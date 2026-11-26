@@ -143,3 +143,21 @@ a.card:hover {
 .callout-practical .callout-title { color: #b8610a; }
 .callout-note { background: white; border-color: #d6e0f5; }
 .callout-note .callout-title { color: #5a6a8f; }
+
+/* Small spec-point tag under sub-headings */
+.lesson-prose .spec-tag {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  padding: 0.15rem 0.7rem;
+  border-radius: 9999px;
+  background: var(--color-sun-soft);
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #8a6100;
+}
+
+/* Wide tables scroll on small screens */
+.lesson-prose table {
+  display: block;
+  overflow-x: auto;
+}
