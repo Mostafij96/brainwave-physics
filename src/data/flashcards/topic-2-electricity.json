@@ -1,0 +1,778 @@
+{
+ "chapterTitle": "Electricity",
+ "sections": [
+  {
+   "title": "Electrical Units",
+   "spec": "2.1",
+   "cards": [
+    {
+     "tag": "2.1 Units",
+     "q": [
+      "What is the unit of electric CURRENT?"
+     ],
+     "a": [
+      "Ampere (A)",
+      "→ measured by: Ammeter",
+      "→ in SERIES with circuit"
+     ]
+    },
+    {
+     "tag": "2.1 Units",
+     "q": [
+      "What is the unit of VOLTAGE?"
+     ],
+     "a": [
+      "Volt (V)",
+      "→ measured by: Voltmeter",
+      "→ in PARALLEL with component"
+     ]
+    },
+    {
+     "tag": "2.1 Units",
+     "q": [
+      "What is the unit of RESISTANCE?"
+     ],
+     "a": [
+      "Ohm (Ω)",
+      "→ R = V ÷ I",
+      "→ measured by: Ohmmeter"
+     ]
+    },
+    {
+     "tag": "2.1 Units",
+     "q": [
+      "What is the unit of CHARGE?"
+     ],
+     "a": [
+      "Coulomb (C)",
+      "→ Q = I × t",
+      "→ 1A = 1C per second"
+     ]
+    },
+    {
+     "tag": "2.1 Units",
+     "q": [
+      "What is the unit of POWER?"
+     ],
+     "a": [
+      "Watt (W)",
+      "→ P = IV",
+      "→ 1W = 1J per second"
+     ]
+    },
+    {
+     "tag": "2.1 Units",
+     "q": [
+      "What is the unit of ENERGY?"
+     ],
+     "a": [
+      "Joule (J)",
+      "→ E = Pt",
+      "→ Also used: kWh"
+     ]
+    },
+    {
+     "tag": "2.1 / 2.20",
+     "q": [
+      "What does 1 Volt mean?"
+     ],
+     "a": [
+      "1 V = 1 Joule per Coulomb",
+      "→ 1 V = 1 J/C",
+      "→ Energy per unit charge"
+     ]
+    },
+    {
+     "tag": "2.1 Units",
+     "q": [
+      "How many joules is 1 kilowatt-hour (kWh)?"
+     ],
+     "a": [
+      "1 kWh = 3,600,000 J",
+      "= 3.6 MJ",
+      "→ Used on electricity bills"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Mains Electricity",
+   "spec": "2.2, 2.6",
+   "cards": [
+    {
+     "tag": "2.2 Mains",
+     "q": [
+      "What colour is the LIVE wire? What does it do?"
+     ],
+     "a": [
+      "BROWN",
+      "→ Carries 230V to appliance",
+      "→ Most dangerous wire"
+     ]
+    },
+    {
+     "tag": "2.2 Mains",
+     "q": [
+      "What colour is the NEUTRAL wire? What does it do?"
+     ],
+     "a": [
+      "BLUE",
+      "→ Returns current from appliance",
+      "→ At ~0V normally"
+     ]
+    },
+    {
+     "tag": "2.2 Mains",
+     "q": [
+      "What colour is the EARTH wire? What does it do?"
+     ],
+     "a": [
+      "GREEN / YELLOW",
+      "→ Connected to metal casing",
+      "→ Safety wire — fault protection"
+     ]
+    },
+    {
+     "tag": "2.2 Mains",
+     "q": [
+      "What does a FUSE do? Where is it positioned?"
+     ],
+     "a": [
+      "Thin wire that MELTS",
+      "if current is too high.",
+      "→ Breaks circuit",
+      "→ In SERIES with LIVE wire"
+     ]
+    },
+    {
+     "tag": "2.2 Mains",
+     "q": [
+      "What does DOUBLE INSULATION mean?"
+     ],
+     "a": [
+      "Plastic outer casing —",
+      "no metal parts exposed.",
+      "→ No earth wire needed",
+      "→ Symbol: □ inside □"
+     ]
+    },
+    {
+     "tag": "2.2 Mains",
+     "q": [
+      "What is the difference between a fuse and an MCB?"
+     ],
+     "a": [
+      "Fuse: melts — must replace",
+      "MCB: trips — can reset",
+      "MCB is faster to reset"
+     ]
+    },
+    {
+     "tag": "2.6 AC/DC",
+     "q": [
+      "What is the difference between AC and DC?"
+     ],
+     "a": [
+      "AC: direction reverses repeatedly",
+      "→ Mains: 230V, 50Hz",
+      "DC: one direction only",
+      "→ Cell or battery"
+     ]
+    },
+    {
+     "tag": "2.4 Fuse",
+     "q": [
+      "FUSE SELECTION: 1150W iron at 230V. Which fuse?"
+     ],
+     "a": [
+      "I = P ÷ V = 1150 ÷ 230 = 5A",
+      "Next fuse ABOVE 5A:",
+      "→ Use 13A fuse",
+      "Available: 3A / 5A / 13A"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Power & Energy",
+   "spec": "2.3–2.5",
+   "cards": [
+    {
+     "tag": "2.4 Power",
+     "q": [
+      "Write the THREE power formulae."
+     ],
+     "a": [
+      "P = I × V",
+      "P = I² × R",
+      "P = V² ÷ R"
+     ]
+    },
+    {
+     "tag": "2.3 Heating",
+     "q": [
+      "Why does a current through a resistor cause heating?"
+     ],
+     "a": [
+      "Electrons COLLIDE with",
+      "positive metal ions →",
+      "energy transferred as heat →",
+      "temperature rises"
+     ]
+    },
+    {
+     "tag": "2.3 Heating",
+     "q": [
+      "Give THREE devices that use the heating effect of electric current."
+     ],
+     "a": [
+      "→ Electric kettle",
+      "→ Toaster / Iron",
+      "→ Electric heater",
+      "→ Filament bulb"
+     ]
+    },
+    {
+     "tag": "2.5 Energy",
+     "q": [
+      "Write THREE formulae for energy transferred."
+     ],
+     "a": [
+      "E = P × t",
+      "E = I × V × t",
+      "E = Q × V",
+      "(units: J — t in SECONDS)"
+     ]
+    },
+    {
+     "tag": "2.5 Energy",
+     "q": [
+      "How do you calculate energy cost in kWh?"
+     ],
+     "a": [
+      "Energy (kWh) = kW × hours",
+      "Cost = kWh × price/unit",
+      "e.g. 2kW × 3h = 6kWh",
+      "6kWh × 30fils = 0.18 OMR"
+     ]
+    },
+    {
+     "tag": "2.4 Fuse",
+     "q": [
+      "2300W shower at 230V. Which fuse? Show working."
+     ],
+     "a": [
+      "I = P/V = 2300/230 = 10A",
+      "Next fuse ABOVE 10A:",
+      "→ Use 13A fuse"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ohm's Law & I–V Graphs",
+   "spec": "2.8–2.13",
+   "cards": [
+    {
+     "tag": "2.13 V=IR",
+     "q": [
+      "Write Ohm's Law and its rearrangements."
+     ],
+     "a": [
+      "V = I × R",
+      "I = V ÷ R",
+      "R = V ÷ I",
+      "(V=volts, I=amps, R=ohms)"
+     ]
+    },
+    {
+     "tag": "2.9 I-V",
+     "q": [
+      "What does the I–V graph for an OHMIC RESISTOR look like?"
+     ],
+     "a": [
+      "Straight line through ORIGIN",
+      "→ I is proportional to V",
+      "→ Resistance is CONSTANT"
+     ]
+    },
+    {
+     "tag": "2.9 I-V",
+     "q": [
+      "What does the I–V graph for a FILAMENT LAMP look like?"
+     ],
+     "a": [
+      "Curved line — slope decreases",
+      "→ As T rises, R increases",
+      "→ NON-OHMIC (not straight)"
+     ]
+    },
+    {
+     "tag": "2.9 I-V",
+     "q": [
+      "What does the I–V graph for a DIODE look like?"
+     ],
+     "a": [
+      "Almost zero current until",
+      "~0.6V threshold, then rises.",
+      "→ In reverse: near zero I",
+      "→ NON-OHMIC"
+     ]
+    },
+    {
+     "tag": "2.10 Resistance",
+     "q": [
+      "What happens to current when resistance INCREASES?"
+     ],
+     "a": [
+      "Current DECREASES",
+      "I = V ÷ R",
+      "(for fixed voltage)",
+      "More R → less I"
+     ]
+    },
+    {
+     "tag": "2.13 / 2.19P",
+     "q": [
+      "Series circuit: total resistance of 20Ω + 40Ω = ?"
+     ],
+     "a": [
+      "R_total = R₁ + R₂",
+      "= 20 + 40 = 60 Ω",
+      "→ I = V ÷ R_total",
+      "(current same everywhere)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "LDR & Thermistor",
+   "spec": "2.11–2.12",
+   "cards": [
+    {
+     "tag": "2.11 LDR",
+     "q": [
+      "How does LDR resistance change with light?"
+     ],
+     "a": [
+      "IN DARK: resistance HIGH",
+      "IN BRIGHT LIGHT: resistance LOW",
+      "→ Graph: curve decreasing",
+      "→ R ∝ 1/light intensity"
+     ]
+    },
+    {
+     "tag": "2.11 Thermistor",
+     "q": [
+      "How does thermistor resistance change with temperature?"
+     ],
+     "a": [
+      "COLD: resistance HIGH",
+      "HOT: resistance LOW",
+      "→ NTC = Negative Temp Coeff.",
+      "→ R decreases as T increases"
+     ]
+    },
+    {
+     "tag": "2.11 LDR",
+     "q": [
+      "Give a real-life use of an LDR."
+     ],
+     "a": [
+      "Automatic street lighting",
+      "→ Dark: high R → lamp ON",
+      "Also: burglar alarms,",
+      "camera exposure meters"
+     ]
+    },
+    {
+     "tag": "2.11 Thermistor",
+     "q": [
+      "Give a real-life use of a thermistor."
+     ],
+     "a": [
+      "Fire alarm / thermostat",
+      "→ Hot: low R → alarm triggers",
+      "Also: digital thermometers,",
+      "freezer/oven control"
+     ]
+    },
+    {
+     "tag": "2.11 Sensor",
+     "q": [
+      "LDR in DARK: what happens to Vout in a sensor circuit?"
+     ],
+     "a": [
+      "LDR R HIGH →",
+      "total R increases →",
+      "current low →",
+      "Vout across fixed R is LOW"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Charge, Current & Voltage",
+   "spec": "2.14–2.21",
+   "cards": [
+    {
+     "tag": "2.15 Q=It",
+     "q": [
+      "Write the charge formula and state the units."
+     ],
+     "a": [
+      "Q = I × t",
+      "Q = charge (Coulombs, C)",
+      "I = current (Amperes, A)",
+      "t = time (Seconds, s)"
+     ]
+    },
+    {
+     "tag": "2.16 Electrons",
+     "q": [
+      "What carries current in a metal wire?"
+     ],
+     "a": [
+      "FREE ELECTRONS (negative)",
+      "→ Flow from − to + terminal",
+      "→ Opposite to conventional",
+      "current direction"
+     ]
+    },
+    {
+     "tag": "2.15 Q=It",
+     "q": [
+      "4A flows for 3 minutes. Calculate the charge."
+     ],
+     "a": [
+      "t = 3 × 60 = 180 s",
+      "Q = It = 4 × 180",
+      "Q = 720 C"
+     ]
+    },
+    {
+     "tag": "2.17 Junction",
+     "q": [
+      "State Kirchhoff's 1st Law."
+     ],
+     "a": [
+      "Current IN = Current OUT",
+      "at any junction.",
+      "→ Charge is CONSERVED",
+      "e.g. 0.6A = 0.4A + 0.2A ✓"
+     ]
+    },
+    {
+     "tag": "2.18 Parallel V",
+     "q": [
+      "What is the voltage rule for PARALLEL circuits?"
+     ],
+     "a": [
+      "Voltage is the SAME",
+      "across ALL branches.",
+      "V₁ = V₂ = V_supply",
+      "(Spec 2.18)"
+     ]
+    },
+    {
+     "tag": "2.19P Series",
+     "q": [
+      "12V battery, R₁=20Ω, R₂=40Ω in SERIES. Find I, V₁, V₂."
+     ],
+     "a": [
+      "R_total = 60Ω",
+      "I = 12/60 = 0.2A",
+      "V₁ = 0.2×20 = 4V",
+      "V₂ = 0.2×40 = 8V ✓(4+8=12)"
+     ]
+    },
+    {
+     "tag": "2.20 Voltage",
+     "q": [
+      "State: what does voltage mean physically?"
+     ],
+     "a": [
+      "Voltage = energy transferred",
+      "per unit charge",
+      "1 V = 1 J per coulomb",
+      "1 V = 1 J/C"
+     ]
+    },
+    {
+     "tag": "2.21 E=QV",
+     "q": [
+      "E = QV: calculate energy when 50C passes through a 12V component."
+     ],
+     "a": [
+      "E = Q × V",
+      "E = 50 × 12",
+      "E = 600 J"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Series vs Parallel",
+   "spec": "2.7–2.8",
+   "cards": [
+    {
+     "tag": "2.8 Series",
+     "q": [
+      "State THREE rules for a SERIES circuit."
+     ],
+     "a": [
+      "1. Current SAME everywhere",
+      "2. Voltages ADD UP",
+      "V₁ + V₂ = V_supply",
+      "3. R_total = R₁ + R₂"
+     ]
+    },
+    {
+     "tag": "2.7/2.18 Parallel",
+     "q": [
+      "State THREE rules for a PARALLEL circuit."
+     ],
+     "a": [
+      "1. Voltage SAME each branch",
+      "2. Currents ADD: I=I₁+I₂",
+      "3. Total R DECREASES"
+     ]
+    },
+    {
+     "tag": "2.7 Parallel",
+     "q": [
+      "Why are home lights wired in PARALLEL? (Give 2 reasons)"
+     ],
+     "a": [
+      "1. Each gets full 230V",
+      "→ stays at full brightness",
+      "2. One failing doesn't",
+      "affect the others"
+     ]
+    },
+    {
+     "tag": "2.7 Parallel",
+     "q": [
+      "What happens when you add a branch to a parallel circuit?"
+     ],
+     "a": [
+      "→ Total R decreases",
+      "→ Total current INCREASES",
+      "→ Each branch still gets",
+      "same voltage"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Resistance of a Wire Practical",
+   "spec": "2.14P",
+   "cards": [
+    {
+     "tag": "2.14P Practical",
+     "q": [
+      "State FOUR factors that affect wire resistance."
+     ],
+     "a": [
+      "1. Length (R ∝ L)",
+      "2. Cross-section area (R∝1/A)",
+      "3. Material (resistivity ρ)",
+      "4. Temperature"
+     ]
+    },
+    {
+     "tag": "2.14P Practical",
+     "q": [
+      "Resistance of wire practical: what is the INDEPENDENT variable?"
+     ],
+     "a": [
+      "Length of the wire (L)",
+      "→ Varied: 20, 40, 60,",
+      "80, 100 cm",
+      "→ Dependent: R = V/I"
+     ]
+    },
+    {
+     "tag": "2.14P Practical",
+     "q": [
+      "Resistance of wire practical: state TWO control variables."
+     ],
+     "a": [
+      "1. Cross-sectional area",
+      "of the wire",
+      "2. Material of the wire",
+      "(also: temperature)"
+     ]
+    },
+    {
+     "tag": "2.14P Practical",
+     "q": [
+      "What graph do you plot in the wire practical? What shape?"
+     ],
+     "a": [
+      "R (y-axis) vs L (x-axis)",
+      "→ Straight line through ORIGIN",
+      "→ Confirms: R ∝ L",
+      "→ R is directly proportional to L"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Static Electricity",
+   "spec": "2.22P–2.28P",
+   "cards": [
+    {
+     "tag": "2.22P Conductors",
+     "q": [
+      "Name TWO conductors and TWO insulators."
+     ],
+     "a": [
+      "CONDUCTORS:",
+      "copper, iron, aluminium",
+      "INSULATORS:",
+      "plastic, rubber, glass"
+     ]
+    },
+    {
+     "tag": "2.23P / 2.24P",
+     "q": [
+      "What is transferred when charging by FRICTION?"
+     ],
+     "a": [
+      "ELECTRONS only",
+      "→ Protons NEVER move",
+      "→ Rubbing SEPARATES charge",
+      "→ Total charge stays zero"
+     ]
+    },
+    {
+     "tag": "2.24P Charging",
+     "q": [
+      "A plastic rod is rubbed. It becomes POSITIVE. Explain why."
+     ],
+     "a": [
+      "Electrons transferred",
+      "FROM rod TO cloth.",
+      "Rod LOSES electrons →",
+      "more protons → POSITIVE"
+     ]
+    },
+    {
+     "tag": "2.25P Forces",
+     "q": [
+      "State the TWO rules for electrostatic forces."
+     ],
+     "a": [
+      "LIKE charges → REPEL",
+      "(++ or −−)",
+      "UNLIKE charges → ATTRACT",
+      "(+ and −)"
+     ]
+    },
+    {
+     "tag": "2.28P Uses",
+     "q": [
+      "How does a PHOTOCOPIER use static electricity? (Key principle)"
+     ],
+     "a": [
+      "Drum charged (+) all over →",
+      "light removes charge from",
+      "white areas → (−) toner",
+      "attracted to (+) areas"
+     ]
+    },
+    {
+     "tag": "2.28P Uses",
+     "q": [
+      "How does an ELECTROSTATIC PRECIPITATOR work?"
+     ],
+     "a": [
+      "Dust gains (−) charge",
+      "from mesh wires →",
+      "attracted to earthed (+) plates →",
+      "dust sticks → clean air out"
+     ]
+    },
+    {
+     "tag": "2.27P Dangers",
+     "q": [
+      "Why is an aircraft EARTHED before refuelling?"
+     ],
+     "a": [
+      "Aircraft has static charge",
+      "from flight →",
+      "spark could ignite fuel →",
+      "EARTH wire drains charge safely"
+     ]
+    },
+    {
+     "tag": "2.27P Dangers",
+     "q": [
+      "Name ONE other danger of static electricity and how it is prevented."
+     ],
+     "a": [
+      "Fuel tankers:",
+      "charge builds as fuel moves →",
+      "metal chain drags on road →",
+      "continuous earthing"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Mixed Formula Cards",
+   "spec": "All spec",
+   "cards": [
+    {
+     "tag": "2.4 Power",
+     "q": [
+      "Which power formula to use when you have ONLY I and R?"
+     ],
+     "a": [
+      "P = I² × R",
+      "→ Derived from P=IV and V=IR",
+      "e.g. I=3A, R=50Ω:",
+      "P = 9 × 50 = 450W"
+     ]
+    },
+    {
+     "tag": "2.4 Power",
+     "q": [
+      "Which power formula to use when you have ONLY V and R?"
+     ],
+     "a": [
+      "P = V² ÷ R",
+      "→ Derived from P=IV and I=V/R",
+      "e.g. V=230V, R=52.9Ω:",
+      "P = 52900/52.9 ≈ 1000W"
+     ]
+    },
+    {
+     "tag": "2.16 Electrons",
+     "q": [
+      "What is conventional current direction? What about electron flow?"
+     ],
+     "a": [
+      "Conventional: + to −",
+      "Electron flow: − to +",
+      "(OPPOSITE directions)",
+      "Both are accepted in exams"
+     ]
+    },
+    {
+     "tag": "2.4 Fuse",
+     "q": [
+      "How do you select a fuse? State the method."
+     ],
+     "a": [
+      "Step 1: I = P ÷ V",
+      "Step 2: Choose NEXT fuse",
+      "ABOVE calculated I",
+      "Fuses: 3A / 5A / 13A"
+     ]
+    }
+   ]
+  }
+ ]
+}

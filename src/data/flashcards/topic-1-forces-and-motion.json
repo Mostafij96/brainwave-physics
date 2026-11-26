@@ -1,0 +1,382 @@
+{
+ "chapterTitle": "Forces and Motion",
+ "sections": [
+  {
+   "title": "All cards",
+   "spec": "",
+   "cards": [
+    {
+     "q": [
+      "What is the SI unit of force?"
+     ],
+     "a": [
+      "Newton (N)"
+     ]
+    },
+    {
+     "q": [
+      "What is the SI unit of acceleration?"
+     ],
+     "a": [
+      "m/s²",
+      "(metres per second squared)"
+     ]
+    },
+    {
+     "q": [
+      "Formula for average speed?"
+     ],
+     "a": [
+      "v = s / t",
+      "speed = distance ÷ time"
+     ]
+    },
+    {
+     "q": [
+      "Convert km/h to m/s — how?"
+     ],
+     "a": [
+      "Divide by 3.6",
+      "e.g. 72 km/h ÷ 3.6 = 20 m/s"
+     ]
+    },
+    {
+     "q": [
+      "Gradient of a d–t graph gives what?"
+     ],
+     "a": [
+      "SPEED",
+      "(steeper = faster)"
+     ]
+    },
+    {
+     "q": [
+      "Horizontal line on d–t graph means?"
+     ],
+     "a": [
+      "Object is STATIONARY",
+      "(speed = 0)"
+     ]
+    },
+    {
+     "q": [
+      "Formula for acceleration?"
+     ],
+     "a": [
+      "a = (v − u) / t",
+      "change in velocity ÷ time"
+     ]
+    },
+    {
+     "q": [
+      "Difference between speed and velocity?"
+     ],
+     "a": [
+      "Speed = magnitude only (scalar)",
+      "Velocity = magnitude + direction"
+     ]
+    },
+    {
+     "q": [
+      "Gradient of a v–t graph gives what?"
+     ],
+     "a": [
+      "ACCELERATION",
+      "(NOT speed!)"
+     ]
+    },
+    {
+     "q": [
+      "Area under a v–t graph gives what?"
+     ],
+     "a": [
+      "DISTANCE TRAVELLED",
+      "(split into shapes)"
+     ]
+    },
+    {
+     "q": [
+      "Horizontal line on v–t graph means?"
+     ],
+     "a": [
+      "CONSTANT VELOCITY (a = 0)",
+      "(NOT stationary!)"
+     ]
+    },
+    {
+     "q": [
+      "State v² = u² + 2as. When do you use it?"
+     ],
+     "a": [
+      "Use when TIME is not given",
+      "v² = u² + 2as"
+     ]
+    },
+    {
+     "q": [
+      "How do you choose which equation of motion?"
+     ],
+     "a": [
+      "Missing quantity decides:",
+      "No s → v=u+at",
+      "No t → v²=u²+2as"
+     ]
+    },
+    {
+     "q": [
+      "Area of a trapezium?"
+     ],
+     "a": [
+      "½ × (a + b) × h",
+      "a,b = parallel sides"
+     ]
+    },
+    {
+     "q": [
+      "Name 3 effects of a force."
+     ],
+     "a": [
+      "Change SPEED",
+      "Change DIRECTION",
+      "Change SHAPE"
+     ]
+    },
+    {
+     "q": [
+      "What is a resultant force?"
+     ],
+     "a": [
+      "Single force replacing all forces",
+      "Same dir → ADD",
+      "Opposite → SUBTRACT"
+     ]
+    },
+    {
+     "q": [
+      "What is friction?"
+     ],
+     "a": [
+      "Force that OPPOSES motion",
+      "Always opposite to movement"
+     ]
+    },
+    {
+     "q": [
+      "Name 3 scalar quantities."
+     ],
+     "a": [
+      "Speed, mass, time,",
+      "energy, distance"
+     ]
+    },
+    {
+     "q": [
+      "Name 3 vector quantities."
+     ],
+     "a": [
+      "Velocity, force, acceleration,",
+      "momentum, displacement"
+     ]
+    },
+    {
+     "q": [
+      "Constant velocity → resultant force = ?"
+     ],
+     "a": [
+      "ZERO (0 N)",
+      "Forces are BALANCED",
+      "(not 'no forces')"
+     ]
+    },
+    {
+     "q": [
+      "Newton's Second Law?"
+     ],
+     "a": [
+      "F = m × a",
+      "Force = mass × acceleration"
+     ]
+    },
+    {
+     "q": [
+      "Formula for weight?"
+     ],
+     "a": [
+      "W = m × g",
+      "g(Earth) ≈ 10 N/kg"
+     ]
+    },
+    {
+     "q": [
+      "g on Earth vs Moon?"
+     ],
+     "a": [
+      "Earth: g ≈ 10 N/kg",
+      "Moon: g ≈ 1.6 N/kg"
+     ]
+    },
+    {
+     "q": [
+      "What is stopping distance made of?"
+     ],
+     "a": [
+      "Thinking + Braking",
+      "Thinking = speed × reaction time"
+     ]
+    },
+    {
+     "q": [
+      "Speed doubles → braking distance?"
+     ],
+     "a": [
+      "QUADRUPLES (×4)",
+      "because KE ∝ v²"
+     ]
+    },
+    {
+     "q": [
+      "2 factors affecting thinking distance?"
+     ],
+     "a": [
+      "Speed of car",
+      "Reaction time (tiredness,",
+      "alcohol, drugs)"
+     ]
+    },
+    {
+     "q": [
+      "What is terminal velocity?"
+     ],
+     "a": [
+      "Max constant velocity when",
+      "Drag = Weight",
+      "Resultant = 0"
+     ]
+    },
+    {
+     "q": [
+      "At terminal velocity, are forces acting?"
+     ],
+     "a": [
+      "YES! Forces BALANCED",
+      "(W = Drag)",
+      "Not absent — balanced!"
+     ]
+    },
+    {
+     "q": [
+      "State Hooke's Law."
+     ],
+     "a": [
+      "Extension ∝ Force",
+      "(within elastic limit)",
+      "Straight line through origin"
+     ]
+    },
+    {
+     "q": [
+      "What is the elastic limit?"
+     ],
+     "a": [
+      "Point of PERMANENT",
+      "DEFORMATION",
+      "(won't return to shape)"
+     ]
+    },
+    {
+     "q": [
+      "Does rubber band obey Hooke's Law?"
+     ],
+     "a": [
+      "NO — graph is CURVED",
+      "Elastic but NOT Hooke's Law"
+     ]
+    },
+    {
+     "q": [
+      "Formula for momentum?"
+     ],
+     "a": [
+      "p = m × v",
+      "Units: kg·m/s (vector)"
+     ]
+    },
+    {
+     "q": [
+      "Conservation of momentum?"
+     ],
+     "a": [
+      "Total p BEFORE =",
+      "Total p AFTER collision"
+     ]
+    },
+    {
+     "q": [
+      "How do safety features reduce injury?"
+     ],
+     "a": [
+      "F = Δp / t",
+      "Increase TIME → decrease FORCE"
+     ]
+    },
+    {
+     "q": [
+      "State Newton's Third Law."
+     ],
+     "a": [
+      "A pushes B → B pushes A",
+      "EQUAL &amp; OPPOSITE",
+      "on DIFFERENT objects"
+     ]
+    },
+    {
+     "q": [
+      "Weight &amp; normal reaction = N3L pair?"
+     ],
+     "a": [
+      "NO! Same object.",
+      "N3L = DIFFERENT objects."
+     ]
+    },
+    {
+     "q": [
+      "Formula for a moment?"
+     ],
+     "a": [
+      "M = F × d",
+      "Force × perpendicular distance",
+      "Units: N·m"
+     ]
+    },
+    {
+     "q": [
+      "Principle of Moments?"
+     ],
+     "a": [
+      "For balance:",
+      "CW moments = ACW moments"
+     ]
+    },
+    {
+     "q": [
+      "What is centre of gravity?"
+     ],
+     "a": [
+      "Point where entire weight",
+      "appears to act",
+      "(centre for uniform objects)"
+     ]
+    },
+    {
+     "q": [
+      "Moment vs Momentum?"
+     ],
+     "a": [
+      "Moment = F×d (N·m) turning",
+      "Momentum = m×v (kg·m/s) motion"
+     ]
+    }
+   ]
+  }
+ ]
+}

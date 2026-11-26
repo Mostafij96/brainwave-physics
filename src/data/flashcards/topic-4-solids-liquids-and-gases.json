@@ -1,0 +1,605 @@
+{
+ "chapterTitle": "Solids, Liquids and Gases",
+ "sections": [
+  {
+   "title": "Density",
+   "spec": "4.1, 4.3",
+   "cards": [
+    {
+     "q": [
+      "State the formula for density."
+     ],
+     "a": [
+      "ρ = m ÷ V",
+      "ρ = density (kg/m³)",
+      "m = mass (kg)",
+      "V = volume (m³)"
+     ]
+    },
+    {
+     "q": [
+      "Define density."
+     ],
+     "a": [
+      "Density is the mass per unit volume of a substance.",
+      "It tells us how much mass is packed into each cubic metre."
+     ]
+    },
+    {
+     "q": [
+      "How do you convert grams to kilograms?"
+     ],
+     "a": [
+      "Divide by 1000.",
+      "e.g. 540 g = 540 ÷ 1000 = 0.540 kg"
+     ]
+    },
+    {
+     "q": [
+      "How do you convert cm³ to m³?"
+     ],
+     "a": [
+      "Divide by 1,000,000.",
+      "e.g. 200 cm³ = 200 ÷ 1,000,000 = 0.0002 m³"
+     ]
+    },
+    {
+     "q": [
+      "What is the density of water?"
+     ],
+     "a": [
+      "1000 kg/m³",
+      "(An object with density less than this floats on water; more than this sinks.)"
+     ]
+    },
+    {
+     "q": [
+      "Why does a wooden block float but a steel ball sinks?"
+     ],
+     "a": [
+      "Wood density (~600 kg/m³) &lt; water density (1000).",
+      "Steel density (~7800) &gt; water density.",
+      "Less dense objects float; denser objects sink."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Measuring Density",
+   "spec": "4.4P",
+   "cards": [
+    {
+     "q": [
+      "How do you find the volume of a regular solid?"
+     ],
+     "a": [
+      "Measure length, width and height with a ruler.",
+      "V = l × w × h (in m³)"
+     ]
+    },
+    {
+     "q": [
+      "How do you find the volume of an irregular solid?"
+     ],
+     "a": [
+      "Displacement method:",
+      "Record water volume V₁, lower the object in, record V₂.",
+      "Volume of object = V₂ − V₁"
+     ]
+    },
+    {
+     "q": [
+      "How do you measure the density of a liquid?"
+     ],
+     "a": [
+      "Measure mass of empty cylinder (m₁).",
+      "Add liquid, measure volume V and new mass (m₂).",
+      "Density = (m₂ − m₁) ÷ V"
+     ]
+    },
+    {
+     "q": [
+      "What equipment measures mass and volume in the density practical?"
+     ],
+     "a": [
+      "Mass: an electronic balance (kg)",
+      "Volume: a ruler (regular) or a measuring cylinder (irregular/liquid)"
+     ]
+    },
+    {
+     "q": [
+      "A block has mass 780g and volume 100cm³. Find density in kg/m³."
+     ],
+     "a": [
+      "m = 0.780 kg, V = 0.0001 m³",
+      "ρ = m/V = 0.780 ÷ 0.0001",
+      "ρ = 7800 kg/m³ (iron/steel)"
+     ]
+    },
+    {
+     "q": [
+      "What fraction of an iceberg floats below the surface?"
+     ],
+     "a": [
+      "About 92% (ρ_ice/ρ_water = 917/1000).",
+      "Only ~8% shows above the water."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Pressure",
+   "spec": "4.5, 4.6",
+   "cards": [
+    {
+     "q": [
+      "State the formula for pressure."
+     ],
+     "a": [
+      "P = F ÷ A",
+      "P = pressure (Pa = N/m²)",
+      "F = force (N)",
+      "A = area (m²)"
+     ]
+    },
+    {
+     "q": [
+      "What is the unit of pressure?"
+     ],
+     "a": [
+      "Pascal (Pa)",
+      "1 Pa = 1 N/m² (one newton per square metre)"
+     ]
+    },
+    {
+     "q": [
+      "How do you INCREASE pressure?"
+     ],
+     "a": [
+      "Decrease the area (for the same force).",
+      "e.g. sharp knife, needle, stiletto heel — small area → high pressure"
+     ]
+    },
+    {
+     "q": [
+      "How do you DECREASE pressure?"
+     ],
+     "a": [
+      "Increase the area (for the same force).",
+      "e.g. snowshoes, skis, camel feet, tractor tyres — large area → low pressure"
+     ]
+    },
+    {
+     "q": [
+      "In which directions does pressure act in a fluid at rest?"
+     ],
+     "a": [
+      "EQUALLY in ALL directions at any point.",
+      "(upward, downward and sideways — all the same at that depth)"
+     ]
+    },
+    {
+     "q": [
+      "Why do camels have wide feet?"
+     ],
+     "a": [
+      "Large area spreads their weight → lower pressure on the sand → they do not sink in."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Pressure in Liquids",
+   "spec": "4.7",
+   "cards": [
+    {
+     "q": [
+      "State the formula for pressure in a liquid."
+     ],
+     "a": [
+      "p = h × ρ × g",
+      "h = depth (m)",
+      "ρ = density (kg/m³)",
+      "g = 10 N/kg"
+     ]
+    },
+    {
+     "q": [
+      "Why does pressure increase with depth?"
+     ],
+     "a": [
+      "There is more liquid above pushing down.",
+      "The deeper you go, the greater the weight of liquid above → higher pressure."
+     ]
+    },
+    {
+     "q": [
+      "Does pressure in a liquid depend on container shape?"
+     ],
+     "a": [
+      "NO. It depends only on depth (h) and density (ρ).",
+      "Same depth = same pressure in any shaped container."
+     ]
+    },
+    {
+     "q": [
+      "Find the pressure at 15m depth in water (ρ=1000, g=10)."
+     ],
+     "a": [
+      "p = hρg",
+      "p = 15 × 1000 × 10",
+      "p = 150,000 Pa"
+     ]
+    },
+    {
+     "q": [
+      "Why are dam walls thicker at the base?"
+     ],
+     "a": [
+      "Pressure increases with depth.",
+      "Greater force per m² at the base → walls must be stronger/thicker there."
+     ]
+    },
+    {
+     "q": [
+      "What is the total pressure at a depth in a liquid?"
+     ],
+     "a": [
+      "Total pressure = atmospheric pressure + hρg",
+      "(exam questions usually ask for the liquid pressure only, hρg)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Upthrust & Floating",
+   "spec": "Archimedes",
+   "cards": [
+    {
+     "q": [
+      "Define upthrust."
+     ],
+     "a": [
+      "The upward force from a fluid on an object.",
+      "It equals the weight of the fluid displaced (Archimedes' principle)."
+     ]
+    },
+    {
+     "q": [
+      "What is the condition for an object to FLOAT?"
+     ],
+     "a": [
+      "Upthrust = weight",
+      "(net force is zero, so the object stays at the surface)"
+     ]
+    },
+    {
+     "q": [
+      "What is the condition for an object to SINK?"
+     ],
+     "a": [
+      "Weight &gt; upthrust",
+      "(net downward force, so the object accelerates down)"
+     ]
+    },
+    {
+     "q": [
+      "Why does a huge steel ship float?"
+     ],
+     "a": [
+      "The hull is hollow (full of air).",
+      "The average density of ship + air is LESS than water.",
+      "So it floats."
+     ]
+    },
+    {
+     "q": [
+      "How does a submarine sink and rise?"
+     ],
+     "a": [
+      "Sink: fill ballast tanks with water → weight increases.",
+      "Rise: blow water out with compressed air → weight decreases."
+     ]
+    },
+    {
+     "q": [
+      "An object weighs 60N in air, 45N in water. Find the upthrust."
+     ],
+     "a": [
+      "Upthrust = weight in air − weight in water",
+      "Upthrust = 60 − 45 = 15 N"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Particle Model",
+   "spec": "4.10P",
+   "cards": [
+    {
+     "q": [
+      "Describe the particles in a SOLID."
+     ],
+     "a": [
+      "Regularly arranged, tightly packed.",
+      "Vibrate about fixed positions.",
+      "Fixed shape and volume; cannot be compressed."
+     ]
+    },
+    {
+     "q": [
+      "Describe the particles in a LIQUID."
+     ],
+     "a": [
+      "Close together, randomly arranged.",
+      "Move/slide past each other.",
+      "Fixed volume, takes shape of container; cannot be compressed."
+     ]
+    },
+    {
+     "q": [
+      "Describe the particles in a GAS."
+     ],
+     "a": [
+      "Far apart, randomly arranged.",
+      "Fast, random motion.",
+      "No fixed shape or volume; can be compressed."
+     ]
+    },
+    {
+     "q": [
+      "Why can gases be compressed but not solids or liquids?"
+     ],
+     "a": [
+      "Gas particles are far apart with large gaps.",
+      "Solid/liquid particles are already touching — no space to compress."
+     ]
+    },
+    {
+     "q": [
+      "What happens to gas particles when heated?"
+     ],
+     "a": [
+      "They move FASTER and spread further apart.",
+      "(The particles themselves do NOT change size or expand.)"
+     ]
+    },
+    {
+     "q": [
+      "Why does a liquid take the shape of its container?"
+     ],
+     "a": [
+      "Its particles can move and slide past each other,",
+      "but stay close together, so it keeps a fixed volume but no fixed shape."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Changes of State",
+   "spec": "4.9P",
+   "cards": [
+    {
+     "q": [
+      "Name the change: solid → liquid."
+     ],
+     "a": [
+      "Melting (requires energy / heating)",
+      "Reverse: freezing (liquid → solid, releases energy)"
+     ]
+    },
+    {
+     "q": [
+      "Name the change: liquid → gas."
+     ],
+     "a": [
+      "Boiling or evaporating (requires energy)",
+      "Reverse: condensing (gas → liquid, releases energy)"
+     ]
+    },
+    {
+     "q": [
+      "What happens to temperature during a change of state?"
+     ],
+     "a": [
+      "It stays CONSTANT.",
+      "All the energy goes to breaking/forming bonds (latent heat), not changing temperature."
+     ]
+    },
+    {
+     "q": [
+      "At what temperature does ice melt / water boil?"
+     ],
+     "a": [
+      "Ice melts at 0°C.",
+      "Water boils at 100°C.",
+      "(at atmospheric pressure)"
+     ]
+    },
+    {
+     "q": [
+      "During melting, where does the supplied energy go?"
+     ],
+     "a": [
+      "It breaks the bonds between particles (increases potential energy).",
+      "It does NOT increase kinetic energy, so temperature stays constant."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Specific Heat Capacity",
+   "spec": "4.12P–4.14P",
+   "cards": [
+    {
+     "q": [
+      "State the formula for specific heat capacity."
+     ],
+     "a": [
+      "ΔQ = m × c × ΔT",
+      "ΔQ = energy (J), m = mass (kg)",
+      "c = SHC (J/kg°C), ΔT = temp change (°C)"
+     ]
+    },
+    {
+     "q": [
+      "Define specific heat capacity."
+     ],
+     "a": [
+      "The energy needed to raise the temperature of 1 kg of a substance by 1°C.",
+      "Unit: J/kg°C"
+     ]
+    },
+    {
+     "q": [
+      "What is ΔT in ΔQ = mcΔT?"
+     ],
+     "a": [
+      "The CHANGE in temperature (T₂ − T₁).",
+      "e.g. from 20°C to 70°C → ΔT = 50°C (not 70°C)."
+     ]
+    },
+    {
+     "q": [
+      "Why is water used as a coolant?"
+     ],
+     "a": [
+      "Water has a very high SHC (4200 J/kg°C).",
+      "It absorbs a lot of energy with only a small temperature rise."
+     ]
+    },
+    {
+     "q": [
+      "In the SHC practical, why insulate the block?"
+     ],
+     "a": [
+      "To reduce heat loss to the surroundings.",
+      "This makes the result more accurate (fair test)."
+     ]
+    },
+    {
+     "q": [
+      "Why is the measured SHC usually too high?"
+     ],
+     "a": [
+      "Some supplied energy heats the surroundings, not just the block.",
+      "So the energy per °C appears larger than the true value."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Latent Heat",
+   "spec": "4.15P",
+   "cards": [
+    {
+     "q": [
+      "State the formula for latent heat."
+     ],
+     "a": [
+      "ΔQ = m × L",
+      "ΔQ = energy (J), m = mass (kg)",
+      "L = specific latent heat (J/kg)"
+     ]
+    },
+    {
+     "q": [
+      "Define specific latent heat."
+     ],
+     "a": [
+      "The energy needed to change the state of 1 kg of a substance WITHOUT a change in temperature.",
+      "Unit: J/kg"
+     ]
+    },
+    {
+     "q": [
+      "What is latent heat of FUSION?"
+     ],
+     "a": [
+      "The energy to melt (or freeze) 1 kg at its melting point.",
+      "Ice: L = 334,000 J/kg"
+     ]
+    },
+    {
+     "q": [
+      "What is latent heat of VAPORISATION?"
+     ],
+     "a": [
+      "The energy to boil (or condense) 1 kg at its boiling point.",
+      "Water: L = 2,260,000 J/kg"
+     ]
+    },
+    {
+     "q": [
+      "Find the energy to melt 2kg of ice at 0°C. (L=334,000)"
+     ],
+     "a": [
+      "ΔQ = mL",
+      "ΔQ = 2 × 334,000",
+      "ΔQ = 668,000 J"
+     ]
+    },
+    {
+     "q": [
+      "How do you solve a combined mcΔT + mL problem?"
+     ],
+     "a": [
+      "Do each stage separately: use mL for state changes and mcΔT for temperature changes, then ADD all the energies."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Heating Curves & Key Facts",
+   "spec": "",
+   "cards": [
+    {
+     "q": [
+      "What do the SLOPING parts of a heating curve show?"
+     ],
+     "a": [
+      "Temperature is rising — energy increases kinetic energy of particles.",
+      "Use ΔQ = mcΔT (sensible heat)."
+     ]
+    },
+    {
+     "q": [
+      "What do the FLAT parts of a heating curve show?"
+     ],
+     "a": [
+      "A change of state at constant temperature.",
+      "Energy breaks bonds — use ΔQ = mL (latent heat)."
+     ]
+    },
+    {
+     "q": [
+      "Why is the boiling flat section longer than melting?"
+     ],
+     "a": [
+      "L_vaporisation (2,260,000) is much larger than L_fusion (334,000).",
+      "More energy is needed to fully separate particles into a gas."
+     ]
+    },
+    {
+     "q": [
+      "Difference between sensible heat and latent heat?"
+     ],
+     "a": [
+      "Sensible: temperature changes (ΔQ=mcΔT).",
+      "Latent: temperature constant, state changes (ΔQ=mL)."
+     ]
+    },
+    {
+     "q": [
+      "List the 5 key Topic 4 formulae."
+     ],
+     "a": [
+      "ρ = m/V · P = F/A · p = hρg",
+      "ΔQ = mcΔT · ΔQ = mL",
+      "(g = 10 N/kg always)"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,703 @@
+{
+ "chapterTitle": "Energy Resources and Energy Transfer",
+ "sections": [
+  {
+   "title": "Units & Energy Stores",
+   "spec": "3.1–3.2",
+   "cards": [
+    {
+     "q": [
+      "What is the unit of energy?"
+     ],
+     "a": [
+      "Joule (J)",
+      "1 kJ = 1000 J",
+      "1 kWh = 3,600,000 J"
+     ]
+    },
+    {
+     "q": [
+      "What is the unit of power?"
+     ],
+     "a": [
+      "Watt (W)",
+      "1 W = 1 J/s",
+      "1 kW = 1000 W · 1 MW = 1,000,000 W"
+     ]
+    },
+    {
+     "q": [
+      "What is the unit of force?"
+     ],
+     "a": [
+      "Newton (N)",
+      "Weight = mass × g",
+      "g = 10 N/kg on Earth"
+     ]
+    },
+    {
+     "q": [
+      "Name the 8 energy stores."
+     ],
+     "a": [
+      "1 Kinetic",
+      "2 Gravitational Potential (GPE)",
+      "3 Elastic Potential",
+      "4 Chemical",
+      "5 Thermal",
+      "6 Nuclear",
+      "7 Electrical",
+      "8 Magnetic"
+     ]
+    },
+    {
+     "q": [
+      "What energy store does a stretched spring have?"
+     ],
+     "a": [
+      "Elastic potential energy",
+      "The spring stores energy when deformed and releases it when it returns to shape."
+     ]
+    },
+    {
+     "q": [
+      "What is the difference between a STORE and a PATHWAY?"
+     ],
+     "a": [
+      "Store = where energy is held (e.g. kinetic, thermal)",
+      "Pathway = HOW energy moves between stores",
+      "(e.g. mechanical work, radiation)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Energy Pathways & Chains",
+   "spec": "3.2",
+   "cards": [
+    {
+     "q": [
+      "Name the 4 energy transfer pathways."
+     ],
+     "a": [
+      "1 Mechanical work (force moves object)",
+      "2 Heating (temperature difference)",
+      "3 Electrical (moving charge)",
+      "4 Radiation (EM waves — light, infrared)"
+     ]
+    },
+    {
+     "q": [
+      "Is radiation a store or a pathway?"
+     ],
+     "a": [
+      "PATHWAY — not a store.",
+      "Radiation (infrared, light) is a mechanism of energy transfer.",
+      "Thermal is the store; radiation is how energy travels."
+     ]
+    },
+    {
+     "q": [
+      "Write the energy chain for a burning candle."
+     ],
+     "a": [
+      "Chemical store",
+      "→ Heating + radiation (pathways)",
+      "→ Thermal store of surroundings",
+      "(+ light/radiation pathway → thermal)"
+     ]
+    },
+    {
+     "q": [
+      "Write the energy chain for an electric kettle."
+     ],
+     "a": [
+      "Electrical store",
+      "→ Electrical pathway (current)",
+      "→ Thermal store (water + casing)",
+      "+ Sound (small amount)"
+     ]
+    },
+    {
+     "q": [
+      "Write the energy chain for a ball falling."
+     ],
+     "a": [
+      "Gravitational potential store",
+      "→ Mechanical work (pathway)",
+      "→ Kinetic store",
+      "→ (on impact) Thermal + Sound"
+     ]
+    },
+    {
+     "q": [
+      "Write the energy chain for a wind turbine."
+     ],
+     "a": [
+      "Kinetic store (air/wind)",
+      "→ Turbine blades spin → KE",
+      "→ Generator → Electrical pathway",
+      "→ Electrical energy for consumers"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Conservation & Efficiency",
+   "spec": "3.3–3.5",
+   "cards": [
+    {
+     "q": [
+      "State the Law of Conservation of Energy."
+     ],
+     "a": [
+      "Energy cannot be created or destroyed.",
+      "It can only be transferred from one store to another.",
+      "Total energy of a closed system is always constant."
+     ]
+    },
+    {
+     "q": [
+      "What is energy dissipation?"
+     ],
+     "a": [
+      "Energy spreading out into the thermal store of the surroundings.",
+      "Dissipated energy is less useful — e.g. heat from friction.",
+      "Dissipation is why 100% efficiency is impossible."
+     ]
+    },
+    {
+     "q": [
+      "State the formula for efficiency."
+     ],
+     "a": [
+      "Efficiency = Useful Energy Output ÷ Total Energy Input",
+      "As decimal (0 to 1) or ×100 for percentage (0% to 100%)."
+     ]
+    },
+    {
+     "q": [
+      "A motor uses 400J and produces 280J useful KE. What is the efficiency?"
+     ],
+     "a": [
+      "Efficiency = 280 ÷ 400 = 0.70",
+      "= 70%",
+      "Wasted = 400 − 280 = 120 J"
+     ]
+    },
+    {
+     "q": [
+      "An LED is 35% efficient and uses 60J. Find useful output."
+     ],
+     "a": [
+      "Useful = 0.35 × 60 = 21 J",
+      "Wasted = 60 − 21 = 39 J",
+      "Always: wasted = total − useful"
+     ]
+    },
+    {
+     "q": [
+      "What is a Sankey diagram?"
+     ],
+     "a": [
+      "A diagram showing energy transfers.",
+      "Width of arrow ∝ amount of energy.",
+      "Useful output → right",
+      "Wasted outputs → branch up or down"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Thermal Energy Transfer",
+   "spec": "3.6–3.10",
+   "cards": [
+    {
+     "q": [
+      "How does CONDUCTION transfer thermal energy?"
+     ],
+     "a": [
+      "Vibrating particles collide with neighbours, passing energy along.",
+      "Best in SOLIDS, especially metals.",
+      "Does NOT require the medium to move."
+     ]
+    },
+    {
+     "q": [
+      "How does CONVECTION transfer thermal energy?"
+     ],
+     "a": [
+      "Hot fluid → less dense → rises.",
+      "Cool fluid → more dense → sinks.",
+      "Creates a convection current.",
+      "Only in LIQUIDS and GASES — not solids."
+     ]
+    },
+    {
+     "q": [
+      "How does RADIATION transfer thermal energy?"
+     ],
+     "a": [
+      "As infrared electromagnetic waves.",
+      "No medium needed — works in a VACUUM.",
+      "e.g. Sun → Earth through space."
+     ]
+    },
+    {
+     "q": [
+      "Which surface is the best absorber of radiation?"
+     ],
+     "a": [
+      "Matt BLACK (dark, dull) surface.",
+      "Also the BEST emitter of radiation.",
+      "Shiny/white surfaces are the WORST absorbers and emitters."
+     ]
+    },
+    {
+     "q": [
+      "What are TWO ways to reduce energy transfer by conduction?"
+     ],
+     "a": [
+      "1 Loft insulation (traps air — poor conductor)",
+      "2 Double glazing (air/gas gap between panes)",
+      "3 Cavity wall insulation (foam-filled gap)",
+      "Air is an excellent thermal insulator."
+     ]
+    },
+    {
+     "q": [
+      "State the required practical for thermal energy transfer."
+     ],
+     "a": [
+      "Heater in water + ammeter (series) + voltmeter (parallel) + thermometer.",
+      "Measure V, I, t, ΔT.",
+      "E input = I × V × t",
+      "Q absorbed = m × c × ΔT",
+      "Expect E &gt; Q (some heat escapes)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Work Done: W = Fd",
+   "spec": "3.11–3.12",
+   "cards": [
+    {
+     "q": [
+      "State the formula for work done."
+     ],
+     "a": [
+      "W = F × d",
+      "W = work done (joules, J)",
+      "F = force (newtons, N)",
+      "d = distance in direction of force (metres, m)",
+      "Work done = energy transferred."
+     ]
+    },
+    {
+     "q": [
+      "When is work NOT done on an object?"
+     ],
+     "a": [
+      "When the force is PERPENDICULAR to the displacement.",
+      "e.g. Carrying a bag horizontally — upward force ⊥ horizontal motion → no work done against gravity.",
+      "Also: no movement → no work done."
+     ]
+    },
+    {
+     "q": [
+      "A 50N force moves a box 8m. Calculate the work done."
+     ],
+     "a": [
+      "W = F × d",
+      "W = 50 × 8",
+      "W = 400 J",
+      "400 joules of energy is transferred to the box."
+     ]
+    },
+    {
+     "q": [
+      "A person of weight 700N climbs 5m of stairs. What is the work done against gravity?"
+     ],
+     "a": [
+      "W = F × d = weight × height",
+      "W = 700 × 5",
+      "W = 3500 J",
+      "This equals the GPE gained."
+     ]
+    },
+    {
+     "q": [
+      "Where does the work done against friction go?"
+     ],
+     "a": [
+      "All the work done against friction becomes",
+      "THERMAL ENERGY",
+      "(heat in the surfaces in contact).",
+      "It cannot be recovered as useful work."
+     ]
+    },
+    {
+     "q": [
+      "Define work done in physics."
+     ],
+     "a": [
+      "Work done = force × distance moved in the direction of the force.",
+      "Work done is equal to the energy transferred.",
+      "1 J = 1 Nm (1 newton × 1 metre)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Power: P = W/t and P = Fv",
+   "spec": "3.16–3.17",
+   "cards": [
+    {
+     "q": [
+      "Define power and state its unit."
+     ],
+     "a": [
+      "Power = rate of energy transfer",
+      "= rate of doing work",
+      "Unit: watt (W)",
+      "1 W = 1 J/s",
+      "More powerful = does SAME work in LESS time."
+     ]
+    },
+    {
+     "q": [
+      "State the two formulae for power."
+     ],
+     "a": [
+      "P = W ÷ t",
+      "(Power = Work done ÷ Time taken)",
+      "P = F × v",
+      "(Power = Force × Speed)",
+      "Derived: P = W/t → W=Fd → P = Fd/t → P = Fv"
+     ]
+    },
+    {
+     "q": [
+      "A crane does 36,000J of work in 60s. Calculate the power."
+     ],
+     "a": [
+      "P = W ÷ t",
+      "P = 36,000 ÷ 60",
+      "P = 600 W"
+     ]
+    },
+    {
+     "q": [
+      "A car exerts 4000N at 25m/s. Calculate the power."
+     ],
+     "a": [
+      "P = F × v",
+      "P = 4000 × 25",
+      "P = 100,000 W = 100 kW"
+     ]
+    },
+    {
+     "q": [
+      "A 2.4kW motor runs for 5 minutes. How much energy is transferred?"
+     ],
+     "a": [
+      "P = 2400W, t = 5 × 60 = 300s",
+      "W = P × t",
+      "W = 2400 × 300",
+      "W = 720,000 J"
+     ]
+    },
+    {
+     "q": [
+      "A pump produces 6kW of power. Water flows at 3m/s. Find the force."
+     ],
+     "a": [
+      "P = F × v → F = P ÷ v",
+      "F = 6000 ÷ 3",
+      "F = 2000 N"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "GPE = mgh",
+   "spec": "3.13",
+   "cards": [
+    {
+     "q": [
+      "State the formula for gravitational potential energy."
+     ],
+     "a": [
+      "GPE = m × g × h",
+      "GPE = gravitational potential energy (J)",
+      "m = mass (kg)",
+      "g = 10 N/kg (Earth)",
+      "h = vertical height (m)"
+     ]
+    },
+    {
+     "q": [
+      "What value of g should you use in IGCSE calculations?"
+     ],
+     "a": [
+      "g = 10 N/kg",
+      "(unless the question states a different value)",
+      "This is the gravitational field strength on Earth."
+     ]
+    },
+    {
+     "q": [
+      "Calculate GPE: m = 5kg, h = 8m, g = 10N/kg."
+     ],
+     "a": [
+      "GPE = m × g × h",
+      "GPE = 5 × 10 × 8",
+      "GPE = 400 J"
+     ]
+    },
+    {
+     "q": [
+      "At what height is GPE = zero?"
+     ],
+     "a": [
+      "At ground level (h = 0).",
+      "GPE = m × g × 0 = 0 J",
+      "GPE is measured relative to a chosen reference level, usually the ground."
+     ]
+    },
+    {
+     "q": [
+      "If mass doubles, what happens to GPE?"
+     ],
+     "a": [
+      "GPE doubles.",
+      "(GPE ∝ m — directly proportional to mass)",
+      "If height doubles, GPE also doubles.",
+      "(GPE ∝ h — directly proportional to height)"
+     ]
+    },
+    {
+     "q": [
+      "A 2kg book is on a shelf 1.5m high. Calculate its GPE."
+     ],
+     "a": [
+      "GPE = m × g × h",
+      "GPE = 2 × 10 × 1.5",
+      "GPE = 30 J"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "KE = ½mv² and Conservation",
+   "spec": "3.14–3.15",
+   "cards": [
+    {
+     "q": [
+      "State the formula for kinetic energy."
+     ],
+     "a": [
+      "KE = ½ × m × v²",
+      "KE = kinetic energy (J)",
+      "m = mass (kg)",
+      "v = speed (m/s) — SQUARE v FIRST!",
+      "1 W = 1 J/s"
+     ]
+    },
+    {
+     "q": [
+      "What happens to KE when speed doubles?"
+     ],
+     "a": [
+      "KE QUADRUPLES (×4)",
+      "Because v is SQUARED:",
+      "(2v)² = 4v² → KE × 4",
+      "This is why speeding is so dangerous."
+     ]
+    },
+    {
+     "q": [
+      "Calculate KE: m = 1500kg, v = 20m/s."
+     ],
+     "a": [
+      "KE = ½ × m × v²",
+      "KE = ½ × 1500 × 400",
+      "KE = ½ × 600,000",
+      "KE = 300,000 J = 300 kJ"
+     ]
+    },
+    {
+     "q": [
+      "State the relationship when a ball falls freely (no friction)."
+     ],
+     "a": [
+      "GPE lost = KE gained",
+      "mgh = ½mv²",
+      "m cancels → v = √(2gh)",
+      "Speed depends ONLY on height — NOT on mass."
+     ]
+    },
+    {
+     "q": [
+      "A ball drops from 45m. Find its speed at the ground (g=10)."
+     ],
+     "a": [
+      "v = √(2gh)",
+      "v = √(2 × 10 × 45)",
+      "v = √900",
+      "v = 30 m/s"
+     ]
+    },
+    {
+     "q": [
+      "A 4kg ball is thrown up with KE = 320J. Find max height (g=10)."
+     ],
+     "a": [
+      "At max height: KE = 0 → all GPE",
+      "GPE = KE = 320J",
+      "mgh = 320 → h = 320 ÷ (4 × 10)",
+      "h = 8 m"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Energy Resources",
+   "spec": "3.18P–3.19P",
+   "cards": [
+    {
+     "q": [
+      "What is a non-renewable energy resource? Give examples."
+     ],
+     "a": [
+      "A resource that CANNOT be replaced once used.",
+      "Will eventually run out.",
+      "Examples: coal, oil, natural gas, nuclear fuel (uranium)"
+     ]
+    },
+    {
+     "q": [
+      "What is a renewable energy resource? Give examples."
+     ],
+     "a": [
+      "A resource that will NOT run out.",
+      "Continually replenished naturally.",
+      "Examples: wind, solar, hydroelectric, geothermal, tidal, wave"
+     ]
+    },
+    {
+     "q": [
+      "State the energy chain for a fossil fuel power station."
+     ],
+     "a": [
+      "Chemical store (fuel)",
+      "→ Burning → Thermal",
+      "→ Steam → Turbine (KE)",
+      "→ Generator → Electrical energy"
+     ]
+    },
+    {
+     "q": [
+      "State TWO advantages and TWO disadvantages of nuclear power."
+     ],
+     "a": [
+      "Advantages: No CO₂ · Huge energy output from small fuel",
+      "Disadvantages: Radioactive waste · Expensive to build · Risk of accident · Slow to start"
+     ]
+    },
+    {
+     "q": [
+      "Why is wind power described as intermittent?"
+     ],
+     "a": [
+      "Wind speed varies and may be zero.",
+      "When there is no wind → no electricity generated.",
+      "Cannot guarantee a constant supply.",
+      "Needs backup from other sources."
+     ]
+    },
+    {
+     "q": [
+      "State the difference between solar cells and solar heating panels."
+     ],
+     "a": [
+      "Solar cells: convert sunlight DIRECTLY to ELECTRICITY",
+      "(photovoltaic — no turbine)",
+      "Solar heating: heat water in pipes",
+      "(produces hot water — NOT electricity)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The National Grid",
+   "spec": "3.19P",
+   "cards": [
+    {
+     "q": [
+      "Describe the National Grid sequence from power station to home."
+     ],
+     "a": [
+      "Power station (~25kV)",
+      "→ Step-UP transformer (→400kV)",
+      "→ High-voltage cables (pylons)",
+      "→ Step-DOWN transformer (→230V)",
+      "→ Home / factory"
+     ]
+    },
+    {
+     "q": [
+      "Why is electricity transmitted at HIGH VOLTAGE?"
+     ],
+     "a": [
+      "High voltage → low current (P = IV)",
+      "Low current → less power wasted as heat in cables (P = I²R)",
+      "Makes transmission far more efficient over long distances."
+     ]
+    },
+    {
+     "q": [
+      "What does a step-UP transformer do?"
+     ],
+     "a": [
+      "Increases voltage (e.g. 25kV → 400kV)",
+      "This decreases the current.",
+      "Used at the power station before long-distance transmission."
+     ]
+    },
+    {
+     "q": [
+      "What does a step-DOWN transformer do?"
+     ],
+     "a": [
+      "Decreases voltage (e.g. 400kV → 230V)",
+      "Makes electricity safe for homes and offices.",
+      "Used at local substations near consumers."
+     ]
+    },
+    {
+     "q": [
+      "Why must mains electricity be AC rather than DC?"
+     ],
+     "a": [
+      "Transformers need a CHANGING magnetic field to work.",
+      "Only AC creates a continuously changing field.",
+      "DC produces a constant magnetic field → transformer does not work."
+     ]
+    },
+    {
+     "q": [
+      "State the mains supply values for UK households."
+     ],
+     "a": [
+      "Voltage: 230V",
+      "Frequency: 50Hz",
+      "Type: AC (alternating current)",
+      "The current direction reverses 50 times per second."
+     ]
+    }
+   ]
+  }
+ ]
+}
