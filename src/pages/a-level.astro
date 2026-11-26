@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/url';
+---
+
+<Base title="A Level Physics" description="Edexcel A Level Physics notes are coming soon to Brainwave Physics.">
+  <div class="mx-auto max-w-2xl px-4 py-20 text-center">
+    <p class="text-6xl">🚀</p>
+    <h1 class="mt-4 text-4xl font-extrabold">A Level Physics</h1>
+    <p class="mt-3 text-lg text-ink/70">
+      We are building the A Level course right now. It will follow the same Unit → Chapter → Topic layout as IGCSE.
+    </p>
+    <a href={url('igcse/')} class="btn mt-8 bg-sky text-white shadow-[0_5px_0_#1c78cc]">Start with IGCSE Physics →</a>
+  </div>
+</Base>

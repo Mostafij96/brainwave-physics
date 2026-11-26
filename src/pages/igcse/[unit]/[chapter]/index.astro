@@ -1,0 +1,74 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import { IGCSE, COLORS, findChapter } from '../../../../data/curriculum';
+import { url } from '../../../../lib/url';
+
+export async function getStaticPaths() {
+  const lessons = await getCollection('lessons');
+  return IGCSE.flatMap((unit) =>
+    unit.chapters
+      .filter((c) => lessons.some((l) => l.id.split('/')[2] === c.slug))
+      .map((c) => ({ params: { unit: unit.slug, chapter: c.slug } })),
+  );
+}
+
+const { unit: unitSlug, chapter: chapterSlug } = Astro.params;
+const { unit, chapter } = findChapter(unitSlug!, chapterSlug!)!;
+const col = COLORS[chapter.color];
+
+const lessons = (await getCollection('lessons'))
+  .filter((l) => l.id.split('/')[2] === chapter.slug)
+  .sort((a, b) => a.data.order - b.data.order);
+const totalMinutes = lessons.reduce((s, l) => s + l.data.minutes, 0);
+const base = `igcse/${unit.slug}/${chapter.slug}`;
+const lessonSlug = (id: string) => id.split('/')[3];
+---
+
+<Base
+  title={`Topic ${chapter.n}: ${chapter.title} – Edexcel IGCSE Physics`}
+  description={`Edexcel IGCSE Physics Topic ${chapter.n}: ${chapter.title}. ${chapter.blurb}`}
+>
+  <div class="mx-auto max-w-4xl px-4 py-12">
+    <nav class="text-sm font-bold text-ink/60">
+      <a href={url('igcse/')} class="hover:text-sky">IGCSE Physics</a> ›
+      <span>{unit.title}</span> ›
+      <span>Chapter {chapter.n}</span>
+    </nav>
+
+    <div class={`mt-4 rounded-[2rem] p-8 ${col.soft}`}>
+      <div class="flex items-center gap-4">
+        <div class="grid h-16 w-16 place-items-center rounded-2xl bg-white text-4xl">{chapter.emoji}</div>
+        <div>
+          <p class="text-sm font-extrabold text-ink/60">{unit.title} · Chapter {chapter.n} · Spec {chapter.spec}</p>
+          <h1 class="text-3xl font-extrabold leading-tight md:text-4xl">{chapter.title}</h1>
+        </div>
+      </div>
+      <p class="mt-4 text-ink/75">{chapter.blurb}</p>
+      <p class="mt-3 text-sm font-bold text-ink/60">{lessons.length} topics · about {totalMinutes} min of reading</p>
+      <a href={url(`${base}/${lessonSlug(lessons[0].id)}/`)} class="btn mt-5 bg-sky text-white shadow-[0_5px_0_#1c78cc]">
+        Start with topic 1 →
+      </a>
+    </div>
+
+    <h2 class="mt-10 text-2xl font-extrabold">Topics in this chapter</h2>
+    <ol class="mt-4 space-y-4">
+      {lessons.map((l) => (
+        <li>
+          <a href={url(`${base}/${lessonSlug(l.id)}/`)} class="card flex items-center gap-4 p-4">
+            <span class={`grid h-12 w-12 shrink-0 place-items-center rounded-2xl font-display text-xl font-extrabold ${col.badge}`}>
+              {l.data.order}
+            </span>
+            <span class="flex-1">
+              <span class="block text-lg font-extrabold leading-tight">{l.data.title}</span>
+              <span class="mt-1 block text-sm text-ink/60">
+                {l.data.specRange ? `Spec ${l.data.specRange}` : 'Practice'} · ⏱ {l.data.minutes} min
+              </span>
+            </span>
+            <span class="text-2xl text-ink/30">→</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </div>
+</Base>

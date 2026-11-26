@@ -13,9 +13,8 @@ const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} | ${SITE.tag
 const canonical = new URL(Astro.url.pathname, Astro.site);
 
 const nav = [
-  { label: 'Lessons', href: url('lessons/') },
-  { label: 'O Level', href: url('lessons/#o-level') },
-  { label: 'A Level', href: url('lessons/#a-level') },
+  { label: 'IGCSE Physics', href: url('igcse/') },
+  { label: 'A Level', href: url('a-level/') },
   { label: 'Free Resources', href: url('resources/') },
   { label: 'About', href: url('about/') },
 ];

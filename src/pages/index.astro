@@ -4,16 +4,13 @@ import Base from '../layouts/Base.astro';
 import { SITE } from '../config';
 import { url } from '../lib/url';
 
-const lessons = (await getCollection('lessons')).sort(
-  (a, b) => a.data.level.localeCompare(b.data.level) || a.data.order - b.data.order,
-);
-const latest = lessons.slice(0, 6);
-const count = (lvl: string) => lessons.filter((l) => l.data.level === lvl).length;
-
-const levelColor: Record<string, string> = {
-  'O Level': 'bg-mint-soft text-emerald-800',
-  'A Level': 'bg-grape-soft text-violet-800',
-};
+const lessons = await getCollection('lessons');
+const igcseCount = lessons.length;
+const first = lessons
+  .filter((l) => l.data.unit === 1 && l.data.chapter === 1)
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 6);
+const lessonUrl = (id: string) => url(`${id}/`);
 
 const features = [
   { icon: '🧠', color: 'bg-sky-soft', title: 'Simple explanations', text: 'Every topic is broken into small, easy steps with everyday examples.' },
@@ -38,7 +35,7 @@ const features = [
         </h1>
         <p class="mt-5 max-w-lg text-lg text-ink/75">{SITE.description}</p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href={url('lessons/')} class="btn bg-sky text-white shadow-[0_5px_0_#1c78cc]">Start learning →</a>
+          <a href={url('igcse/')} class="btn bg-sky text-white shadow-[0_5px_0_#1c78cc]">Start learning →</a>
           <a href={url('resources/')} class="btn bg-white shadow-[0_5px_0_#d6e0f5] border-2 border-[#d6e0f5]">Free resources</a>
         </div>
       </div>
@@ -132,17 +129,17 @@ const features = [
   <section class="mx-auto max-w-6xl px-4 py-10">
     <h2 class="text-center text-3xl font-extrabold">Choose your level</h2>
     <div class="mt-8 grid gap-6 md:grid-cols-2">
-      <a href={url('lessons/#o-level')} class="card block bg-mint-soft p-8">
+      <a href={url('igcse/')} class="card block bg-mint-soft p-8">
         <p class="text-5xl">🌱</p>
-        <h3 class="mt-3 text-2xl font-extrabold">O Level Physics</h3>
-        <p class="mt-2 text-ink/70">Build strong foundations: motion, forces, energy, waves and more.</p>
-        <p class="mt-4 font-extrabold text-emerald-700">{count('O Level')} lessons →</p>
+        <h3 class="mt-3 text-2xl font-extrabold">O Level / IGCSE Physics</h3>
+        <p class="mt-2 text-ink/70">Edexcel course in book order: Unit → Chapter → Topic, with diagrams and worked examples.</p>
+        <p class="mt-4 font-extrabold text-emerald-700">{igcseCount} topics available →</p>
       </a>
-      <a href={url('lessons/#a-level')} class="card block bg-grape-soft p-8">
+      <a href={url('a-level/')} class="card block bg-grape-soft p-8">
         <p class="text-5xl">🚀</p>
         <h3 class="mt-3 text-2xl font-extrabold">A Level Physics</h3>
-        <p class="mt-2 text-ink/70">Go deeper: circular motion, fields, oscillations and advanced problem solving.</p>
-        <p class="mt-4 font-extrabold text-violet-700">{count('A Level')} lessons →</p>
+        <p class="mt-2 text-ink/70">Go deeper: fields, oscillations and advanced problem solving.</p>
+        <p class="mt-4 font-extrabold text-violet-700">Coming soon →</p>
       </a>
     </div>
   </section>
@@ -163,16 +160,16 @@ const features = [
   <!-- Latest lessons -->
   <section class="mx-auto max-w-6xl px-4 py-10">
     <div class="flex items-end justify-between">
-      <h2 class="text-3xl font-extrabold">Popular lessons</h2>
-      <a href={url('lessons/')} class="font-extrabold text-sky hover:underline">See all →</a>
+      <h2 class="text-3xl font-extrabold">Start with Forces and Motion</h2>
+      <a href={url('igcse/')} class="font-extrabold text-sky hover:underline">See all chapters →</a>
     </div>
     <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {latest.map((l) => (
-        <a href={url(`lessons/${l.id}/`)} class="card block p-6">
-          <span class={`rounded-full px-3 py-1 text-xs font-extrabold ${levelColor[l.data.level]}`}>{l.data.level}</span>
+      {first.map((l) => (
+        <a href={lessonUrl(l.id)} class="card block p-6">
+          <span class="rounded-full bg-sky-soft px-3 py-1 text-xs font-extrabold text-sky">Topic 1 · Section {l.data.order}</span>
           <h3 class="mt-3 text-xl font-extrabold">{l.data.title}</h3>
-          <p class="mt-2 text-sm text-ink/70">{l.data.description}</p>
-          <p class="mt-4 text-sm font-bold text-ink/50">⏱ {l.data.minutes} min read · {l.data.topic}</p>
+          <p class="mt-2 text-sm text-ink/70">{l.data.specRange ? `Edexcel spec ${l.data.specRange}` : 'Exam practice'}</p>
+          <p class="mt-4 text-sm font-bold text-ink/50">⏱ {l.data.minutes} min read</p>
         </a>
       ))}
     </div>

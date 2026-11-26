@@ -33,6 +33,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-display);
 }
 
+@layer components {
 .btn {
   display: inline-flex;
   align-items: center;
@@ -56,6 +57,7 @@ h1, h2, h3, h4 {
 a.card:hover {
   transform: translateY(-3px);
   box-shadow: 0 9px 0 #d6e0f5;
+}
 }
 
 /* Lesson text styling */
@@ -93,3 +95,51 @@ a.card:hover {
 .lesson-prose thead {
   background: var(--color-sky-soft);
 }
+
+/* Diagrams inside lessons */
+.lesson-prose img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+  border: 2px solid #d6e0f5;
+  background: white;
+}
+
+/* Boxed notes converted from the study guides */
+.lesson-prose .callout {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  border: 2px solid transparent;
+}
+.lesson-prose .callout p {
+  margin: 0.4rem 0;
+}
+.lesson-prose .callout ul {
+  margin: 0.4rem 0;
+}
+.lesson-prose .callout-title {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.callout-definition { background: var(--color-sky-soft); border-color: #b9dcff; }
+.callout-definition .callout-title { color: #1c78cc; }
+.callout-formula { background: var(--color-grape-soft); border-color: #cfc1ff; text-align: center; }
+.callout-formula .callout-title { color: #6b4fd8; }
+.callout-formula p:nth-of-type(2) { font-size: 1.35rem; }
+.callout-example { background: var(--color-mint-soft); border-color: #a9ead2; }
+.callout-example .callout-title { color: #0f8a64; }
+.callout-warning { background: var(--color-coral-soft); border-color: #ffc2c2; }
+.callout-warning .callout-title { color: #d63f3f; }
+.callout-tip { background: var(--color-sun-soft); border-color: #ffe08a; }
+.callout-tip .callout-title { color: #a67200; }
+.callout-practical { background: #fff0dc; border-color: #ffd29a; }
+.callout-practical .callout-title { color: #b8610a; }
+.callout-note { background: white; border-color: #d6e0f5; }
+.callout-note .callout-title { color: #5a6a8f; }

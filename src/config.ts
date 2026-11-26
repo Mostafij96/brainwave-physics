@@ -4,7 +4,7 @@ export const SITE = {
   name: 'Brainwave Physics',
   tagline: 'O Level & A Level Physics made simple',
   description:
-    'Free O Level and A Level Physics notes, worked examples, formula sheets and practice questions explained in simple English.',
+    'Free Edexcel IGCSE (O Level) and A Level Physics notes, worked examples, formula sheets and practice questions explained in simple English.',
   social: {
     youtube: '',
     facebook: '',
