@@ -1,0 +1,72 @@
+---
+import Base from '../../layouts/Base.astro';
+import { IGCSE, COLORS } from '../../data/curriculum';
+import { getDeck, cardCount } from '../../lib/flashcards';
+import { url } from '../../lib/url';
+
+const decks = IGCSE.flatMap((unit) =>
+  unit.chapters
+    .filter((c) => getDeck(c.slug))
+    .map((c) => ({ unit, chapter: c, count: cardCount(getDeck(c.slug)) })),
+);
+const totalCards = decks.reduce((n, d) => n + d.count, 0);
+
+const soon = [
+  { icon: '📚', bg: 'bg-sun-soft', title: 'Practice questions', text: 'Exam-style questions with full mark schemes, chapter by chapter.' },
+  { icon: '🧪', bg: 'bg-mint-soft', title: 'End-of-topic tests', text: 'Timed tests to check your exam readiness.' },
+  { icon: '📄', bg: 'bg-sky-soft', title: 'Formula sheets', text: 'One-page summaries of every key formula.' },
+  { icon: '🗒️', bg: 'bg-coral-soft', title: 'Revision packs', text: 'Short notes for quick last-minute revision.' },
+];
+---
+
+<Base
+  title="Free Physics Resources"
+  description="Free Edexcel IGCSE Physics revision resources: flashcards for every chapter, with practice questions, tests and formula sheets coming soon."
+>
+  <div class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="text-4xl font-extrabold">Free Resources</h1>
+    <p class="mt-2 max-w-2xl text-ink/70">Study tools to practise and revise. Everything here is free, with no sign-up.</p>
+
+    <!-- Flashcards -->
+    <section class="mt-10">
+      <div class="flex flex-wrap items-baseline justify-between gap-2">
+        <h2 class="text-2xl font-extrabold">🃏 Flashcards</h2>
+        <p class="text-sm font-bold text-ink/60">{totalCards} cards · Edexcel IGCSE Physics · Unit 1</p>
+      </div>
+      <p class="mt-1 text-ink/70">Flip, shuffle and track what you know. Pick a chapter:</p>
+
+      <div class="mt-5 grid gap-5 md:grid-cols-2">
+        {decks.map(({ chapter: c, count }) => {
+          const col = COLORS[c.color];
+          return (
+            <a href={url(`resources/flashcards/${c.slug}/`)} class={`card block p-5 ${col.soft}`}>
+              <div class="flex items-center gap-4">
+                <div class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white text-3xl">{c.emoji}</div>
+                <div>
+                  <p class="text-sm font-extrabold text-ink/50">Topic {c.n} · Spec {c.spec}</p>
+                  <h3 class="text-xl font-extrabold leading-tight">{c.title}</h3>
+                </div>
+              </div>
+              <p class={`mt-4 text-sm font-extrabold ${col.text}`}>{count} flashcards →</p>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- Coming soon -->
+    <section class="mt-14">
+      <h2 class="text-2xl font-extrabold">Coming soon</h2>
+      <div class="mt-5 grid gap-5 md:grid-cols-2">
+        {soon.map((i) => (
+          <div class="card p-6">
+            <div class={`grid h-14 w-14 place-items-center rounded-2xl text-3xl ${i.bg}`}>{i.icon}</div>
+            <h3 class="mt-4 text-xl font-extrabold">{i.title}</h3>
+            <p class="mt-2 text-ink/70">{i.text}</p>
+            <span class="mt-4 inline-block rounded-full bg-cream px-3 py-1 text-xs font-extrabold text-ink/60">Coming soon</span>
+          </div>
+        ))}
+      </div>
+    </section>
+  </div>
+</Base>

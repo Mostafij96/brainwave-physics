@@ -66,7 +66,7 @@ const specPoints = d.spec ? d.spec.split('|').map((s) => s.trim()).filter(Boolea
             ))}
           </ol>
           {hasCards && (
-            <a href={url(`${base}/flashcards/`)} class="mt-3 flex gap-2 rounded-xl bg-sun-soft px-3 py-2 text-sm font-extrabold hover:brightness-95">
+            <a href={url(`resources/flashcards/${chapter.slug}/`)} class="mt-3 flex gap-2 rounded-xl bg-sun-soft px-3 py-2 text-sm font-extrabold hover:brightness-95">
               <span>🃏</span><span>Flashcards</span>
             </a>
           )}
