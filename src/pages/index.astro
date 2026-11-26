@@ -1,0 +1,191 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+import { url } from '../lib/url';
+
+const lessons = (await getCollection('lessons')).sort(
+  (a, b) => a.data.level.localeCompare(b.data.level) || a.data.order - b.data.order,
+);
+const latest = lessons.slice(0, 6);
+const count = (lvl: string) => lessons.filter((l) => l.data.level === lvl).length;
+
+const levelColor: Record<string, string> = {
+  'O Level': 'bg-mint-soft text-emerald-800',
+  'A Level': 'bg-grape-soft text-violet-800',
+};
+
+const features = [
+  { icon: '🧠', color: 'bg-sky-soft', title: 'Simple explanations', text: 'Every topic is broken into small, easy steps with everyday examples.' },
+  { icon: '📝', color: 'bg-sun-soft', title: 'Exam-focused', text: 'Worked examples and tips built around O and A Level exam questions.' },
+  { icon: '🎁', color: 'bg-coral-soft', title: '100% free', text: 'Notes, formula sheets and practice questions. No sign-up needed.' },
+];
+---
+
+<Base>
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="pointer-events-none absolute -left-16 top-10 h-56 w-56 rounded-full bg-sun/40 blur-2xl"></div>
+    <div class="pointer-events-none absolute -right-10 top-24 h-64 w-64 rounded-full bg-sky/30 blur-2xl"></div>
+    <div class="pointer-events-none absolute bottom-0 left-1/2 h-40 w-72 rounded-full bg-coral/20 blur-2xl"></div>
+
+    <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:py-24">
+      <div>
+        <p class="inline-block rounded-full bg-sun px-4 py-1 text-sm font-extrabold">🚀 Free O &amp; A Level Physics</p>
+        <h1 class="mt-5 text-4xl font-extrabold leading-tight md:text-6xl">
+          Physics made <span class="text-sky">simple</span>,<br />
+          grades made <span class="text-coral">higher</span>.
+        </h1>
+        <p class="mt-5 max-w-lg text-lg text-ink/75">{SITE.description}</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href={url('lessons/')} class="btn bg-sky text-white shadow-[0_5px_0_#1c78cc]">Start learning →</a>
+          <a href={url('resources/')} class="btn bg-white shadow-[0_5px_0_#d6e0f5] border-2 border-[#d6e0f5]">Free resources</a>
+        </div>
+      </div>
+
+      <!-- Illustration -->
+      <div class="mx-auto grid w-full max-w-md grid-cols-2 gap-3" aria-hidden="true">
+        <!-- Column 1 -->
+        <div class="space-y-3">
+          <div class="card bg-coral-soft p-3">
+            <svg viewBox="0 0 120 70" class="w-full">
+              <line x1="5" y1="62" x2="115" y2="62" stroke="#1f2a44" stroke-opacity=".25" stroke-width="2" />
+              <path d="M10 60 Q60 -10 110 60" fill="none" stroke="#ff6b6b" stroke-width="3" stroke-dasharray="5 5" stroke-linecap="round" />
+              <circle cx="60" cy="25" r="7" fill="#ff6b6b" />
+              <path d="M60 25 L82 25" stroke="#1f2a44" stroke-width="2" />
+            </svg>
+            <p class="font-display text-sm font-bold">Projectiles</p>
+            <p class="text-xs text-ink/60">s = ut + ½at²</p>
+          </div>
+          <div class="card bg-[#e0e7ff] p-3">
+            <svg viewBox="0 0 120 70" class="w-full">
+              <!-- Tesla coil: base, coil windings, top terminal and sparks -->
+              <rect x="42" y="58" width="36" height="6" rx="3" fill="#4338ca" />
+              <path d="M52 58 L54 26 H66 L68 58 Z" fill="#6366f1" />
+              <g stroke="#e0e7ff" stroke-width="2" stroke-linecap="round">
+                <path d="M54 32 H66 M54 38 H66 M54 44 H66 M54 50 H66" />
+              </g>
+              <ellipse cx="60" cy="20" rx="13" ry="7" fill="#4338ca" />
+              <g fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M48 17 L36 12 L40 8 L26 4" />
+                <path d="M72 17 L84 11 L80 7 L94 3" />
+                <path d="M60 13 L56 8 L62 5 L58 1" />
+              </g>
+            </svg>
+            <p class="font-display text-sm font-bold">Magnetism &amp; Induction</p>
+            <p class="text-xs text-ink/60">ε = −N dΦ/dt · B in tesla</p>
+          </div>
+          <div class="card bg-sun-soft p-3">
+            <svg viewBox="0 0 120 70" class="w-full">
+              <line x1="10" y1="62" x2="10" y2="6" stroke="#1f2a44" stroke-opacity=".3" stroke-width="2" />
+              <line x1="10" y1="62" x2="112" y2="62" stroke="#1f2a44" stroke-opacity=".3" stroke-width="2" />
+              <path d="M10 10 C30 50 60 58 112 60" fill="none" stroke="#ff9f1c" stroke-width="3.5" stroke-linecap="round" />
+            </svg>
+            <p class="font-display text-sm font-bold">Capacitors</p>
+            <p class="text-xs text-ink/60">Q = Q₀e<sup>−t/RC</sup></p>
+          </div>
+        </div>
+
+        <!-- Column 2 (shifted down for a staggered look) -->
+        <div class="mt-8 space-y-3">
+          <div class="card bg-sky-soft p-3">
+            <svg viewBox="0 0 120 70" class="w-full">
+              <path d="M2 35 C15 2 27 2 40 35 S65 68 80 35 S105 2 118 35" fill="none" stroke="#2e9cff" stroke-width="3.5" stroke-linecap="round" />
+              <line x1="2" y1="35" x2="118" y2="35" stroke="#1f2a44" stroke-opacity=".2" stroke-width="1.5" />
+            </svg>
+            <p class="font-display text-sm font-bold">Waves &amp; Oscillations</p>
+            <p class="text-xs text-ink/60">v = fλ</p>
+          </div>
+          <div class="card bg-mint-soft p-3">
+            <svg viewBox="0 0 120 70" class="w-full">
+              <line x1="15" y1="12" x2="105" y2="12" stroke="#1f2a44" stroke-width="3" />
+              <line x1="15" y1="58" x2="105" y2="58" stroke="#1f2a44" stroke-width="3" />
+              <text x="108" y="16" font-size="10" fill="#ff6b6b" font-weight="800">+</text>
+              <text x="108" y="62" font-size="10" fill="#2e9cff" font-weight="800">−</text>
+              <g stroke="#2fcb9a" stroke-width="2.5" stroke-linecap="round">
+                <path d="M30 18 V50 M50 18 V50 M70 18 V50 M90 18 V50" />
+              </g>
+              <g fill="#2fcb9a">
+                <path d="M25 46 L30 54 L35 46Z M45 46 L50 54 L55 46Z M65 46 L70 54 L75 46Z M85 46 L90 54 L95 46Z" />
+              </g>
+            </svg>
+            <p class="font-display text-sm font-bold">Electric Fields</p>
+            <p class="text-xs text-ink/60">E = V/d</p>
+          </div>
+          <div class="card bg-white p-3">
+            <svg viewBox="0 0 120 70" class="w-full">
+              <path d="M5 20 Q12 5 19 20 T33 20 T47 20 T61 20" fill="none" stroke="#ffc53d" stroke-width="3" stroke-linecap="round" />
+              <line x1="66" y1="6" x2="66" y2="64" stroke="#1f2a44" stroke-width="5" />
+              <circle cx="84" cy="30" r="4" fill="#2e9cff" />
+              <circle cx="100" cy="42" r="4" fill="#2e9cff" />
+              <path d="M70 28 L80 30 M70 40 L96 42" stroke="#2e9cff" stroke-width="1.5" stroke-dasharray="3 3" />
+            </svg>
+            <p class="font-display text-sm font-bold">Photoelectric Effect</p>
+            <p class="text-xs text-ink/60">hf = φ + KE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Levels -->
+  <section class="mx-auto max-w-6xl px-4 py-10">
+    <h2 class="text-center text-3xl font-extrabold">Choose your level</h2>
+    <div class="mt-8 grid gap-6 md:grid-cols-2">
+      <a href={url('lessons/#o-level')} class="card block bg-mint-soft p-8">
+        <p class="text-5xl">🌱</p>
+        <h3 class="mt-3 text-2xl font-extrabold">O Level Physics</h3>
+        <p class="mt-2 text-ink/70">Build strong foundations: motion, forces, energy, waves and more.</p>
+        <p class="mt-4 font-extrabold text-emerald-700">{count('O Level')} lessons →</p>
+      </a>
+      <a href={url('lessons/#a-level')} class="card block bg-grape-soft p-8">
+        <p class="text-5xl">🚀</p>
+        <h3 class="mt-3 text-2xl font-extrabold">A Level Physics</h3>
+        <p class="mt-2 text-ink/70">Go deeper: circular motion, fields, oscillations and advanced problem solving.</p>
+        <p class="mt-4 font-extrabold text-violet-700">{count('A Level')} lessons →</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="mx-auto max-w-6xl px-4 py-10">
+    <div class="grid gap-6 md:grid-cols-3">
+      {features.map((f) => (
+        <div class="card p-6">
+          <div class={`grid h-14 w-14 place-items-center rounded-2xl text-3xl ${f.color}`}>{f.icon}</div>
+          <h3 class="mt-4 text-xl font-extrabold">{f.title}</h3>
+          <p class="mt-2 text-ink/70">{f.text}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Latest lessons -->
+  <section class="mx-auto max-w-6xl px-4 py-10">
+    <div class="flex items-end justify-between">
+      <h2 class="text-3xl font-extrabold">Popular lessons</h2>
+      <a href={url('lessons/')} class="font-extrabold text-sky hover:underline">See all →</a>
+    </div>
+    <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {latest.map((l) => (
+        <a href={url(`lessons/${l.id}/`)} class="card block p-6">
+          <span class={`rounded-full px-3 py-1 text-xs font-extrabold ${levelColor[l.data.level]}`}>{l.data.level}</span>
+          <h3 class="mt-3 text-xl font-extrabold">{l.data.title}</h3>
+          <p class="mt-2 text-sm text-ink/70">{l.data.description}</p>
+          <p class="mt-4 text-sm font-bold text-ink/50">⏱ {l.data.minutes} min read · {l.data.topic}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Social CTA -->
+  <section class="mx-auto max-w-6xl px-4 py-10">
+    <div class="rounded-[2rem] bg-sky p-10 text-center text-white">
+      <h2 class="text-3xl font-extrabold">Learn with video too 🎥</h2>
+      <p class="mx-auto mt-3 max-w-xl text-white/90">
+        Follow us on YouTube, Facebook and Instagram for short physics explainers, exam tips and free updates.
+      </p>
+      <a href={url('about/')} class="btn mt-6 bg-sun text-ink shadow-[0_5px_0_#c99a1a]">Meet Brainwave Physics</a>
+    </div>
+  </section>
+</Base>

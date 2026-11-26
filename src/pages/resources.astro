@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+
+const items = [
+  { icon: '📄', bg: 'bg-sky-soft', title: 'Formula sheets', text: 'One-page summaries of every key formula for O and A Level.', status: 'Coming soon' },
+  { icon: '📚', bg: 'bg-sun-soft', title: 'Past paper practice', text: 'Topic-wise questions with step-by-step solutions.', status: 'Coming soon' },
+  { icon: '🧪', bg: 'bg-mint-soft', title: 'Free mock tests', text: 'Timed practice tests to check your exam readiness.', status: 'Coming soon' },
+  { icon: '🗒️', bg: 'bg-coral-soft', title: 'Revision notes (PDF)', text: 'Short printable notes for quick last-minute revision.', status: 'Coming soon' },
+];
+---
+
+<Base
+  title="Free Physics Resources"
+  description="Free O Level and A Level Physics formula sheets, practice questions, mock tests and revision notes."
+>
+  <div class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="text-4xl font-extrabold">Free Resources</h1>
+    <p class="mt-2 text-ink/70">Study materials to help you practise and revise. More added every week.</p>
+    <div class="mt-8 grid gap-6 md:grid-cols-2">
+      {items.map((i) => (
+        <div class="card p-6">
+          <div class={`grid h-14 w-14 place-items-center rounded-2xl text-3xl ${i.bg}`}>{i.icon}</div>
+          <h2 class="mt-4 text-xl font-extrabold">{i.title}</h2>
+          <p class="mt-2 text-ink/70">{i.text}</p>
+          <span class="mt-4 inline-block rounded-full bg-cream px-3 py-1 text-xs font-extrabold text-ink/60">{i.status}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</Base>

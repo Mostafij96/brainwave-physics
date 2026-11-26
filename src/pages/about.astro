@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../lib/url';
+---
+
+<Base title="About" description="Brainwave Physics offers free, simple O Level and A Level Physics lessons for students everywhere.">
+  <div class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="text-4xl font-extrabold">About Brainwave Physics</h1>
+    <div class="prose prose-lg mt-6 max-w-none">
+      <p>
+        Brainwave Physics is a free learning website for O Level and A Level Physics students.
+        Our goal is simple: explain physics in clear English, with everyday examples, so that every
+        student can understand it and feel confident in the exam hall.
+      </p>
+      <h2>What you will find here</h2>
+      <ul>
+        <li>Step-by-step lessons for O Level and A Level Physics</li>
+        <li>Worked examples with exam tips</li>
+        <li>Free formula sheets, practice questions and mock tests (coming soon)</li>
+        <li>Video explanations on our YouTube channel (coming soon)</li>
+      </ul>
+      <p><a href={url('lessons/')}>Start with the lessons →</a></p>
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Poppins', 'Nunito', ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #eef5ff;
+  --color-ink: #1f2a44;
+  --color-sky: #2e9cff;
+  --color-sky-soft: #e4f3ff;
+  --color-sun: #ffc53d;
+  --color-sun-soft: #fff4d1;
+  --color-coral: #ff6b6b;
+  --color-coral-soft: #ffe5e5;
+  --color-mint: #2fcb9a;
+  --color-mint-soft: #dcf8ee;
+  --color-grape: #8b6cf6;
+  --color-grape-soft: #ece6ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(160deg, #e6f3ff 0%, #eeeaff 50%, #e3f8ee 100%) fixed;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 800;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.card {
+  border-radius: 1.5rem;
+  background: white;
+  border: 2px solid #d6e0f5;
+  box-shadow: 0 6px 0 #d6e0f5;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+a.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 0 #d6e0f5;
+}
+
+/* Lesson text styling */
+.lesson-prose {
+  --tw-prose-body: #2b3752;
+  --tw-prose-headings: var(--color-ink);
+  --tw-prose-links: var(--color-sky);
+  --tw-prose-bold: var(--color-ink);
+  --tw-prose-code: var(--color-grape);
+}
+.lesson-prose h2 {
+  border-left: 6px solid var(--color-sun);
+  padding-left: 0.75rem;
+}
+.lesson-prose blockquote {
+  background: var(--color-sun-soft);
+  border-left-color: var(--color-sun);
+  border-radius: 0 1rem 1rem 0;
+  padding: 0.5rem 1.25rem;
+  font-style: normal;
+}
+.lesson-prose code {
+  background: var(--color-grape-soft);
+  border-radius: 0.5rem;
+  padding: 0.15rem 0.45rem;
+}
+.lesson-prose code::before,
+.lesson-prose code::after {
+  content: none;
+}
+.lesson-prose table {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.lesson-prose thead {
+  background: var(--color-sky-soft);
+}
