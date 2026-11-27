@@ -1,6 +1,6 @@
 ---
 title: "Ldr, Thermistor & Sensor Circuits"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 2: Electricity. Ldr, Thermistor & Sensor Circuits (spec 2.11–2.12, 2.17–2.19P): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 2: Electricity. Ldr, Thermistor & Sensor Circuits (spec 2.11–2.12, 2.17–2.19P): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 2

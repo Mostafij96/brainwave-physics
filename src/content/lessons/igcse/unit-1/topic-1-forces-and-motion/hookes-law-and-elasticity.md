@@ -1,6 +1,6 @@
 ---
 title: "Hooke's Law & Elasticity"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 1: Forces and Motion. Hooke's Law & Elasticity (spec 1.22–1.24): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 1: Forces and Motion. Hooke's Law & Elasticity (spec 1.22–1.24): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 1

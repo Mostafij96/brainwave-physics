@@ -1,0 +1,227 @@
+{
+ "chapterTitle": "Solids, Liquids and Gases (Part 2)",
+ "sections": [
+  {
+   "title": "Kinetic theory & pressure",
+   "spec": "6.1",
+   "cards": [
+    {
+     "q": [
+      "How do gas molecules move?"
+     ],
+     "a": [
+      "Randomly, in all directions, at high speed"
+     ]
+    },
+    {
+     "q": [
+      "How does a gas cause pressure?"
+     ],
+     "a": [
+      "Molecules collide with the walls; force ÷ area = pressure"
+     ]
+    },
+    {
+     "q": [
+      "Why does adding more gas raise the pressure?"
+     ],
+     "a": [
+      "More molecules → more collisions per second → more force per unit area"
+     ]
+    },
+    {
+     "q": [
+      "In which directions does gas pressure act?"
+     ],
+     "a": [
+      "Equally in all directions"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Absolute zero & Kelvin",
+   "spec": "6.2, 6.3",
+   "cards": [
+    {
+     "q": [
+      "What is absolute zero in °C?"
+     ],
+     "a": [
+      "−273 °C"
+     ]
+    },
+    {
+     "q": [
+      "What is absolute zero in kelvin?"
+     ],
+     "a": [
+      "0 K"
+     ]
+    },
+    {
+     "q": [
+      "Convert °C to kelvin"
+     ],
+     "a": [
+      "K = °C + 273"
+     ]
+    },
+    {
+     "q": [
+      "Convert kelvin to °C"
+     ],
+     "a": [
+      "°C = K − 273"
+     ]
+    },
+    {
+     "q": [
+      "What happens to molecules at absolute zero?"
+     ],
+     "a": [
+      "They stop moving / have zero kinetic energy"
+     ]
+    },
+    {
+     "q": [
+      "273 K in °C"
+     ],
+     "a": [
+      "0 °C"
+     ]
+    },
+    {
+     "q": [
+      "100 °C in kelvin"
+     ],
+     "a": [
+      "373 K"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Temperature & kinetic energy",
+   "spec": "6.4, 6.5",
+   "cards": [
+    {
+     "q": [
+      "What happens to molecules when a gas is heated?"
+     ],
+     "a": [
+      "They move faster (more kinetic energy)"
+     ]
+    },
+    {
+     "q": [
+      "Kelvin temperature is proportional to…"
+     ],
+     "a": [
+      "the average kinetic energy of the molecules"
+     ]
+    },
+    {
+     "q": [
+      "Do molecules get bigger when heated?"
+     ],
+     "a": [
+      "No — they move faster"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Qualitative relationships",
+   "spec": "6.6",
+   "cards": [
+    {
+     "q": [
+      "At constant T, volume halved → pressure?"
+     ],
+     "a": [
+      "Doubles (p ∝ 1/V)"
+     ]
+    },
+    {
+     "q": [
+      "Shape of p–V graph at constant T"
+     ],
+     "a": [
+      "A curve (pressure falls as volume rises)"
+     ]
+    },
+    {
+     "q": [
+      "Shape of p–T graph at constant V"
+     ],
+     "a": [
+      "A straight line through 0 K"
+     ]
+    },
+    {
+     "q": [
+      "At constant V, Kelvin temperature doubled → pressure?"
+     ],
+     "a": [
+      "Doubles"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The gas laws",
+   "spec": "6.7, 6.8",
+   "cards": [
+    {
+     "q": [
+      "Pressure law equation"
+     ],
+     "a": [
+      "p₁/T₁ = p₂/T₂ (constant volume)"
+     ]
+    },
+    {
+     "q": [
+      "Boyle's law equation"
+     ],
+     "a": [
+      "p₁V₁ = p₂V₂ (constant temperature)"
+     ]
+    },
+    {
+     "q": [
+      "Which law needs kelvin?"
+     ],
+     "a": [
+      "The pressure law (any law using T)"
+     ]
+    },
+    {
+     "q": [
+      "Condition for Boyle's law"
+     ],
+     "a": [
+      "Fixed mass of gas at constant temperature"
+     ]
+    },
+    {
+     "q": [
+      "Condition for the pressure law"
+     ],
+     "a": [
+      "Fixed mass of gas at constant volume"
+     ]
+    },
+    {
+     "q": [
+      "Is Charles's law in this spec?"
+     ],
+     "a": [
+      "No — not required"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 ---
 title: "Energy Resources & National Grid"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 3: Energy Resources and Energy Transfer. Energy Resources & National Grid (spec 3.18P–3.19P): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 3: Energy Resources and Energy Transfer. Energy Resources & National Grid (spec 3.18P–3.19P): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 3

@@ -1,6 +1,6 @@
 ---
 title: "Speed & Distance–Time Graphs"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 1: Forces and Motion. Speed & Distance–Time Graphs (spec 1.3–1.5): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 1: Forces and Motion. Speed & Distance–Time Graphs (spec 1.3–1.5): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 1

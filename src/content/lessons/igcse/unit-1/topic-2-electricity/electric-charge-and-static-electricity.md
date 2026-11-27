@@ -1,6 +1,6 @@
 ---
 title: "Electric Charge & Static Electricity"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 2: Electricity. Electric Charge & Static Electricity (spec 2.22P–2.28P): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 2: Electricity. Electric Charge & Static Electricity (spec 2.22P–2.28P): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 2

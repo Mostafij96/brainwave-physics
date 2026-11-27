@@ -1,6 +1,6 @@
 ---
 title: "Newton's 2nd Law, Weight & Stopping Distance"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 1: Forces and Motion. Newton's 2nd Law, Weight & Stopping Distance (spec 1.17–1.20): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 1: Forces and Motion. Newton's 2nd Law, Weight & Stopping Distance (spec 1.17–1.20): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 1

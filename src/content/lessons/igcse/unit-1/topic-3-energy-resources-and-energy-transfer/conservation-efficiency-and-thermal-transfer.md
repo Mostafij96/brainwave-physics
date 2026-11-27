@@ -1,6 +1,6 @@
 ---
 title: "Conservation, Efficiency & Thermal Transfer"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 3: Energy Resources and Energy Transfer. Conservation, Efficiency & Thermal Transfer (spec 3.3–3.10): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 3: Energy Resources and Energy Transfer. Conservation, Efficiency & Thermal Transfer (spec 3.3–3.10): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 3

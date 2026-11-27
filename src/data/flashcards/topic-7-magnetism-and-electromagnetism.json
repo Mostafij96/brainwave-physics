@@ -1,0 +1,467 @@
+{
+ "chapterTitle": "Magnetism and Electromagnetism",
+ "sections": [
+  {
+   "title": "Magnets and Fields",
+   "spec": "7.1–7.7",
+   "cards": [
+    {
+     "q": [
+      "What do like poles do?"
+     ],
+     "a": [
+      "They repel."
+     ]
+    },
+    {
+     "q": [
+      "What do unlike poles do?"
+     ],
+     "a": [
+      "They attract."
+     ]
+    },
+    {
+     "q": [
+      "Name four magnetic materials."
+     ],
+     "a": [
+      "Iron, steel, nickel and cobalt."
+     ]
+    },
+    {
+     "q": [
+      "What is a magnetically HARD material?"
+     ],
+     "a": [
+      "One that keeps its magnetism (hard to magnetise or demagnetise)."
+     ]
+    },
+    {
+     "q": [
+      "What is a magnetically SOFT material?"
+     ],
+     "a": [
+      "One that is easy to magnetise and loses its magnetism easily."
+     ]
+    },
+    {
+     "q": [
+      "Give one use of a hard and one of a soft material."
+     ],
+     "a": [
+      "Hard: permanent magnets. Soft: electromagnet cores."
+     ]
+    },
+    {
+     "q": [
+      "What do magnetic field lines show?"
+     ],
+     "a": [
+      "The strength, direction and shape of the field."
+     ]
+    },
+    {
+     "q": [
+      "Which way do field lines point outside a magnet?"
+     ],
+     "a": [
+      "From N to S."
+     ]
+    },
+    {
+     "q": [
+      "Where is a bar magnet’s field strongest?"
+     ],
+     "a": [
+      "At the poles, where the lines are closest together."
+     ]
+    },
+    {
+     "q": [
+      "What is induced magnetism?"
+     ],
+     "a": [
+      "A magnetic material becoming a magnet when it is placed in a magnetic field."
+     ]
+    },
+    {
+     "q": [
+      "What does a plotting compass show that iron filings do not?"
+     ],
+     "a": [
+      "The direction of the field."
+     ]
+    },
+    {
+     "q": [
+      "What is a neutral point?"
+     ],
+     "a": [
+      "A point where two magnetic fields cancel, so the field is zero."
+     ]
+    },
+    {
+     "q": [
+      "What is a uniform magnetic field?"
+     ],
+     "a": [
+      "One with the same strength and direction everywhere: parallel, equally spaced lines."
+     ]
+    },
+    {
+     "q": [
+      "How do you make a uniform field?"
+     ],
+     "a": [
+      "Put a N pole facing a S pole, close together."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Currents Make Fields",
+   "spec": "7.8–7.10P",
+   "cards": [
+    {
+     "q": [
+      "What is produced around a wire carrying a current?"
+     ],
+     "a": [
+      "A magnetic field."
+     ]
+    },
+    {
+     "q": [
+      "What is the field shape around a straight wire?"
+     ],
+     "a": [
+      "Circles around the wire, closer together near the wire."
+     ]
+    },
+    {
+     "q": [
+      "Why does a copper wire produce a magnetic field? (J25)"
+     ],
+     "a": [
+      "There is a current in the wire."
+     ]
+    },
+    {
+     "q": [
+      "What is the field inside a solenoid like?"
+     ],
+     "a": [
+      "Strong and uniform: parallel lines."
+     ]
+    },
+    {
+     "q": [
+      "What does the field outside a solenoid look like?"
+     ],
+     "a": [
+      "Like the field of a bar magnet."
+     ]
+    },
+    {
+     "q": [
+      "Describe the construction of an electromagnet."
+     ],
+     "a": [
+      "A coil of insulated wire wound on a soft iron core."
+     ]
+    },
+    {
+     "q": [
+      "Name three ways to make an electromagnet stronger."
+     ],
+     "a": [
+      "More current, more turns on the coil, an iron core."
+     ]
+    },
+    {
+     "q": [
+      "Why is the core of an electromagnet soft iron?"
+     ],
+     "a": [
+      "It loses its magnetism when the current is switched off."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Forces",
+   "spec": "7.11P–7.14",
+   "cards": [
+    {
+     "q": [
+      "When is there no force on a charge moving in a magnetic field? (J25)"
+     ],
+     "a": [
+      "When it moves parallel to the field."
+     ]
+    },
+    {
+     "q": [
+      "In which direction is the force on a moving charge?"
+     ],
+     "a": [
+      "At right angles to the field and to the motion."
+     ]
+    },
+    {
+     "q": [
+      "Why does a force act on a current-carrying wire in a field?"
+     ],
+     "a": [
+      "The wire’s own field interacts with the magnet’s field."
+     ]
+    },
+    {
+     "q": [
+      "Which hand is used in Fleming’s rule for motors?"
+     ],
+     "a": [
+      "The left hand."
+     ]
+    },
+    {
+     "q": [
+      "In the left-hand rule, the first finger shows…"
+     ],
+     "a": [
+      "The field (N to S)."
+     ]
+    },
+    {
+     "q": [
+      "In the left-hand rule, the second finger shows…"
+     ],
+     "a": [
+      "The current (+ to −)."
+     ]
+    },
+    {
+     "q": [
+      "In the left-hand rule, the thumb shows…"
+     ],
+     "a": [
+      "The motion (the force)."
+     ]
+    },
+    {
+     "q": [
+      "How do you reverse the force on a wire?"
+     ],
+     "a": [
+      "Reverse the current OR the field (not both)."
+     ]
+    },
+    {
+     "q": [
+      "How do you increase the force on a wire?"
+     ],
+     "a": [
+      "A larger current or a stronger magnet."
+     ]
+    },
+    {
+     "q": [
+      "What is the force on a wire lying parallel to the field?"
+     ],
+     "a": [
+      "Zero."
+     ]
+    },
+    {
+     "q": [
+      "What does the split-ring commutator do?"
+     ],
+     "a": [
+      "Reverses the current every half turn so the coil keeps turning the same way."
+     ]
+    },
+    {
+     "q": [
+      "Why does the coil of a d.c. motor turn?"
+     ],
+     "a": [
+      "The current is opposite on the two sides, so the forces are opposite."
+     ]
+    },
+    {
+     "q": [
+      "How does a loudspeaker work?"
+     ],
+     "a": [
+      "a.c. in a coil in a magnet’s field makes the force keep reversing, so the cone vibrates and makes sound."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Induction and Generators",
+   "spec": "7.15–7.16",
+   "cards": [
+    {
+     "q": [
+      "When is a voltage induced in a coil?"
+     ],
+     "a": [
+      "When there is relative movement between coil and magnet (field lines are cut)."
+     ]
+    },
+    {
+     "q": [
+      "What voltage is induced by a magnet held still in a coil?"
+     ],
+     "a": [
+      "Zero."
+     ]
+    },
+    {
+     "q": [
+      "Name three ways to increase an induced voltage."
+     ],
+     "a": [
+      "Move faster, stronger magnet, more turns on the coil."
+     ]
+    },
+    {
+     "q": [
+      "Why is the output of a generator alternating?"
+     ],
+     "a": [
+      "The coil cuts the field in opposite directions each half turn."
+     ]
+    },
+    {
+     "q": [
+      "What do slip rings do?"
+     ],
+     "a": [
+      "Keep the rotating coil connected to the external circuit."
+     ]
+    },
+    {
+     "q": [
+      "Motor or generator: electrical energy to movement?"
+     ],
+     "a": [
+      "Motor. (A generator turns movement into electrical energy.)"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Transformers",
+   "spec": "7.17P–7.20P",
+   "cards": [
+    {
+     "q": [
+      "Name the three parts of a transformer."
+     ],
+     "a": [
+      "Primary coil, secondary coil and soft iron core."
+     ]
+    },
+    {
+     "q": [
+      "How does a transformer work?"
+     ],
+     "a": [
+      "a.c. in the primary makes a changing field; this induces a voltage in the secondary."
+     ]
+    },
+    {
+     "q": [
+      "Why does a transformer need a.c.?"
+     ],
+     "a": [
+      "d.c. gives a steady field, so no voltage is induced."
+     ]
+    },
+    {
+     "q": [
+      "Step-up or step-down: more turns on the secondary?"
+     ],
+     "a": [
+      "Step-up. (Step-down has fewer.)"
+     ]
+    },
+    {
+     "q": [
+      "Write the turns-ratio equation."
+     ],
+     "a": [
+      "Vp ÷ Vs = Np ÷ Ns"
+     ]
+    },
+    {
+     "q": [
+      "Write the power equation for a transformer."
+     ],
+     "a": [
+      "Vp × Ip = Vs × Is (100% efficient)"
+     ]
+    },
+    {
+     "q": [
+      "Why is electricity transmitted at high voltage?"
+     ],
+     "a": [
+      "Lower current, less heating of cables, less energy wasted."
+     ]
+    },
+    {
+     "q": [
+      "Why use step-down transformers near homes?"
+     ],
+     "a": [
+      "To give a safe voltage (230 V)."
+     ]
+    },
+    {
+     "q": [
+      "What assumption is made in VpIp = VsIs? (J25)"
+     ],
+     "a": [
+      "The transformer is 100% efficient: no energy is lost."
+     ]
+    },
+    {
+     "q": [
+      "Vp = 6.0 V, Np = 100, Ns = 400. Find Vs."
+     ],
+     "a": [
+      "24 V"
+     ]
+    },
+    {
+     "q": [
+      "Vp = 230 V, Vs = 12 V, Np = 1150. Find Ns."
+     ],
+     "a": [
+      "60 turns"
+     ]
+    },
+    {
+     "q": [
+      "J25: 25 000 V → 275 000 V, Np = 265. Find Ns."
+     ],
+     "a": [
+      "2915 turns"
+     ]
+    },
+    {
+     "q": [
+      "State the units of current, voltage and power."
+     ],
+     "a": [
+      "Ampere (A), volt (V), watt (W)."
+     ]
+    }
+   ]
+  }
+ ]
+}

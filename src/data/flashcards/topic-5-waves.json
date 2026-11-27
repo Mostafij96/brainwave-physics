@@ -1,0 +1,561 @@
+{
+ "chapterTitle": "Waves",
+ "sections": [
+  {
+   "title": "Wave basics",
+   "spec": "5.1–5.4",
+   "cards": [
+    {
+     "q": [
+      "What is a wave?"
+     ],
+     "a": [
+      "A disturbance that transfers energy and information without transferring matter"
+     ]
+    },
+    {
+     "q": [
+      "Transverse wave"
+     ],
+     "a": [
+      "Vibrations at 90° (right angles) to the direction of energy transfer"
+     ]
+    },
+    {
+     "q": [
+      "Longitudinal wave"
+     ],
+     "a": [
+      "Vibrations parallel to the direction of energy transfer; has compressions and rarefactions"
+     ]
+    },
+    {
+     "q": [
+      "Amplitude"
+     ],
+     "a": [
+      "Maximum displacement from the rest position (metre)"
+     ]
+    },
+    {
+     "q": [
+      "Wavelength"
+     ],
+     "a": [
+      "Distance from a point on one wave to the same point on the next (metre)"
+     ]
+    },
+    {
+     "q": [
+      "Frequency"
+     ],
+     "a": [
+      "Number of complete waves passing a point per second (hertz)"
+     ]
+    },
+    {
+     "q": [
+      "Period"
+     ],
+     "a": [
+      "Time for one complete wave to pass a point (second)"
+     ]
+    },
+    {
+     "q": [
+      "Example of each wave type"
+     ],
+     "a": [
+      "Transverse: light, water ripples. Longitudinal: sound"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Wave equations",
+   "spec": "5.5–5.7",
+   "cards": [
+    {
+     "q": [
+      "Wave equation"
+     ],
+     "a": [
+      "v = f × λ (speed = frequency × wavelength)"
+     ]
+    },
+    {
+     "q": [
+      "Frequency and period"
+     ],
+     "a": [
+      "f = 1 ÷ T"
+     ]
+    },
+    {
+     "q": [
+      "Units of v, f, λ, T"
+     ],
+     "a": [
+      "m/s, Hz, m, s"
+     ]
+    },
+    {
+     "q": [
+      "Does frequency change the wave speed?"
+     ],
+     "a": [
+      "No — speed depends on the material; higher f means shorter λ"
+     ]
+    },
+    {
+     "q": [
+      "λ if v = 340 m/s and f = 170 Hz"
+     ],
+     "a": [
+      "λ = v ÷ f = 2.0 m"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Doppler, reflection, refraction",
+   "spec": "5.8–5.9",
+   "cards": [
+    {
+     "q": [
+      "Doppler effect"
+     ],
+     "a": [
+      "Change in observed frequency/wavelength when the source moves relative to the observer"
+     ]
+    },
+    {
+     "q": [
+      "Source moving towards you"
+     ],
+     "a": [
+      "Shorter observed wavelength, higher observed frequency (higher pitch)"
+     ]
+    },
+    {
+     "q": [
+      "Source moving away"
+     ],
+     "a": [
+      "Longer wavelength, lower frequency (lower pitch)"
+     ]
+    },
+    {
+     "q": [
+      "Red-shift of a galaxy means"
+     ],
+     "a": [
+      "It is moving away → the Universe is expanding"
+     ]
+    },
+    {
+     "q": [
+      "Two things all waves can do"
+     ],
+     "a": [
+      "Be reflected and be refracted"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "EM spectrum",
+   "spec": "5.10–5.11",
+   "cards": [
+    {
+     "q": [
+      "The seven EM regions in order"
+     ],
+     "a": [
+      "Radio, microwave, infrared, visible, ultraviolet, X-ray, gamma"
+     ]
+    },
+    {
+     "q": [
+      "Same for all EM waves in a vacuum"
+     ],
+     "a": [
+      "Their speed = 3.0 × 10⁸ m/s"
+     ]
+    },
+    {
+     "q": [
+      "Longest wavelength / lowest frequency"
+     ],
+     "a": [
+      "Radio waves"
+     ]
+    },
+    {
+     "q": [
+      "Shortest wavelength / highest frequency"
+     ],
+     "a": [
+      "Gamma rays"
+     ]
+    },
+    {
+     "q": [
+      "Visible colours (long → short λ)"
+     ],
+     "a": [
+      "Red, orange, yellow, green, blue, indigo, violet"
+     ]
+    },
+    {
+     "q": [
+      "Are EM waves transverse or longitudinal?"
+     ],
+     "a": [
+      "Transverse"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "EM uses",
+   "spec": "5.12",
+   "cards": [
+    {
+     "q": [
+      "Use of radio waves"
+     ],
+     "a": [
+      "Broadcasting and communications"
+     ]
+    },
+    {
+     "q": [
+      "Use of microwaves"
+     ],
+     "a": [
+      "Cooking; satellite transmissions"
+     ]
+    },
+    {
+     "q": [
+      "Use of infrared"
+     ],
+     "a": [
+      "Heaters; night-vision; remote controls"
+     ]
+    },
+    {
+     "q": [
+      "Use of ultraviolet"
+     ],
+     "a": [
+      "Fluorescent lamps; security marking"
+     ]
+    },
+    {
+     "q": [
+      "Use of X-rays"
+     ],
+     "a": [
+      "Imaging internal structures / bones"
+     ]
+    },
+    {
+     "q": [
+      "Use of gamma rays"
+     ],
+     "a": [
+      "Sterilising equipment; treating cancer"
+     ]
+    },
+    {
+     "q": [
+      "How microwaves cook food"
+     ],
+     "a": [
+      "Absorbed by water molecules → they vibrate more → temperature rises"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "EM dangers",
+   "spec": "5.13",
+   "cards": [
+    {
+     "q": [
+      "Danger of microwaves"
+     ],
+     "a": [
+      "Internal heating of body tissue"
+     ]
+    },
+    {
+     "q": [
+      "Danger of infrared"
+     ],
+     "a": [
+      "Skin burns"
+     ]
+    },
+    {
+     "q": [
+      "Danger of ultraviolet"
+     ],
+     "a": [
+      "Skin cancer; blindness"
+     ]
+    },
+    {
+     "q": [
+      "Danger of gamma rays"
+     ],
+     "a": [
+      "Cancer; cell mutation"
+     ]
+    },
+    {
+     "q": [
+      "Protection from UV"
+     ],
+     "a": [
+      "Sun-cream, sunglasses, cover the skin"
+     ]
+    },
+    {
+     "q": [
+      "Protection from gamma"
+     ],
+     "a": [
+      "Lead or concrete shielding; limit time and distance"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Reflection",
+   "spec": "5.14–5.16",
+   "cards": [
+    {
+     "q": [
+      "Law of reflection"
+     ],
+     "a": [
+      "Angle of incidence = angle of reflection (i = r)"
+     ]
+    },
+    {
+     "q": [
+      "Angles measured from…"
+     ],
+     "a": [
+      "The normal (line at 90° to the surface)"
+     ]
+    },
+    {
+     "q": [
+      "Image in a plane mirror"
+     ],
+     "a": [
+      "Same size, upright, virtual, laterally inverted, equal distance behind"
+     ]
+    },
+    {
+     "q": [
+      "Is light transverse or longitudinal?"
+     ],
+     "a": [
+      "Transverse"
+     ]
+    },
+    {
+     "q": [
+      "What is the normal?"
+     ],
+     "a": [
+      "A line drawn at 90° to the surface at the point the ray hits"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Refraction",
+   "spec": "5.17–5.19",
+   "cards": [
+    {
+     "q": [
+      "Refraction"
+     ],
+     "a": [
+      "Change of direction when a wave changes speed between media"
+     ]
+    },
+    {
+     "q": [
+      "Air → glass, which way does it bend?"
+     ],
+     "a": [
+      "Towards the normal (it slows down)"
+     ]
+    },
+    {
+     "q": [
+      "Refractive index equation"
+     ],
+     "a": [
+      "n = sin i ÷ sin r"
+     ]
+    },
+    {
+     "q": [
+      "Does n have a unit?"
+     ],
+     "a": [
+      "No"
+     ]
+    },
+    {
+     "q": [
+      "Measuring n of glass"
+     ],
+     "a": [
+      "Measure i and r for several angles; n = sin i ÷ sin r (average or graph gradient)"
+     ]
+    },
+    {
+     "q": [
+      "n if i = 40°, r = 25°"
+     ],
+     "a": [
+      "n = sin40 ÷ sin25 = 1.52"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Total internal reflection",
+   "spec": "5.20–5.22",
+   "cards": [
+    {
+     "q": [
+      "Critical angle"
+     ],
+     "a": [
+      "The angle of incidence (in the denser medium) for which r = 90°"
+     ]
+    },
+    {
+     "q": [
+      "Critical-angle equation"
+     ],
+     "a": [
+      "sin c = 1 ÷ n"
+     ]
+    },
+    {
+     "q": [
+      "Two conditions for TIR"
+     ],
+     "a": [
+      "Dense → less dense, and i greater than the critical angle"
+     ]
+    },
+    {
+     "q": [
+      "Uses of TIR"
+     ],
+     "a": [
+      "Optical fibres (comms, endoscopes); prisms (periscopes, binoculars)"
+     ]
+    },
+    {
+     "q": [
+      "Critical angle of glass (n = 1.52)"
+     ],
+     "a": [
+      "sin c = 1 ÷ 1.52 → c = 41.1°"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sound",
+   "spec": "5.23–5.29P",
+   "cards": [
+    {
+     "q": [
+      "Is sound transverse or longitudinal?"
+     ],
+     "a": [
+      "Longitudinal"
+     ]
+    },
+    {
+     "q": [
+      "Can sound travel through a vacuum?"
+     ],
+     "a": [
+      "No — it needs a medium"
+     ]
+    },
+    {
+     "q": [
+      "Human hearing range"
+     ],
+     "a": [
+      "20 Hz to 20 000 Hz"
+     ]
+    },
+    {
+     "q": [
+      "Speed of sound in air"
+     ],
+     "a": [
+      "About 340 m/s"
+     ]
+    },
+    {
+     "q": [
+      "Measuring the speed of sound"
+     ],
+     "a": [
+      "Two mics distance d apart + fast timer: v = d ÷ t"
+     ]
+    },
+    {
+     "q": [
+      "Apparatus to detect sound for an oscilloscope"
+     ],
+     "a": [
+      "A microphone"
+     ]
+    },
+    {
+     "q": [
+      "Time period from an oscilloscope"
+     ],
+     "a": [
+      "(squares per wave) × (time base); then f = 1 ÷ T"
+     ]
+    },
+    {
+     "q": [
+      "Pitch depends on…"
+     ],
+     "a": [
+      "Frequency (higher frequency = higher pitch)"
+     ]
+    },
+    {
+     "q": [
+      "Loudness depends on…"
+     ],
+     "a": [
+      "Amplitude (bigger amplitude = louder)"
+     ]
+    }
+   ]
+  }
+ ]
+}

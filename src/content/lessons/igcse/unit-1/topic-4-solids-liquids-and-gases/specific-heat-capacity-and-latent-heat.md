@@ -1,6 +1,6 @@
 ---
 title: "Specific Heat Capacity & Latent Heat"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 4: Solids, Liquids and Gases. Specific Heat Capacity & Latent Heat (spec 4.8P, 4.11P–4.15P): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 4: Solids, Liquids and Gases. Specific Heat Capacity & Latent Heat (spec 4.8P, 4.11P–4.15P): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 4

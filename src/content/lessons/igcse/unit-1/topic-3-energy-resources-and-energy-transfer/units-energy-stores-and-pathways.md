@@ -1,6 +1,6 @@
 ---
 title: "Units, Energy Stores & Pathways"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 3: Energy Resources and Energy Transfer. Units, Energy Stores & Pathways (spec 3.1–3.2): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 3: Energy Resources and Energy Transfer. Units, Energy Stores & Pathways (spec 3.1–3.2): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 3

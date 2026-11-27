@@ -1,6 +1,6 @@
 ---
 title: "Forces, Vectors & Resultant"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 1: Forces and Motion. Forces, Vectors & Resultant (spec 1.11–1.16): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 1: Forces and Motion. Forces, Vectors & Resultant (spec 1.11–1.16): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 1

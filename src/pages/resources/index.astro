@@ -4,12 +4,11 @@ import { IGCSE, COLORS } from '../../data/curriculum';
 import { getDeck, cardCount } from '../../lib/flashcards';
 import { url } from '../../lib/url';
 
-const decks = IGCSE.flatMap((unit) =>
-  unit.chapters
-    .filter((c) => getDeck(c.slug))
-    .map((c) => ({ unit, chapter: c, count: cardCount(getDeck(c.slug)) })),
-);
-const totalCards = decks.reduce((n, d) => n + d.count, 0);
+const groups = IGCSE.map((unit) => ({
+  unit,
+  decks: unit.chapters.filter((c) => getDeck(c.slug)).map((c) => ({ chapter: c, count: cardCount(getDeck(c.slug)) })),
+})).filter((g) => g.decks.length);
+const totalCards = groups.reduce((n, g) => n + g.decks.reduce((m, d) => m + d.count, 0), 0);
 
 const soon = [
   { icon: '📚', bg: 'bg-sun-soft', title: 'Practice questions', text: 'Exam-style questions with full mark schemes, chapter by chapter.' },
@@ -31,27 +30,35 @@ const soon = [
     <section class="mt-10">
       <div class="flex flex-wrap items-baseline justify-between gap-2">
         <h2 class="text-2xl font-extrabold">🃏 Flashcards</h2>
-        <p class="text-sm font-bold text-ink/60">{totalCards} cards · Edexcel IGCSE Physics · Unit 1</p>
+        <p class="text-sm font-bold text-ink/60">{totalCards} cards · Edexcel IGCSE Physics</p>
       </div>
-      <p class="mt-1 text-ink/70">Flip, shuffle and track what you know. Pick a chapter:</p>
+      <p class="mt-1 text-ink/70">Flip, shuffle and track what you know. Pick a unit and chapter:</p>
 
-      <div class="mt-5 grid gap-5 md:grid-cols-2">
-        {decks.map(({ chapter: c, count }) => {
-          const col = COLORS[c.color];
-          return (
-            <a href={url(`resources/flashcards/${c.slug}/`)} class={`card block p-5 ${col.soft}`}>
-              <div class="flex items-center gap-4">
-                <div class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white text-3xl">{c.emoji}</div>
-                <div>
-                  <p class="text-sm font-extrabold text-ink/50">Topic {c.n} · Spec {c.spec}</p>
-                  <h3 class="text-xl font-extrabold leading-tight">{c.title}</h3>
-                </div>
-              </div>
-              <p class={`mt-4 text-sm font-extrabold ${col.text}`}>{count} flashcards →</p>
-            </a>
-          );
-        })}
-      </div>
+      {groups.map(({ unit, decks }) => (
+        <div class="mt-8">
+          <div class="flex flex-wrap items-baseline gap-3">
+            <h3 class="rounded-full bg-sun px-4 py-1 text-lg font-extrabold">{unit.title}</h3>
+            <p class="text-sm font-bold text-ink/60">{unit.subtitle}</p>
+          </div>
+          <div class="mt-4 grid gap-5 md:grid-cols-2">
+            {decks.map(({ chapter: c, count }) => {
+              const col = COLORS[c.color];
+              return (
+                <a href={url(`resources/flashcards/${c.slug}/`)} class={`card block p-5 ${col.soft}`}>
+                  <div class="flex items-center gap-4">
+                    <div class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white text-3xl">{c.emoji}</div>
+                    <div>
+                      <p class="text-sm font-extrabold text-ink/50">Topic {c.n} · Spec {c.spec}</p>
+                      <h4 class="font-display text-xl font-extrabold leading-tight">{c.title}</h4>
+                    </div>
+                  </div>
+                  <p class={`mt-4 text-sm font-extrabold ${col.text}`}>{count} flashcards →</p>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      ))}
     </section>
 
     <!-- Coming soon -->

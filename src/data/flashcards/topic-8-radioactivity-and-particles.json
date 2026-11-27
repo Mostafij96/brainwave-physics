@@ -1,0 +1,647 @@
+{
+ "chapterTitle": "Radioactivity and Particles",
+ "sections": [
+  {
+   "title": "Atoms and Isotopes",
+   "spec": "8.1–8.3",
+   "cards": [
+    {
+     "q": [
+      "What is the unit of activity?"
+     ],
+     "a": [
+      "The becquerel (Bq): one decay per second."
+     ]
+    },
+    {
+     "q": [
+      "Where are protons and neutrons found?"
+     ],
+     "a": [
+      "In the nucleus."
+     ]
+    },
+    {
+     "q": [
+      "What are the relative charges of proton, neutron and electron?"
+     ],
+     "a": [
+      "+1, 0 and −1."
+     ]
+    },
+    {
+     "q": [
+      "What is the atomic (proton) number Z?"
+     ],
+     "a": [
+      "The number of protons in the nucleus."
+     ]
+    },
+    {
+     "q": [
+      "What is the mass (nucleon) number A?"
+     ],
+     "a": [
+      "The number of protons plus neutrons."
+     ]
+    },
+    {
+     "q": [
+      "How do you find the number of neutrons?"
+     ],
+     "a": [
+      "A − Z."
+     ]
+    },
+    {
+     "q": [
+      "How many neutrons are in ¹⁴₆C?"
+     ],
+     "a": [
+      "14 − 6 = 8."
+     ]
+    },
+    {
+     "q": [
+      "Why is a neutral atom neutral?"
+     ],
+     "a": [
+      "Number of electrons = number of protons."
+     ]
+    },
+    {
+     "q": [
+      "What is an isotope?"
+     ],
+     "a": [
+      "Atoms of the same element (same Z) with different numbers of neutrons (different A)."
+     ]
+    },
+    {
+     "q": [
+      "How many neutrons in U-235 and U-238?"
+     ],
+     "a": [
+      "143 and 146."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Radiation and Detection",
+   "spec": "8.4–8.6, 8.9, 8.10",
+   "cards": [
+    {
+     "q": [
+      "What does ‘random’ mean for decay?"
+     ],
+     "a": [
+      "We cannot predict which nucleus will decay or when."
+     ]
+    },
+    {
+     "q": [
+      "What does ‘ionising’ mean?"
+     ],
+     "a": [
+      "The radiation knocks electrons off atoms."
+     ]
+    },
+    {
+     "q": [
+      "What is an alpha particle?"
+     ],
+     "a": [
+      "A helium nucleus: 2 protons + 2 neutrons (charge +2)."
+     ]
+    },
+    {
+     "q": [
+      "What is a beta (β⁻) particle?"
+     ],
+     "a": [
+      "A fast electron from the nucleus (charge −1)."
+     ]
+    },
+    {
+     "q": [
+      "What is gamma radiation?"
+     ],
+     "a": [
+      "An electromagnetic wave with no charge or mass."
+     ]
+    },
+    {
+     "q": [
+      "Which radiation is most ionising?"
+     ],
+     "a": [
+      "Alpha."
+     ]
+    },
+    {
+     "q": [
+      "Which radiation is most penetrating?"
+     ],
+     "a": [
+      "Gamma."
+     ]
+    },
+    {
+     "q": [
+      "What stops alpha radiation?"
+     ],
+     "a": [
+      "A sheet of paper (or a few cm of air)."
+     ]
+    },
+    {
+     "q": [
+      "What stops beta radiation?"
+     ],
+     "a": [
+      "A few mm of aluminium."
+     ]
+    },
+    {
+     "q": [
+      "What reduces gamma radiation?"
+     ],
+     "a": [
+      "Thick lead or concrete."
+     ]
+    },
+    {
+     "q": [
+      "Name two detectors of radiation."
+     ],
+     "a": [
+      "Photographic film and a Geiger–Müller (GM) tube."
+     ]
+    },
+    {
+     "q": [
+      "How does a film badge work?"
+     ],
+     "a": [
+      "Radiation fogs the film; more fogging means more radiation received."
+     ]
+    },
+    {
+     "q": [
+      "Penetration practical: what must stay the same? (8.6)"
+     ],
+     "a": [
+      "The distance from source to detector and the counting time."
+     ]
+    },
+    {
+     "q": [
+      "Why measure the background count?"
+     ],
+     "a": [
+      "So it can be subtracted to find the count from the source."
+     ]
+    },
+    {
+     "q": [
+      "Counts: air 780, paper 520, Al 520, lead 12. What does it show? (J25)"
+     ],
+     "a": [
+      "Alpha (paper absorbs), no beta (no fall with Al), gamma (passes Al, stopped by lead)."
+     ]
+    },
+    {
+     "q": [
+      "Name sources of background radiation."
+     ],
+     "a": [
+      "Radon and rocks, food, building materials, cosmic rays, medical sources."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Nuclear Equations",
+   "spec": "8.7–8.8",
+   "cards": [
+    {
+     "q": [
+      "Effect of alpha emission on A and Z?"
+     ],
+     "a": [
+      "A decreases by 4; Z decreases by 2."
+     ]
+    },
+    {
+     "q": [
+      "Effect of beta (β⁻) emission on A and Z?"
+     ],
+     "a": [
+      "A stays the same; Z increases by 1."
+     ]
+    },
+    {
+     "q": [
+      "Effect of gamma emission on A and Z?"
+     ],
+     "a": [
+      "No change."
+     ]
+    },
+    {
+     "q": [
+      "Effect of neutron emission on A and Z?"
+     ],
+     "a": [
+      "A decreases by 1; Z stays the same."
+     ]
+    },
+    {
+     "q": [
+      "What must balance in a nuclear equation?"
+     ],
+     "a": [
+      "Mass numbers (top) and charges / atomic numbers (bottom)."
+     ]
+    },
+    {
+     "q": [
+      "Complete: ²²⁶₈₈Ra → ²²²₈₆Rn + ?"
+     ],
+     "a": [
+      "⁴₂He (an alpha particle)."
+     ]
+    },
+    {
+     "q": [
+      "Complete: ²⁴₁₁Na → ²⁴₁₂Mg + ?"
+     ],
+     "a": [
+      "⁰₋₁e (a beta particle)."
+     ]
+    },
+    {
+     "q": [
+      "²³⁴₉₀Th → ²³⁴ₓPa + ⁰₋₁e. Find x."
+     ],
+     "a": [
+      "x = 91."
+     ]
+    },
+    {
+     "q": [
+      "J25: ⁹⁰₃₉Y decays by β⁻ to Zr. Write the equation."
+     ],
+     "a": [
+      "⁹⁰₃₉Y → ⁹⁰₄₀Zr + ⁰₋₁β"
+     ]
+    },
+    {
+     "q": [
+      "Which symbols are accepted for the electron in beta decay?"
+     ],
+     "a": [
+      "β, β⁻, e, e⁻ (not β⁺)."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Activity and Half-life",
+   "spec": "8.11–8.13",
+   "cards": [
+    {
+     "q": [
+      "What happens to activity over time?"
+     ],
+     "a": [
+      "It decreases."
+     ]
+    },
+    {
+     "q": [
+      "Define half-life. (J25)"
+     ],
+     "a": [
+      "The time taken for the activity (or number of undecayed nuclei) to halve."
+     ]
+    },
+    {
+     "q": [
+      "Is ‘half the time’ a correct definition?"
+     ],
+     "a": [
+      "No: it scores no marks."
+     ]
+    },
+    {
+     "q": [
+      "Do all isotopes have the same half-life?"
+     ],
+     "a": [
+      "No: it is different for different isotopes."
+     ]
+    },
+    {
+     "q": [
+      "What fraction is left after 3 half-lives?"
+     ],
+     "a": [
+      "One eighth."
+     ]
+    },
+    {
+     "q": [
+      "How do you find the number of half-lives?"
+     ],
+     "a": [
+      "Total time ÷ half-life."
+     ]
+    },
+    {
+     "q": [
+      "640 Bq, half-life 5 min. Activity after 20 min?"
+     ],
+     "a": [
+      "4 half-lives: 640 → 320 → 160 → 80 → 40 Bq."
+     ]
+    },
+    {
+     "q": [
+      "960 Bq → 120 Bq in 45 min. Half-life?"
+     ],
+     "a": [
+      "3 halvings: 45 ÷ 3 = 15 min."
+     ]
+    },
+    {
+     "q": [
+      "How do you read half-life from a graph?"
+     ],
+     "a": [
+      "Pick an activity, find half of it, read the time difference."
+     ]
+    },
+    {
+     "q": [
+      "What do you do about background in half-life questions?"
+     ],
+     "a": [
+      "Subtract it first; add it back if the measured count is asked for."
+     ]
+    },
+    {
+     "q": [
+      "J25: is activity × time constant for the data?"
+     ],
+     "a": [
+      "No: the products 250, 440, 540 … change."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Uses and Dangers",
+   "spec": "8.14–8.16",
+   "cards": [
+    {
+     "q": [
+      "Which radiation is used as a medical tracer?"
+     ],
+     "a": [
+      "Gamma, with a short half-life."
+     ]
+    },
+    {
+     "q": [
+      "Why must a tracer have a short half-life?"
+     ],
+     "a": [
+      "Its activity falls quickly so the patient receives less radiation."
+     ]
+    },
+    {
+     "q": [
+      "Which radiation treats cancer?"
+     ],
+     "a": [
+      "Beta (or alpha): short range, kills nearby cells."
+     ]
+    },
+    {
+     "q": [
+      "Which radiation sterilises instruments?"
+     ],
+     "a": [
+      "Gamma: it penetrates the packaging and kills bacteria."
+     ]
+    },
+    {
+     "q": [
+      "Which radiation controls paper thickness?"
+     ],
+     "a": [
+      "Beta."
+     ]
+    },
+    {
+     "q": [
+      "What is irradiation?"
+     ],
+     "a": [
+      "Exposure to radiation from a source outside the object."
+     ]
+    },
+    {
+     "q": [
+      "What is contamination?"
+     ],
+     "a": [
+      "Radioactive material on or inside an object or person."
+     ]
+    },
+    {
+     "q": [
+      "Does irradiation make an object radioactive?"
+     ],
+     "a": [
+      "No."
+     ]
+    },
+    {
+     "q": [
+      "What are two dangers of ionising radiation?"
+     ],
+     "a": [
+      "It damages cells and tissue, and causes mutations (cancer)."
+     ]
+    },
+    {
+     "q": [
+      "Name two ways to reduce the risk from a source."
+     ],
+     "a": [
+      "Shielding, distance (tongs), short exposure time."
+     ]
+    },
+    {
+     "q": [
+      "How is radioactive waste stored? (J25)"
+     ],
+     "a": [
+      "In sealed lead or concrete containers, vitrified, underground."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fission",
+   "spec": "8.17–8.22",
+   "cards": [
+    {
+     "q": [
+      "What starts fission of U-235?"
+     ],
+     "a": [
+      "A neutron hitting the nucleus."
+     ]
+    },
+    {
+     "q": [
+      "What does fission of U-235 produce?"
+     ],
+     "a": [
+      "Two radioactive daughter nuclei, 2 or 3 neutrons and energy."
+     ]
+    },
+    {
+     "q": [
+      "In what form is the energy released?"
+     ],
+     "a": [
+      "Kinetic energy of the fission products."
+     ]
+    },
+    {
+     "q": [
+      "What is a chain reaction? (J25)"
+     ],
+     "a": [
+      "Neutrons from one fission cause further fissions."
+     ]
+    },
+    {
+     "q": [
+      "When is a chain reaction uncontrolled? (J25)"
+     ],
+     "a": [
+      "When each fission causes more than one further fission."
+     ]
+    },
+    {
+     "q": [
+      "What does the moderator do?"
+     ],
+     "a": [
+      "Slows the neutrons so they are more easily absorbed by U-235."
+     ]
+    },
+    {
+     "q": [
+      "What do the control rods do?"
+     ],
+     "a": [
+      "Absorb neutrons, decreasing the rate of fission."
+     ]
+    },
+    {
+     "q": [
+      "How is the rate kept constant? (J25)"
+     ],
+     "a": [
+      "By changing the position of the control rods."
+     ]
+    },
+    {
+     "q": [
+      "Why is a reactor surrounded by thick concrete?"
+     ],
+     "a": [
+      "It absorbs radiation to protect workers and the environment."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fusion",
+   "spec": "8.23–8.26",
+   "cards": [
+    {
+     "q": [
+      "What is nuclear fusion?"
+     ],
+     "a": [
+      "Small nuclei join to form a larger nucleus, releasing energy."
+     ]
+    },
+    {
+     "q": [
+      "What happens to mass in fusion?"
+     ],
+     "a": [
+      "The new nucleus has less mass; the loss is released as energy."
+     ]
+    },
+    {
+     "q": [
+      "What is the energy source of stars?"
+     ],
+     "a": [
+      "Fusion."
+     ]
+    },
+    {
+     "q": [
+      "Complete: ²₁H + ³₁H → ⁴₂He + ?"
+     ],
+     "a": [
+      "¹₀n (a neutron)."
+     ]
+    },
+    {
+     "q": [
+      "Why does fusion need very high temperature?"
+     ],
+     "a": [
+      "To give nuclei enough speed to overcome their repulsion."
+     ]
+    },
+    {
+     "q": [
+      "Why are nuclei repelling each other?"
+     ],
+     "a": [
+      "They are positively charged (protons): electrostatic repulsion."
+     ]
+    },
+    {
+     "q": [
+      "Why are there no fusion power plants? (J25)"
+     ],
+     "a": [
+      "Needs high temperature/pressure; cannot be sustained or run commercially; needs a large energy input."
+     ]
+    },
+    {
+     "q": [
+      "One difference between fission and fusion?"
+     ],
+     "a": [
+      "Fission splits a large nucleus; fusion joins small nuclei."
+     ]
+    }
+   ]
+  }
+ ]
+}

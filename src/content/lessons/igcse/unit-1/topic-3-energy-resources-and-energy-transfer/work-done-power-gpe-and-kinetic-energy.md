@@ -1,6 +1,6 @@
 ---
 title: "Work Done, Power, GPE & Kinetic Energy"
-description: "Edexcel IGCSE Physics (4XPH1) Topic 3: Energy Resources and Energy Transfer. Work Done, Power, GPE & Kinetic Energy (spec 3.11–3.17): key definitions, formulae, worked examples and exam tips."
+description: "Edexcel IGCSE Physics (4WPH1) Topic 3: Energy Resources and Energy Transfer. Work Done, Power, GPE & Kinetic Energy (spec 3.11–3.17): key definitions, formulae, worked examples and exam tips."
 course: igcse
 unit: 1
 chapter: 3

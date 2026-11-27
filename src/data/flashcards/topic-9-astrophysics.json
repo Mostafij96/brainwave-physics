@@ -1,0 +1,689 @@
+{
+ "chapterTitle": "Astrophysics",
+ "sections": [
+  {
+   "title": "Units and the Universe",
+   "spec": "9.1–9.2",
+   "cards": [
+    {
+     "q": [
+      "What is the unit of gravitational field strength?"
+     ],
+     "a": [
+      "Newton per kilogram (N/kg)."
+     ]
+    },
+    {
+     "q": [
+      "What is the unit of acceleration?"
+     ],
+     "a": [
+      "Metre per second squared (m/s²)."
+     ]
+    },
+    {
+     "q": [
+      "Which units go with mass, force and time?"
+     ],
+     "a": [
+      "Kilogram (kg), newton (N) and second (s)."
+     ]
+    },
+    {
+     "q": [
+      "Convert 7.5 km/s to m/s."
+     ],
+     "a": [
+      "× 1000: 7500 m/s."
+     ]
+    },
+    {
+     "q": [
+      "What is a galaxy?"
+     ],
+     "a": [
+      "A very large collection of billions of stars held together by gravity."
+     ]
+    },
+    {
+     "q": [
+      "What is the universe?"
+     ],
+     "a": [
+      "A large collection of billions of galaxies."
+     ]
+    },
+    {
+     "q": [
+      "Which galaxy contains the Solar System?"
+     ],
+     "a": [
+      "The Milky Way."
+     ]
+    },
+    {
+     "q": [
+      "Order by size, smallest first: universe, galaxy, Solar System."
+     ],
+     "a": [
+      "Solar System, galaxy, universe."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Gravity and Orbits",
+   "spec": "9.3–9.6",
+   "cards": [
+    {
+     "q": [
+      "What is gravitational field strength, g?"
+     ],
+     "a": [
+      "The force of gravity on each kilogram (N/kg)."
+     ]
+    },
+    {
+     "q": [
+      "What two things decide the value of g?"
+     ],
+     "a": [
+      "The mass of the planet or moon, and the distance from its centre."
+     ]
+    },
+    {
+     "q": [
+      "What is the equation for weight?"
+     ],
+     "a": [
+      "W = m × g."
+     ]
+    },
+    {
+     "q": [
+      "Does mass change on the Moon?"
+     ],
+     "a": [
+      "No. Mass stays the same; weight changes because g is different."
+     ]
+    },
+    {
+     "q": [
+      "A 50 kg student on Mars (g = 4 N/kg): weight?"
+     ],
+     "a": [
+      "50 × 4 = 200 N."
+     ]
+    },
+    {
+     "q": [
+      "A rover weighs 600 N on Earth (g = 10 N/kg): mass?"
+     ],
+     "a": [
+      "600 ÷ 10 = 60 kg."
+     ]
+    },
+    {
+     "q": [
+      "What force makes a planet orbit a star? (J25)"
+     ],
+     "a": [
+      "Gravity (gravitational force)."
+     ]
+    },
+    {
+     "q": [
+      "What causes moons to orbit planets?"
+     ],
+     "a": [
+      "Gravity pulling the moon inwards."
+     ]
+    },
+    {
+     "q": [
+      "What causes artificial satellites to orbit the Earth?"
+     ],
+     "a": [
+      "Gravity."
+     ]
+    },
+    {
+     "q": [
+      "What causes comets to orbit the Sun?"
+     ],
+     "a": [
+      "Gravity."
+     ]
+    },
+    {
+     "q": [
+      "Which bodies does gravity make orbit?"
+     ],
+     "a": [
+      "Moons, planets, artificial satellites and comets."
+     ]
+    },
+    {
+     "q": [
+      "Shape of a planet’s orbit?"
+     ],
+     "a": [
+      "Nearly circular."
+     ]
+    },
+    {
+     "q": [
+      "Shape of a comet’s orbit?"
+     ],
+     "a": [
+      "A long, thin ellipse."
+     ]
+    },
+    {
+     "q": [
+      "One difference between a comet and a moon orbit? (J25)"
+     ],
+     "a": [
+      "Comet: highly elliptical, around the Sun. Moon: nearly circular, around a planet."
+     ]
+    },
+    {
+     "q": [
+      "Where does a comet move fastest?"
+     ],
+     "a": [
+      "When it is closest to the Sun."
+     ]
+    },
+    {
+     "q": [
+      "What happens to speed in a lower orbit?"
+     ],
+     "a": [
+      "It increases."
+     ]
+    },
+    {
+     "q": [
+      "What is the equation for orbital speed?"
+     ],
+     "a": [
+      "v = 2πr ÷ T."
+     ]
+    },
+    {
+     "q": [
+      "What is T in v = 2πr ÷ T?"
+     ],
+     "a": [
+      "The time period: the time for one orbit, in seconds."
+     ]
+    },
+    {
+     "q": [
+      "Make T the subject."
+     ],
+     "a": [
+      "T = 2πr ÷ v."
+     ]
+    },
+    {
+     "q": [
+      "Make r the subject."
+     ],
+     "a": [
+      "r = vT ÷ 2π."
+     ]
+    },
+    {
+     "q": [
+      "Convert 414 000 000 km to m."
+     ],
+     "a": [
+      "4.14 × 10¹¹ m."
+     ]
+    },
+    {
+     "q": [
+      "v = 47 400 m/s, r = 5.79 × 10¹⁰ m: T? (J25)"
+     ],
+     "a": [
+      "2π × 5.79 × 10¹⁰ ÷ 47 400 = 7.68 × 10⁶ s."
+     ]
+    },
+    {
+     "q": [
+      "What is the order of magnitude of 3.79 × 10⁸ s? (J25)"
+     ],
+     "a": [
+      "10⁸."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Stars",
+   "spec": "9.7–9.10",
+   "cards": [
+    {
+     "q": [
+      "How are stars classified?"
+     ],
+     "a": [
+      "By their colour."
+     ]
+    },
+    {
+     "q": [
+      "What does a star’s colour tell you?"
+     ],
+     "a": [
+      "Its surface temperature."
+     ]
+    },
+    {
+     "q": [
+      "Which colour star is hottest?"
+     ],
+     "a": [
+      "Blue."
+     ]
+    },
+    {
+     "q": [
+      "Which colour star is coolest?"
+     ],
+     "a": [
+      "Red."
+     ]
+    },
+    {
+     "q": [
+      "What colour is the Sun?"
+     ],
+     "a": [
+      "Yellow."
+     ]
+    },
+    {
+     "q": [
+      "What is a nebula?"
+     ],
+     "a": [
+      "A cloud of dust and gas from which stars form."
+     ]
+    },
+    {
+     "q": [
+      "What starts a star shining?"
+     ],
+     "a": [
+      "Gravity pulls gas together until fusion starts."
+     ]
+    },
+    {
+     "q": [
+      "Why is a main sequence star stable?"
+     ],
+     "a": [
+      "Gravity inwards is balanced by the outward push from fusion."
+     ]
+    },
+    {
+     "q": [
+      "Stages of a star like the Sun?"
+     ],
+     "a": [
+      "Nebula, main sequence, red giant, white dwarf."
+     ]
+    },
+    {
+     "q": [
+      "Why does a star become a red giant?"
+     ],
+     "a": [
+      "Hydrogen runs low; it swells and its surface cools, so it glows red."
+     ]
+    },
+    {
+     "q": [
+      "What is a white dwarf?"
+     ],
+     "a": [
+      "A small, hot, dense core left when the outer layers drift away."
+     ]
+    },
+    {
+     "q": [
+      "Stages of a star much larger than the Sun?"
+     ],
+     "a": [
+      "Nebula, main sequence, red supergiant, supernova, neutron star (or black hole)."
+     ]
+    },
+    {
+     "q": [
+      "What is a supernova?"
+     ],
+     "a": [
+      "An explosion of a massive star that throws dust and gas into space."
+     ]
+    },
+    {
+     "q": [
+      "What is left after a supernova?"
+     ],
+     "a": [
+      "A neutron star (or a black hole for the most massive stars)."
+     ]
+    },
+    {
+     "q": [
+      "Will the Sun become a supernova?"
+     ],
+     "a": [
+      "No. It will become a red giant, then a white dwarf."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Absolute Magnitude and HR Diagram",
+   "spec": "9.11P–9.12P",
+   "cards": [
+    {
+     "q": [
+      "What is apparent brightness?"
+     ],
+     "a": [
+      "How bright a star looks from Earth; it depends on distance."
+     ]
+    },
+    {
+     "q": [
+      "What is absolute magnitude?"
+     ],
+     "a": [
+      "The brightness of a star at a standard distance."
+     ]
+    },
+    {
+     "q": [
+      "Why use absolute magnitude?"
+     ],
+     "a": [
+      "It removes the effect of distance so stars can be compared fairly."
+     ]
+    },
+    {
+     "q": [
+      "Which is brighter: −3 or +6?"
+     ],
+     "a": [
+      "−3: the smaller number is brighter."
+     ]
+    },
+    {
+     "q": [
+      "What is plotted on an HR diagram?"
+     ],
+     "a": [
+      "Absolute magnitude against colour (or temperature)."
+     ]
+    },
+    {
+     "q": [
+      "Where is magnitude −5 on the axis?"
+     ],
+     "a": [
+      "At the top (+15 is at the bottom)."
+     ]
+    },
+    {
+     "q": [
+      "Which colour is on the left of the HR diagram?"
+     ],
+     "a": [
+      "Blue (red is on the right)."
+     ]
+    },
+    {
+     "q": [
+      "Where is the main sequence?"
+     ],
+     "a": [
+      "A diagonal band from top left to bottom right."
+     ]
+    },
+    {
+     "q": [
+      "Where are red giants?"
+     ],
+     "a": [
+      "Top right: cool but very bright because they are huge."
+     ]
+    },
+    {
+     "q": [
+      "Where are white dwarfs?"
+     ],
+     "a": [
+      "Bottom left: hot but dim because they are tiny."
+     ]
+    },
+    {
+     "q": [
+      "Where is the Sun on the HR diagram?"
+     ],
+     "a": [
+      "On the main sequence (yellow, about +5)."
+     ]
+    },
+    {
+     "q": [
+      "Property directly related to surface temperature? (J25)"
+     ],
+     "a": [
+      "Colour."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Big Bang, Doppler and CMB",
+   "spec": "9.13P–9.15P",
+   "cards": [
+    {
+     "q": [
+      "What is the Big Bang theory?"
+     ],
+     "a": [
+      "The universe began from one tiny, hot, dense place and has expanded and cooled since."
+     ]
+    },
+    {
+     "q": [
+      "What happened to the universe as it expanded?"
+     ],
+     "a": [
+      "It cooled, and gravity formed stars and galaxies."
+     ]
+    },
+    {
+     "q": [
+      "What is the Doppler effect?"
+     ],
+     "a": [
+      "A change in observed frequency and wavelength when a wave source moves relative to an observer."
+     ]
+    },
+    {
+     "q": [
+      "Source moving towards you: what happens?"
+     ],
+     "a": [
+      "Shorter wavelength, higher frequency (blue-shift for light)."
+     ]
+    },
+    {
+     "q": [
+      "Source moving away from you: what happens?"
+     ],
+     "a": [
+      "Longer wavelength, lower frequency (red-shift for light)."
+     ]
+    },
+    {
+     "q": [
+      "Two pieces of evidence for the Big Bang? (J25)"
+     ],
+     "a": [
+      "CMB radiation and red-shift of galaxies."
+     ]
+    },
+    {
+     "q": [
+      "What is the CMB?"
+     ],
+     "a": [
+      "Microwaves from all directions: the afterglow of the Big Bang."
+     ]
+    },
+    {
+     "q": [
+      "Why is the CMB wavelength longer now? (J25)"
+     ],
+     "a": [
+      "Its wavelength has increased because the universe is expanding."
+     ]
+    },
+    {
+     "q": [
+      "CMB f = 1.6 × 10¹¹ Hz: wavelength? (J25)"
+     ],
+     "a": [
+      "3.0 × 10⁸ ÷ 1.6 × 10¹¹ = 1.9 mm."
+     ]
+    },
+    {
+     "q": [
+      "Wave equation for speed?"
+     ],
+     "a": [
+      "v = f × λ."
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Red-shift and Expansion",
+   "spec": "9.16P–9.18P",
+   "cards": [
+    {
+     "q": [
+      "What is red-shift?"
+     ],
+     "a": [
+      "The wavelength of light from a receding source is longer (shifted towards red)."
+     ]
+    },
+    {
+     "q": [
+      "What is the red-shift equation?"
+     ],
+     "a": [
+      "Δλ ÷ λ₀ = v ÷ c."
+     ]
+    },
+    {
+     "q": [
+      "What is Δλ?"
+     ],
+     "a": [
+      "The change in wavelength: λ − λ₀."
+     ]
+    },
+    {
+     "q": [
+      "What is λ₀?"
+     ],
+     "a": [
+      "The reference wavelength (as measured for a stationary source)."
+     ]
+    },
+    {
+     "q": [
+      "What is c?"
+     ],
+     "a": [
+      "The speed of light: 3.0 × 10⁸ m/s."
+     ]
+    },
+    {
+     "q": [
+      "434 nm becomes 482 nm: speed of the galaxy?"
+     ],
+     "a": [
+      "Δλ = 48 nm; 3.0 × 10⁸ × 48 ÷ 434 = 3.3 × 10⁷ m/s."
+     ]
+    },
+    {
+     "q": [
+      "Δλ = 300 nm, λ₀ = 600 nm: speed?"
+     ],
+     "a": [
+      "0.5 × 3.0 × 10⁸ = 1.5 × 10⁸ m/s."
+     ]
+    },
+    {
+     "q": [
+      "NGC 300: v = 1.44 × 10⁵ m/s, λ₀ = 4.3405 × 10⁻⁷ m: λ? (J25)"
+     ],
+     "a": [
+      "Δλ = 2.0834 × 10⁻¹⁰ m; λ = 4.3426 × 10⁻⁷ m."
+     ]
+    },
+    {
+     "q": [
+      "What does a galaxy’s red-shift tell you?"
+     ],
+     "a": [
+      "It is moving away from us."
+     ]
+    },
+    {
+     "q": [
+      "How does red-shift change with distance?"
+     ],
+     "a": [
+      "Further galaxies have greater red-shift."
+     ]
+    },
+    {
+     "q": [
+      "What does a greater red-shift mean about speed?"
+     ],
+     "a": [
+      "The galaxy is moving away faster."
+     ]
+    },
+    {
+     "q": [
+      "Why do two galaxies at different distances have different red-shifts? (J25)"
+     ],
+     "a": [
+      "They move at different speeds because the universe is expanding."
+     ]
+    },
+    {
+     "q": [
+      "What does red-shift show about the universe?"
+     ],
+     "a": [
+      "It is expanding."
+     ]
+    }
+   ]
+  }
+ ]
+}
