@@ -41,8 +41,6 @@ The neutrons from one fission strike other U-235 nuclei and split them. If each 
 
 *Figure 18: a nuclear fission reactor*
 
-**J25 1P Q7(c) (6 marks) model answer:** Control rods absorb neutrons, preventing them causing fission, so they decrease the rate of fission. The moderator slows the neutrons, so they are more easily absorbed by uranium nuclei, which increases the rate of fission. Changing the position of the control rods allows the rate to be kept constant.
-
 <div class="callout callout-tip"><p class="callout-title">Key facts</p><p>Fission: neutron + U-235 → 2 daughter nuclei + 2 or 3 neutrons + energy.Chain reaction: neutrons from one fission cause further fissions. More than one each = uncontrolled.Moderator slows neutrons. Control rods absorb neutrons. Concrete shield absorbs radiation.</p></div>
 
 <div class="callout callout-warning"><p class="callout-title">Common Mistakes</p><p>Saying control rods slow neutrons down (that is the moderator).Defining a chain reaction without neutrons.Writing risks of a meltdown when the question asks about waste.</p></div>

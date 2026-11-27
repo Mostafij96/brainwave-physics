@@ -25,6 +25,7 @@ const totalMinutes = lessons.reduce((s, l) => s + l.data.minutes, 0);
 const base = `igcse/${unit.slug}/${chapter.slug}`;
 const lessonSlug = (id: string) => id.split('/')[3];
 const deck = getDeck(chapter.slug);
+const hasPractice = (await getCollection('practice')).some((e) => e.data.chapter === chapter.slug);
 ---
 
 <Base
@@ -53,17 +54,29 @@ const deck = getDeck(chapter.slug);
       </a>
     </div>
 
-    {deck && (
+    {(deck || hasPractice) && (
       <>
         <h2 class="mt-10 text-2xl font-extrabold">Free resources for this chapter</h2>
-        <a href={url(`resources/flashcards/${chapter.slug}/`)} class="card mt-4 flex items-center gap-4 bg-sun-soft p-5">
-          <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white text-2xl">🃏</span>
-          <span class="flex-1">
-            <span class="block text-lg font-extrabold leading-tight">Flashcards</span>
-            <span class="mt-1 block text-sm text-ink/60">{cardCount(deck)} cards · in Free Resources</span>
-          </span>
-          <span class="text-2xl text-ink/30">→</span>
-        </a>
+        {hasPractice && (
+          <a href={url(`resources/practice/${chapter.slug}/`)} class="card mt-4 flex items-center gap-4 bg-mint-soft p-5">
+            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white text-2xl">📝</span>
+            <span class="flex-1">
+              <span class="block text-lg font-extrabold leading-tight">Practice questions</span>
+              <span class="mt-1 block text-sm text-ink/60">Exam-style questions with mark schemes · in Free Resources</span>
+            </span>
+            <span class="text-2xl text-ink/30">→</span>
+          </a>
+        )}
+        {deck && (
+          <a href={url(`resources/flashcards/${chapter.slug}/`)} class="card mt-4 flex items-center gap-4 bg-sun-soft p-5">
+            <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white text-2xl">🃏</span>
+            <span class="flex-1">
+              <span class="block text-lg font-extrabold leading-tight">Flashcards</span>
+              <span class="mt-1 block text-sm text-ink/60">{cardCount(deck)} cards · in Free Resources</span>
+            </span>
+            <span class="text-2xl text-ink/30">→</span>
+          </a>
+        )}
       </>
     )}
 

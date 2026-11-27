@@ -23,14 +23,12 @@ In **fusion**, **small nuclei join** to form a **larger nucleus**. The mass of t
 
 ### Why fusion needs high temperature and pressure (8.26)
 
-All nuclei are positive (protons), so they **repel** each other (electrostatic repulsion). At low temperature and pressure the nuclei are slow and far apart and cannot get close enough to fuse. **Very high temperature** gives nuclei enough speed to **overcome the repulsion**, and **very high pressure** pushes them close together. J25 1P Q7(d): no fusion power plants because it needs very high temperatures/pressures, cannot be run on a commercial scale or sustained, and needs a large amount of energy to start (ignore cost).
-
 ![Diagram](./img/fig-19.png)
 
 *Figure 19: fusion and why it needs very high temperature*
 
 <div class="callout callout-tip"><p class="callout-title">Key facts</p><p>Fusion: small nuclei join → larger nucleus; mass lost; energy released; powers stars.Nuclei are positive and repel: high temperature and pressure needed to overcome the repulsion.</p></div>
 
-<div class="callout callout-warning"><p class="callout-title">Common Mistakes</p><p>Saying fusion splits atoms, or fission joins them.Saying nuclei attract at low temperatures.Giving cost as the reason for J25 7(d) — it is ignored.</p></div>
+<div class="callout callout-warning"><p class="callout-title">Common Mistakes</p></div>
 
 <div class="callout callout-tip"><p class="callout-title">Exam Tips</p><p>‘Explain the difference’: give both sides (fission splits large nuclei; fusion joins small ones).Use the words ‘positive’, ‘repel’ and ‘overcome’ for any question on why fusion is hard.For a six-mark reactor answer, write three linked chains: control rods → absorb neutrons → rate falls; moderator → slows neutrons → rate rises; moving the rods → rate constant.</p></div>

@@ -141,7 +141,7 @@
     },
     {
      "q": [
-      "Why does a copper wire produce a magnetic field? (J25)"
+      "Why does a copper wire produce a magnetic field?"
      ],
      "a": [
       "There is a current in the wire."
@@ -195,7 +195,7 @@
    "cards": [
     {
      "q": [
-      "When is there no force on a charge moving in a magnetic field? (J25)"
+      "When is there no force on a charge moving in a magnetic field?"
      ],
      "a": [
       "When it moves parallel to the field."
@@ -423,7 +423,7 @@
     },
     {
      "q": [
-      "What assumption is made in VpIp = VsIs? (J25)"
+      "What assumption is made in VpIp = VsIs?"
      ],
      "a": [
       "The transformer is 100% efficient: no energy is lost."
@@ -443,14 +443,6 @@
      ],
      "a": [
       "60 turns"
-     ]
-    },
-    {
-     "q": [
-      "J25: 25 000 V → 275 000 V, Np = 265. Find Ns."
-     ],
-     "a": [
-      "2915 turns"
      ]
     },
     {

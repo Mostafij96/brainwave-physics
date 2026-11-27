@@ -23,7 +23,6 @@ Atoms give out light of a known **reference wavelength λ₀**. From a galaxy mo
 | --- | --- | --- | --- |
 | Easy | A line of 434 nm is measured as 482 nm. Find v. | Δλ = 48 nm;  v = c × Δλ ÷ λ₀ = 3.0 × 10⁸ × 48 ÷ 434 | 3.3 × 10⁷ m/s |
 | Medium | Δλ = 300 nm, λ₀ = 600 nm. Find v. | Δλ ÷ λ₀ = 0.5;  v = 0.5 × 3.0 × 10⁸ | 1.5 × 10⁸ m/s |
-| Hard | J25 1P Q10(b): v = 1.44 × 10⁵ m/s, λ₀ = 4.3405 × 10⁻⁷ m. Find λ (5 s.f.). | Δλ = 4.3405 × 10⁻⁷ × 1.44 × 10⁵ ÷ 3.00 × 10⁸ = 2.0834 × 10⁻¹⁰;  λ = λ₀ + Δλ | 4.3426 × 10⁻⁷ m |
 
 ### Red-shift, distance and expansion (9.17P, 9.18P)
 
@@ -33,7 +32,7 @@ Almost all galaxies show **red-shift**, so they are moving **away**. **The furth
 
 *Figure 17: as space expands, all galaxies move further apart*
 
-<div class="callout callout-tip"><p class="callout-title">Key facts</p><p>Δλ = λ − λ₀ and Δλ ÷ λ₀ = v ÷ c.Greater red-shift → faster, further galaxy.Red-shift of galaxies is evidence that the universe is expanding.J25 1PR Q8(c): most galaxies show red-shift (moving away); further galaxies show greater red-shift and move faster; all matter came from a single point.</p></div>
+<div class="callout callout-tip"><p class="callout-title">Key facts</p></div>
 
 <div class="callout callout-warning"><p class="callout-title">Common Mistakes</p><p>Using λ instead of Δλ in the equation.Mixing nm and m inside one calculation.Saying red-shift makes a galaxy move faster — the galaxy’s speed causes the red-shift.Rounding to 4.34 × 10⁻⁷ when the question asks for five significant figures.</p></div>
 

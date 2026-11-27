@@ -8,7 +8,7 @@ chapterTitle: "Radioactivity and Particles"
 order: 2
 spec: "8.4–8.6, 8.9, 8.10"
 specRange: "8.4–8.6, 8.9, 8.10"
-minutes: 4
+minutes: 3
 ---
 
 ### Alpha, beta and gamma (8.4, 8.5)
@@ -40,18 +40,6 @@ There is a trade-off: the radiation that ionises most (alpha) penetrates least, 
 
 *Figure 5: apparatus for the penetration practical*
 
-### Reading results — J25 1P Q6(b)
-
-Counts in one minute: air 780, paper 520, 4 cm aluminium 520, 4 cm lead 12.
-
-- **Paper:** count falls (780 → 520), so alpha is present (paper stops alpha).
-- **Aluminium:** no further fall (520 → 520), so no beta (aluminium would stop beta).
-- **Lead:** falls to 12, so 508 counts passed through aluminium; only gamma passes through aluminium and is stopped by thick lead.
-
-![Diagram](./img/fig-06.png)
-
-*Figure 6: the J25 1P Q6(b) results*
-
 ### Detecting radiation (8.9)
 
 **Photographic film** is fogged (darkened) by ionising radiation, so film badges show how much radiation workers have received. A **Geiger–Müller (GM) tube** has a thin mica window; radiation entering ionises the low-pressure gas, producing a pulse of current that the counter registers (often as a click).
@@ -70,4 +58,4 @@ Counts in one minute: air 780, paper 520, 4 cm aluminium 520, 4 cm lead 12.
 
 <div class="callout callout-tip"><p class="callout-title">Key facts</p><p>α: helium nucleus, +2, most ionising, stopped by paper. β⁻: electron, −1, stopped by a few mm of aluminium. γ: EM wave, weakest ionising, most penetrating.Decay is random. Measure with film (fogging) or a GM tube (counts).Penetration practical: same distance, same time, subtract background.Background: radon and rocks, food, cosmic rays, medical sources.</p></div>
 
-<div class="callout callout-warning"><p class="callout-title">Common Mistakes</p><p>Saying beta is stopped by paper, or alpha by aluminium. Order: paper (α) &lt; aluminium (β) &lt; lead/concrete (γ).Forgetting the background count in the method (J25 1P Q6(a) gives a mark for it).Saying gamma is a particle. It is an electromagnetic wave.</p></div>
+<div class="callout callout-warning"><p class="callout-title">Common Mistakes</p><p>Saying beta is stopped by paper, or alpha by aluminium. Order: paper (α) &lt; aluminium (β) &lt; lead/concrete (γ).Forgetting the background count in the method.Saying gamma is a particle. It is an electromagnetic wave.</p></div>

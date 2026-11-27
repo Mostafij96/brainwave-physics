@@ -30,9 +30,8 @@ Balance **mass** (top numbers) and **charge** (bottom numbers): the totals on th
 | Easy | ²²⁶₈₈Ra → ²²²₈₆Rn + ? | 226 = 222 + 4; 88 = 86 + 2 | ⁴₂He (alpha) |
 | Medium | ²⁴₁₁Na → ²⁴₁₂Mg + ? | 24 = 24 + 0; 11 = 12 + (−1) | ⁰₋₁e (beta) |
 | Hard | ²³⁴₉₀Th → ²³⁴ₓPa + ⁰₋₁e. Find x. | 90 = x + (−1) | x = 91 |
-| J25 1PR Q10(a)(i) | ⁹⁰₃₉Y decays by β⁻ to Zr. Write the equation. | A stays 90; Z = 39 + 1 = 40 | ⁹⁰₃₉Y → ⁹⁰₄₀Zr + ⁰₋₁β (3 marks) |
 
-<div class="callout callout-tip"><p class="callout-title">Key facts</p><p>Alpha: A − 4, Z − 2. Beta⁻: A same, Z + 1. Gamma: no change. Neutron emitted: A − 1, Z same.Check both rows add up. Accept β, β⁻, e or e⁻ for the electron; β⁺ is rejected in the J25 mark scheme.</p></div>
+<div class="callout callout-tip"><p class="callout-title">Key facts</p></div>
 
 <div class="callout callout-warning"><p class="callout-title">Common Mistakes</p><p>Changing A in beta decay. A stays the same; Z goes up by 1.Writing the electron’s charge as +1.Forgetting to write the element symbol after finding Z (use the periodic table).</p></div>
 

@@ -205,14 +205,6 @@
     },
     {
      "q": [
-      "Counts: air 780, paper 520, Al 520, lead 12. What does it show? (J25)"
-     ],
-     "a": [
-      "Alpha (paper absorbs), no beta (no fall with Al), gamma (passes Al, stopped by lead)."
-     ]
-    },
-    {
-     "q": [
       "Name sources of background radiation."
      ],
      "a": [
@@ -291,14 +283,6 @@
     },
     {
      "q": [
-      "J25: ⁹⁰₃₉Y decays by β⁻ to Zr. Write the equation."
-     ],
-     "a": [
-      "⁹⁰₃₉Y → ⁹⁰₄₀Zr + ⁰₋₁β"
-     ]
-    },
-    {
-     "q": [
       "Which symbols are accepted for the electron in beta decay?"
      ],
      "a": [
@@ -321,7 +305,7 @@
     },
     {
      "q": [
-      "Define half-life. (J25)"
+      "Define half-life."
      ],
      "a": [
       "The time taken for the activity (or number of undecayed nuclei) to halve."
@@ -389,14 +373,6 @@
      ],
      "a": [
       "Subtract it first; add it back if the measured count is asked for."
-     ]
-    },
-    {
-     "q": [
-      "J25: is activity × time constant for the data?"
-     ],
-     "a": [
-      "No: the products 250, 440, 540 … change."
      ]
     }
    ]
@@ -487,7 +463,7 @@
     },
     {
      "q": [
-      "How is radioactive waste stored? (J25)"
+      "How is radioactive waste stored?"
      ],
      "a": [
       "In sealed lead or concrete containers, vitrified, underground."
@@ -525,7 +501,7 @@
     },
     {
      "q": [
-      "What is a chain reaction? (J25)"
+      "What is a chain reaction?"
      ],
      "a": [
       "Neutrons from one fission cause further fissions."
@@ -533,7 +509,7 @@
     },
     {
      "q": [
-      "When is a chain reaction uncontrolled? (J25)"
+      "When is a chain reaction uncontrolled?"
      ],
      "a": [
       "When each fission causes more than one further fission."
@@ -557,7 +533,7 @@
     },
     {
      "q": [
-      "How is the rate kept constant? (J25)"
+      "How is the rate kept constant?"
      ],
      "a": [
       "By changing the position of the control rods."
@@ -627,7 +603,7 @@
     },
     {
      "q": [
-      "Why are there no fusion power plants? (J25)"
+      "Why are there no fusion power plants?"
      ],
      "a": [
       "Needs high temperature/pressure; cannot be sustained or run commercially; needs a large energy input."

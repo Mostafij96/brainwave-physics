@@ -41,6 +41,6 @@ Ionising radiation **damages cells and tissue** and can cause **mutations** (pos
 
 *Figure 15: dangers of radiation and how to reduce the risks*
 
-<div class="callout callout-tip"><p class="callout-title">Key facts</p><p>Tracer: gamma + short half-life. Treatment: beta/alpha, short range. Sterilising: gamma. Thickness: beta.Irradiation = exposed from outside. Contamination = radioactive material on or inside.Waste: sealed containers (lead/concrete), vitrified, underground. J25 1PR Q10(c): do NOT give reactor-operation risks (meltdown) for a waste question.</p></div>
+<div class="callout callout-tip"><p class="callout-title">Key facts</p></div>
 
 <div class="callout callout-warning"><p class="callout-title">Common Mistakes</p><p>Saying an irradiated object becomes radioactive.Giving alpha as a medical tracer (it cannot leave the body).Naming a use without saying why that radiation or half-life suits it.</p></div>

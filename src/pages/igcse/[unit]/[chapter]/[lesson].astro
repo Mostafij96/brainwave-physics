@@ -30,6 +30,7 @@ const d = entry.data;
 const base = `igcse/${unit.slug}/${chapter.slug}`;
 const href = (id: string) => url(`${base}/${id.split('/')[3]}/`);
 const hasCards = !!getDeck(chapter.slug);
+const hasPractice = (await getCollection('practice')).some((e) => e.data.chapter === chapter.slug);
 const specPoints = d.spec ? d.spec.split('|').map((s) => s.trim()).filter(Boolean) : [];
 ---
 
@@ -65,6 +66,11 @@ const specPoints = d.spec ? d.spec.split('|').map((s) => s.trim()).filter(Boolea
               </li>
             ))}
           </ol>
+          {hasPractice && (
+            <a href={url(`resources/practice/${chapter.slug}/`)} class="mt-3 flex gap-2 rounded-xl bg-mint-soft px-3 py-2 text-sm font-extrabold hover:brightness-95">
+              <span>📝</span><span>Practice questions</span>
+            </a>
+          )}
           {hasCards && (
             <a href={url(`resources/flashcards/${chapter.slug}/`)} class="mt-3 flex gap-2 rounded-xl bg-sun-soft px-3 py-2 text-sm font-extrabold hover:brightness-95">
               <span>🃏</span><span>Flashcards</span>

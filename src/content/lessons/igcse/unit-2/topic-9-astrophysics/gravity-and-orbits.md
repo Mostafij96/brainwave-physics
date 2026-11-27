@@ -8,7 +8,7 @@ chapterTitle: "Astrophysics"
 order: 2
 spec: "9.3–9.6"
 specRange: "9.3–9.6"
-minutes: 4
+minutes: 3
 ---
 
 ### Gravitational field strength (9.3)
@@ -54,8 +54,6 @@ In one orbit a body travels the **circumference** of its path, 2πr, in one **ti
 | **Level** | **Question** | **Full working (write it all on the board)** | **Answer** |
 | --- | --- | --- | --- |
 | Easy | A satellite orbits at r = 7.0 × 10⁶ m with T = 5900 s. Find v. | v = 2πr ÷ T = 2π × 7.0 × 10⁶ ÷ 5900 | 7.5 × 10³ m/s |
-| Medium | J25 1P Q5(c): v = 47 400 m/s, r = 5.79 × 10¹⁰ m. Find T. | T = 2πr ÷ v = 2π × 5.79 × 10¹⁰ ÷ 47 400 | 7.68 × 10⁶ s |
-| Hard | J25 1PR Q4(b): v = 6.87 km/s, r = 414 000 000 km. Find T, then give the order of magnitude. | v = 6870 m/s; r = 4.14 × 10¹¹ m; T = 2π × 4.14 × 10¹¹ ÷ 6870 | 3.79 × 10⁸ s; order of magnitude 10⁸ |
 
 ![Diagram](./img/fig-06.png)
 

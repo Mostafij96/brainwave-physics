@@ -35,6 +35,6 @@ A star’s position shows its stage: a Sun-like star starts on the main sequence
 
 *Figure 12: the path of a Sun-like star on the HR diagram*
 
-<div class="callout callout-tip"><p class="callout-title">Key facts</p><p>Absolute magnitude = brightness at a standard distance; smaller number = brighter.HR axes: colour blue → red (left to right); magnitude −5 top, +15 bottom.W bottom left, M top-left-to-bottom-right band, R top right.J25 1P Q1(c): the property directly related to surface temperature is colour.</p></div>
+<div class="callout callout-tip"><p class="callout-title">Key facts</p></div>
 
 <div class="callout callout-warning"><p class="callout-title">Common Mistakes</p><p>Putting the brightest stars at the bottom of the diagram.Drawing the main sequence bottom-left to top-right.Mixing up apparent brightness (as seen from Earth) with absolute magnitude (standard distance).Writing several letters in the shape on the diagram question: one letter only.</p></div>

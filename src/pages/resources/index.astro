@@ -3,6 +3,13 @@ import Base from '../../layouts/Base.astro';
 import { IGCSE, COLORS } from '../../data/curriculum';
 import { getDeck, cardCount } from '../../lib/flashcards';
 import { url } from '../../lib/url';
+import { getCollection } from 'astro:content';
+
+const practiceSlugs = new Set((await getCollection('practice')).map((e) => e.data.chapter));
+const practiceGroups = IGCSE.map((unit) => ({
+  unit,
+  chapters: unit.chapters.filter((c) => practiceSlugs.has(c.slug)),
+})).filter((g) => g.chapters.length);
 
 const groups = IGCSE.map((unit) => ({
   unit,
@@ -11,7 +18,6 @@ const groups = IGCSE.map((unit) => ({
 const totalCards = groups.reduce((n, g) => n + g.decks.reduce((m, d) => m + d.count, 0), 0);
 
 const soon = [
-  { icon: '📚', bg: 'bg-sun-soft', title: 'Practice questions', text: 'Exam-style questions with full mark schemes, chapter by chapter.' },
   { icon: '🧪', bg: 'bg-mint-soft', title: 'End-of-topic tests', text: 'Timed tests to check your exam readiness.' },
   { icon: '📄', bg: 'bg-sky-soft', title: 'Formula sheets', text: 'One-page summaries of every key formula.' },
   { icon: '🗒️', bg: 'bg-coral-soft', title: 'Revision packs', text: 'Short notes for quick last-minute revision.' },
@@ -53,6 +59,38 @@ const soon = [
                     </div>
                   </div>
                   <p class={`mt-4 text-sm font-extrabold ${col.text}`}>{count} flashcards →</p>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </section>
+
+    <!-- Practice questions -->
+    <section class="mt-14">
+      <h2 class="text-2xl font-extrabold">📝 Practice questions</h2>
+      <p class="mt-1 text-ink/70">Exam-style questions for every chapter. Try them first, then check the mark scheme.</p>
+
+      {practiceGroups.map(({ unit, chapters }) => (
+        <div class="mt-8">
+          <div class="flex flex-wrap items-baseline gap-3">
+            <h3 class="rounded-full bg-sun px-4 py-1 text-lg font-extrabold">{unit.title}</h3>
+            <p class="text-sm font-bold text-ink/60">{unit.subtitle}</p>
+          </div>
+          <div class="mt-4 grid gap-5 md:grid-cols-2">
+            {chapters.map((c) => {
+              const col = COLORS[c.color];
+              return (
+                <a href={url(`resources/practice/${c.slug}/`)} class={`card block p-5 ${col.soft}`}>
+                  <div class="flex items-center gap-4">
+                    <div class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white text-3xl">{c.emoji}</div>
+                    <div>
+                      <p class="text-sm font-extrabold text-ink/50">Topic {c.n} · Spec {c.spec}</p>
+                      <h4 class="font-display text-xl font-extrabold leading-tight">{c.title}</h4>
+                    </div>
+                  </div>
+                  <p class={`mt-4 text-sm font-extrabold ${col.text}`}>Practice questions with mark schemes →</p>
                 </a>
               );
             })}

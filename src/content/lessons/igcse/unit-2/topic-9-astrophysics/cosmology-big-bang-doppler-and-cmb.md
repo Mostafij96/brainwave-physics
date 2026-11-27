@@ -35,8 +35,8 @@ When a **wave source moves relative to an observer**, the **observed frequency a
 
 *Figure 15: CMB wavelength stretched as the universe expanded*
 
-<div class="callout callout-example"><p class="callout-title">Method</p><p>CMB wavelength: λ = v ÷ f = 3.0 × 10⁸ ÷ 1.6 × 10¹¹ = 1.9 × 10⁻³ m = <strong>1.9 mm</strong> (J25 1PR Q8(a)(ii)).</p></div>
+<div class="callout callout-example"><p class="callout-title">Method</p><p>CMB wavelength: λ = v ÷ f = 3.0 × 10⁸ ÷ 1.6 × 10¹¹ = 1.9 × 10⁻³ m = <strong>1.9 mm</strong>.</p></div>
 
-<div class="callout callout-tip"><p class="callout-title">Key facts</p><p>Big Bang: everything began in one tiny, hot, dense place; the universe has expanded and cooled since.Towards the observer → shorter λ, higher f (blue-shift). Away → longer λ, lower f (red-shift).Two pieces of evidence: CMB radiation and red-shift of galaxies.CMB wavelength has increased because the universe is expanding (J25 1PR Q8(b)).</p></div>
+<div class="callout callout-tip"><p class="callout-title">Key facts</p><p>Big Bang: everything began in one tiny, hot, dense place; the universe has expanded and cooled since.Towards the observer → shorter λ, higher f (blue-shift). Away → longer λ, lower f (red-shift).Two pieces of evidence: CMB radiation and red-shift of galaxies.CMB wavelength has increased because the universe is expanding.</p></div>
 
 <div class="callout callout-warning"><p class="callout-title">Common Mistakes</p><p>Saying the Big Bang happened at one point in space — space itself expanded.Saying the source’s own frequency changes in the Doppler effect — the observed frequency changes.Writing ‘red-shift’ for the CMB explanation. The mark is for ‘the wavelength has increased because the universe is expanding’.</p></div>

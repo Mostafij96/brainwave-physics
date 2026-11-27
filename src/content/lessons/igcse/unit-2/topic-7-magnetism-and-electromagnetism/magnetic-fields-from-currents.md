@@ -39,6 +39,6 @@ An **electromagnet** is a solenoid wound on a **soft iron core**. It is built fr
 
 *Figure 10: an electromagnet*
 
-<div class="callout callout-tip"><p class="callout-title">Key facts</p><p>Current in a wire → magnetic field around it (no current, no field).Straight wire: circles, closer together near the wire. Flat coil: strong straight field through the centre. Solenoid: like a bar magnet.Electromagnet = coil of insulated wire + soft iron core. Stronger: more current, more turns, iron core.J25 1P Q8c(i): ‘there is a current in the wire’. Q8c(ii): four circles, closer near the wire; ignore arrows.</p></div>
+<div class="callout callout-tip"><p class="callout-title">Key facts</p></div>
 
 <div class="callout callout-warning"><p class="callout-title">Common Mistakes</p><p>Saying the wire is a magnet or the field is there ‘because it is copper’. It is there because of the current.Drawing equally spaced circles. Spacing must increase with distance; draw at least four circles.Using steel for a core. Soft iron loses its magnetism when the current is switched off.</p></div>

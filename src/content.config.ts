@@ -20,4 +20,19 @@ const lessons = defineCollection({
   }),
 });
 
-export const collections = { lessons };
+// Practice questions live in: src/content/practice/<chapter-slug>.md
+const practice = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/practice' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    chapter: z.string(),
+    unit: z.number(),
+    topic: z.number(),
+    chapterTitle: z.string(),
+    sections: z.number().default(0),
+    questions: z.number().default(0),
+  }),
+});
+
+export const collections = { lessons, practice };

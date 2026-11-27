@@ -125,7 +125,7 @@
     },
     {
      "q": [
-      "What force makes a planet orbit a star? (J25)"
+      "What force makes a planet orbit a star?"
      ],
      "a": [
       "Gravity (gravitational force)."
@@ -181,7 +181,7 @@
     },
     {
      "q": [
-      "One difference between a comet and a moon orbit? (J25)"
+      "One difference between a comet and a moon orbit?"
      ],
      "a": [
       "Comet: highly elliptical, around the Sun. Moon: nearly circular, around a planet."
@@ -241,22 +241,6 @@
      ],
      "a": [
       "4.14 × 10¹¹ m."
-     ]
-    },
-    {
-     "q": [
-      "v = 47 400 m/s, r = 5.79 × 10¹⁰ m: T? (J25)"
-     ],
-     "a": [
-      "2π × 5.79 × 10¹⁰ ÷ 47 400 = 7.68 × 10⁶ s."
-     ]
-    },
-    {
-     "q": [
-      "What is the order of magnitude of 3.79 × 10⁸ s? (J25)"
-     ],
-     "a": [
-      "10⁸."
      ]
     }
    ]
@@ -481,7 +465,7 @@
     },
     {
      "q": [
-      "Property directly related to surface temperature? (J25)"
+      "Property directly related to surface temperature?"
      ],
      "a": [
       "Colour."
@@ -535,7 +519,7 @@
     },
     {
      "q": [
-      "Two pieces of evidence for the Big Bang? (J25)"
+      "Two pieces of evidence for the Big Bang?"
      ],
      "a": [
       "CMB radiation and red-shift of galaxies."
@@ -551,18 +535,10 @@
     },
     {
      "q": [
-      "Why is the CMB wavelength longer now? (J25)"
+      "Why is the CMB wavelength longer now?"
      ],
      "a": [
       "Its wavelength has increased because the universe is expanding."
-     ]
-    },
-    {
-     "q": [
-      "CMB f = 1.6 × 10¹¹ Hz: wavelength? (J25)"
-     ],
-     "a": [
-      "3.0 × 10⁸ ÷ 1.6 × 10¹¹ = 1.9 mm."
      ]
     },
     {
@@ -637,14 +613,6 @@
     },
     {
      "q": [
-      "NGC 300: v = 1.44 × 10⁵ m/s, λ₀ = 4.3405 × 10⁻⁷ m: λ? (J25)"
-     ],
-     "a": [
-      "Δλ = 2.0834 × 10⁻¹⁰ m; λ = 4.3426 × 10⁻⁷ m."
-     ]
-    },
-    {
-     "q": [
       "What does a galaxy’s red-shift tell you?"
      ],
      "a": [
@@ -669,7 +637,7 @@
     },
     {
      "q": [
-      "Why do two galaxies at different distances have different red-shifts? (J25)"
+      "Why do two galaxies at different distances have different red-shifts?"
      ],
      "a": [
       "They move at different speeds because the universe is expanding."
