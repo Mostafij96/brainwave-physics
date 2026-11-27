@@ -1,0 +1,40 @@
+---
+// A list of specifications for one level, grouped by exam board.
+// kind="learn"      -> links to the notes pages   (/o-level/<spec>/)
+// kind="resources"  -> links to the resources     (/resources/o-level/<spec>/)
+import { BOARDS, specsFor, type LevelSlug } from '../data/curriculum';
+import { url } from '../lib/url';
+
+interface Props {
+  level: LevelSlug;
+  kind: 'learn' | 'resources';
+}
+const { level, kind } = Astro.props;
+const href = (slug: string) => url(kind === 'learn' ? `${level}/${slug}/` : `resources/${level}/${slug}/`);
+const groups = BOARDS.map((board) => ({ board, specs: specsFor(level).filter((s) => s.board === board) })).filter(
+  (g) => g.specs.length,
+);
+---
+
+{groups.map((g) => (
+  <div class="nav-group">
+    <p class="nav-board">{g.board}</p>
+    <ul>
+      {g.specs.map((s) => (
+        <li>
+          {s.status === 'live' ? (
+            <a href={href(s.slug)} class="nav-spec">
+              <span>{s.name}</span>
+              {s.code && <small>{s.code}</small>}
+            </a>
+          ) : (
+            <span class="nav-spec is-soon" title="Coming soon">
+              <span>{s.name}</span>
+              <em>Soon</em>
+            </span>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+))}

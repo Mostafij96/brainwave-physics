@@ -2,13 +2,13 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
-// Lessons live in: src/content/lessons/<course>/<unit-N>/<chapter-slug>/<lesson>.md
+// Lessons live in: src/content/lessons/<spec>/<unit-N>/<chapter-slug>/<lesson>.md
 const lessons = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/lessons' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    course: z.enum(['igcse']),
+    course: z.string(),
     unit: z.number(),
     chapter: z.number(),
     chapterTitle: z.string(),
@@ -20,9 +20,9 @@ const lessons = defineCollection({
   }),
 });
 
-// Practice questions live in: src/content/practice/<chapter-slug>.md
+// Practice questions live in: src/content/practice/<spec>/<chapter-slug>.md
 const practice = defineCollection({
-  loader: glob({ pattern: '*.md', base: './src/content/practice' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/practice' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),

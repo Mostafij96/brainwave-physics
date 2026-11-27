@@ -1,0 +1,97 @@
+---
+// One unit of a specification, shown as a heading row followed by one row per chapter.
+//   mode="learn"      rows link to the notes; a small "Free resources" link sits at the right of each row
+//   mode="resources"  rows link to the chapter's resources; the right side shows Flashcards / Practice chips
+import { getCollection } from 'astro:content';
+import { COLORS, type Spec, type Unit } from '../data/curriculum';
+import { resourcesFor } from '../lib/resources';
+import { url } from '../lib/url';
+
+interface Props {
+  spec: Spec;
+  unit: Unit;
+  mode: 'learn' | 'resources';
+  unitLink?: boolean; // resources mode: show "Open unit resources" in the unit row
+}
+const { spec, unit, mode, unitLink = false } = Astro.props;
+
+const lessons = await getCollection('lessons');
+const rows = await Promise.all(
+  unit.chapters.map(async (c) => ({
+    c,
+    topics: lessons.filter((l) => l.id.startsWith(`${spec.slug}/${unit.slug}/${c.slug}/`)).length,
+    res: await resourcesFor(spec.slug, c.slug),
+  })),
+);
+
+const learnRoot = `${spec.level}/${spec.slug}/${unit.slug}`;
+const resRoot = `resources/${spec.level}/${spec.slug}/${unit.slug}`;
+const hasAnyResource = rows.some((r) => r.res.cards || r.res.hasPractice);
+const mini =
+  'shrink-0 rounded-full bg-sun-soft px-3 py-1 text-xs font-extrabold text-ink/80 hover:bg-sun hover:text-ink';
+---
+
+<section class="mt-10">
+  <!-- unit row -->
+  <div class="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+    <div class="flex flex-wrap items-baseline gap-3">
+      <h2 class="rounded-full bg-sun px-5 py-2 text-2xl font-extrabold">{unit.title}</h2>
+      <p class="font-bold text-ink/60">{unit.subtitle}</p>
+    </div>
+    {mode === 'learn' && hasAnyResource && (
+      <a href={url(`${resRoot}/`)} class={mini}>Free resources →</a>
+    )}
+    {mode === 'resources' && unitLink && (
+      <a href={url(`${resRoot}/`)} class={mini}>Open unit resources →</a>
+    )}
+  </div>
+
+  <!-- chapter rows -->
+  <ul class="card mt-4 divide-y-2 divide-[#e6edf9] overflow-hidden">
+    {rows.map(({ c, topics, res }) => {
+      const col = COLORS[c.color];
+      const chapterRes = url(`${resRoot}/${c.slug}/`);
+      const ready = topics > 0;
+      return (
+        <li class="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 sm:flex-nowrap">
+          <span class={`grid h-11 w-11 shrink-0 place-items-center rounded-2xl text-2xl ${col.soft}`}>{c.emoji}</span>
+
+          {mode === 'learn' ? (
+            ready ? (
+              <a href={url(`${learnRoot}/${c.slug}/`)} class="min-w-0 flex-1 hover:text-sky">
+                <span class="block text-xs font-extrabold text-ink/50">Chapter {c.n} · Spec {c.spec}</span>
+                <span class="block font-display text-lg font-extrabold leading-tight">{c.title}</span>
+                <span class="block text-sm text-ink/60">{topics} topics</span>
+              </a>
+            ) : (
+              <div class="min-w-0 flex-1 opacity-60">
+                <span class="block text-xs font-extrabold text-ink/50">Chapter {c.n} · Spec {c.spec}</span>
+                <span class="block font-display text-lg font-extrabold leading-tight">{c.title}</span>
+                <span class="block text-sm">Coming soon</span>
+              </div>
+            )
+          ) : (
+            <a href={chapterRes} class="min-w-0 flex-1 hover:text-sky">
+              <span class="block text-xs font-extrabold text-ink/50">Chapter {c.n} · Spec {c.spec}</span>
+              <span class="block font-display text-lg font-extrabold leading-tight">{c.title}</span>
+            </a>
+          )}
+
+          {mode === 'learn' && (res.cards > 0 || res.hasPractice) && (
+            <a href={chapterRes} class={mini}>Free resources</a>
+          )}
+          {mode === 'resources' && (
+            <span class="flex flex-wrap gap-2">
+              {res.deck && (
+                <a href={url(`${resRoot}/${c.slug}/flashcards/`)} class={mini}>🃏 Flashcards ({res.cards})</a>
+              )}
+              {res.hasPractice && (
+                <a href={url(`${resRoot}/${c.slug}/practice/`)} class={mini}>📝 Practice questions</a>
+              )}
+            </span>
+          )}
+        </li>
+      );
+    })}
+  </ul>
+</section>

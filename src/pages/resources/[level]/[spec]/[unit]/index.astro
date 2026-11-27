@@ -1,0 +1,37 @@
+---
+import Base from '../../../../../layouts/Base.astro';
+import UnitBlock from '../../../../../components/UnitBlock.astro';
+import { LEVELS, liveSpecs } from '../../../../../data/curriculum';
+import { url } from '../../../../../lib/url';
+
+export function getStaticPaths() {
+  return liveSpecs().flatMap((spec) =>
+    spec.units.map((unit) => ({ params: { level: spec.level, spec: spec.slug, unit: unit.slug }, props: { spec, unit } })),
+  );
+}
+
+const { spec, unit } = Astro.props;
+const info = LEVELS[spec.level];
+---
+
+<Base
+  title={`${unit.title} Free Resources – ${spec.name}`}
+  description={`Free flashcards and practice questions for ${spec.name}, ${unit.title}: ${unit.subtitle}.`}
+>
+  <div class="mx-auto max-w-5xl px-4 py-12">
+    <nav class="flex flex-wrap gap-x-2 text-sm font-bold text-ink/60">
+      <a href={url('resources/')} class="hover:text-sky">Free Resources</a> <span>›</span>
+      <a href={url(`resources/${spec.level}/`)} class="hover:text-sky">{info.title}</a> <span>›</span>
+      <a href={url(`resources/${spec.level}/${spec.slug}/`)} class="hover:text-sky">{spec.name}</a> <span>›</span>
+      <span>{unit.title}</span>
+    </nav>
+    <h1 class="mt-3 text-4xl font-extrabold">{unit.title} resources</h1>
+    <p class="mt-1 font-bold text-ink/60">{spec.name}</p>
+
+    <UnitBlock spec={spec} unit={unit} mode="resources" />
+
+    <p class="mt-8">
+      <a href={url(`${spec.level}/${spec.slug}/`)} class="font-extrabold text-sky hover:underline">Read the {unit.title} notes →</a>
+    </p>
+  </div>
+</Base>

@@ -1,6 +1,12 @@
-// The book order of the course. Add new units / chapters here.
-// A chapter's lessons are the Markdown files inside its folder:
-//   src/content/lessons/igcse/<unit.slug>/<chapter.slug>/*.md
+// The whole site is organised as:  Level > Specification > Unit > Chapter > Topic (lesson)
+//
+// To add a new specification:
+//   1. Add an entry to SPECS below (set status: 'live' once it has content).
+//   2. Put its lessons in      src/content/lessons/<spec.slug>/<unit.slug>/<chapter.slug>/*.md
+//   3. Put its flashcards in   src/data/flashcards/<spec.slug>/<chapter.slug>.json
+//   4. Put its practice in     src/content/practice/<spec.slug>/<chapter.slug>.md
+
+export type LevelSlug = 'o-level' | 'a-level';
 
 export interface Chapter {
   n: number;
@@ -20,12 +26,38 @@ export interface Unit {
   chapters: Chapter[];
 }
 
-export const IGCSE: Unit[] = [
+export interface Spec {
+  level: LevelSlug;
+  board: 'Edexcel' | 'Cambridge';
+  slug: string; // folder name + URL part
+  name: string;
+  code: string;
+  status: 'live' | 'soon';
+  blurb: string;
+  units: Unit[];
+}
+
+export const LEVELS: Record<LevelSlug, { title: string; long: string; emoji: string; blurb: string }> = {
+  'o-level': {
+    title: 'O Level',
+    long: 'O Level / IGCSE Physics',
+    emoji: '🌱',
+    blurb: 'IGCSE and O Level Physics for Edexcel and Cambridge, organised by specification.',
+  },
+  'a-level': {
+    title: 'A Level',
+    long: 'A Level Physics',
+    emoji: '🚀',
+    blurb: 'AS and A Level Physics for Edexcel and Cambridge, organised by specification.',
+  },
+};
+
+const edexcelModularUnits: Unit[] = [
   {
     n: 1,
     slug: 'unit-1',
     title: 'Unit 1',
-    subtitle: 'Modular Physics · Topics 1–4 (Edexcel 4WPH1)',
+    subtitle: 'Modular Physics · Topics 1–4 (4WPH1)',
     chapters: [
       {
         n: 1,
@@ -69,7 +101,7 @@ export const IGCSE: Unit[] = [
     n: 2,
     slug: 'unit-2',
     title: 'Unit 2',
-    subtitle: 'Modular Physics · Topics 5–9 (Edexcel 4WPH2)',
+    subtitle: 'Modular Physics · Topics 5–9 (4WPH2)',
     chapters: [
       {
         n: 5,
@@ -120,11 +152,88 @@ export const IGCSE: Unit[] = [
   },
 ];
 
-export const findChapter = (unitSlug: string, chapterSlug: string) => {
-  const unit = IGCSE.find((u) => u.slug === unitSlug);
+export const SPECS: Spec[] = [
+  // ---------- O Level ----------
+  {
+    level: 'o-level',
+    board: 'Edexcel',
+    slug: 'edexcel-igcse-modular',
+    name: 'Edexcel IGCSE Physics (Modular)',
+    code: '4WPH1 & 4WPH2',
+    status: 'live',
+    blurb: 'Unit 1 (Topics 1–4) and Unit 2 (Topics 5–9) in specification order.',
+    units: edexcelModularUnits,
+  },
+  {
+    level: 'o-level',
+    board: 'Edexcel',
+    slug: 'edexcel-igcse-physics-4ph1',
+    name: 'Edexcel IGCSE Physics',
+    code: '4PH1',
+    status: 'soon',
+    blurb: 'The linear Edexcel IGCSE Physics specification.',
+    units: [],
+  },
+  {
+    level: 'o-level',
+    board: 'Cambridge',
+    slug: 'cambridge-igcse-physics-0625',
+    name: 'Cambridge IGCSE Physics',
+    code: '0625',
+    status: 'soon',
+    blurb: 'Cambridge IGCSE Physics.',
+    units: [],
+  },
+  {
+    level: 'o-level',
+    board: 'Cambridge',
+    slug: 'cambridge-o-level-physics-5054',
+    name: 'Cambridge O Level Physics',
+    code: '5054',
+    status: 'soon',
+    blurb: 'Cambridge O Level Physics.',
+    units: [],
+  },
+  // ---------- A Level ----------
+  {
+    level: 'a-level',
+    board: 'Edexcel',
+    slug: 'edexcel-international-a-level-physics',
+    name: 'Edexcel International A Level Physics',
+    code: '',
+    status: 'soon',
+    blurb: 'Edexcel International AS and A Level Physics.',
+    units: [],
+  },
+  {
+    level: 'a-level',
+    board: 'Cambridge',
+    slug: 'cambridge-a-level-physics-9702',
+    name: 'Cambridge International AS & A Level Physics',
+    code: '9702',
+    status: 'soon',
+    blurb: 'Cambridge International AS and A Level Physics.',
+    units: [],
+  },
+];
+
+// ---------- helpers ----------
+export const BOARDS = ['Edexcel', 'Cambridge'] as const;
+export const specsFor = (level: LevelSlug) => SPECS.filter((s) => s.level === level);
+export const findSpec = (slug: string) => SPECS.find((s) => s.slug === slug);
+export const specPath = (s: Spec) => `${s.level}/${s.slug}`;
+export const liveSpecs = () => SPECS.filter((s) => s.status === 'live');
+
+export const findChapter = (specSlug: string, unitSlug: string, chapterSlug: string) => {
+  const spec = findSpec(specSlug);
+  const unit = spec?.units.find((u) => u.slug === unitSlug);
   const chapter = unit?.chapters.find((c) => c.slug === chapterSlug);
-  return unit && chapter ? { unit, chapter } : undefined;
+  return spec && unit && chapter ? { spec, unit, chapter } : undefined;
 };
+
+// Every (spec, unit, chapter) triple of the live specifications.
+export const allChapters = () =>
+  liveSpecs().flatMap((spec) => spec.units.flatMap((unit) => unit.chapters.map((chapter) => ({ spec, unit, chapter }))));
 
 // Tailwind classes per colour (written out in full so Tailwind keeps them).
 export const COLORS = {

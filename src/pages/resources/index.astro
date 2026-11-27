@@ -1,105 +1,45 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { IGCSE, COLORS } from '../../data/curriculum';
-import { getDeck, cardCount } from '../../lib/flashcards';
+import { LEVELS, specsFor } from '../../data/curriculum';
 import { url } from '../../lib/url';
-import { getCollection } from 'astro:content';
 
-const practiceSlugs = new Set((await getCollection('practice')).map((e) => e.data.chapter));
-const practiceGroups = IGCSE.map((unit) => ({
-  unit,
-  chapters: unit.chapters.filter((c) => practiceSlugs.has(c.slug)),
-})).filter((g) => g.chapters.length);
-
-const groups = IGCSE.map((unit) => ({
-  unit,
-  decks: unit.chapters.filter((c) => getDeck(c.slug)).map((c) => ({ chapter: c, count: cardCount(getDeck(c.slug)) })),
-})).filter((g) => g.decks.length);
-const totalCards = groups.reduce((n, g) => n + g.decks.reduce((m, d) => m + d.count, 0), 0);
+const levels = (['o-level', 'a-level'] as const).map((slug) => {
+  const specs = specsFor(slug);
+  return { slug, ...LEVELS[slug], live: specs.filter((s) => s.status === 'live').length, total: specs.length };
+});
 
 const soon = [
   { icon: '🧪', bg: 'bg-mint-soft', title: 'End-of-topic tests', text: 'Timed tests to check your exam readiness.' },
   { icon: '📄', bg: 'bg-sky-soft', title: 'Formula sheets', text: 'One-page summaries of every key formula.' },
   { icon: '🗒️', bg: 'bg-coral-soft', title: 'Revision packs', text: 'Short notes for quick last-minute revision.' },
+  { icon: '🔬', bg: 'bg-sun-soft', title: 'Required practicals', text: 'Method, results and exam questions for each practical.' },
 ];
 ---
 
 <Base
   title="Free Physics Resources"
-  description="Free Edexcel IGCSE Physics revision resources: flashcards for every chapter, with practice questions, tests and formula sheets coming soon."
+  description="Free O Level and A Level Physics revision resources by specification: flashcards and practice questions, with more added all the time."
 >
-  <div class="mx-auto max-w-6xl px-4 py-12">
+  <div class="mx-auto max-w-5xl px-4 py-12">
     <h1 class="text-4xl font-extrabold">Free Resources</h1>
-    <p class="mt-2 max-w-2xl text-ink/70">Study tools to practise and revise. Everything here is free, with no sign-up.</p>
+    <p class="mt-2 max-w-2xl text-ink/70">
+      Flashcards and practice questions for every specification. Pick your level, then your specification, then your
+      chapter. Everything is free, with no sign-up.
+    </p>
 
-    <!-- Flashcards -->
-    <section class="mt-10">
-      <div class="flex flex-wrap items-baseline justify-between gap-2">
-        <h2 class="text-2xl font-extrabold">🃏 Flashcards</h2>
-        <p class="text-sm font-bold text-ink/60">{totalCards} cards · Edexcel IGCSE Physics</p>
-      </div>
-      <p class="mt-1 text-ink/70">Flip, shuffle and track what you know. Pick a unit and chapter:</p>
-
-      {groups.map(({ unit, decks }) => (
-        <div class="mt-8">
-          <div class="flex flex-wrap items-baseline gap-3">
-            <h3 class="rounded-full bg-sun px-4 py-1 text-lg font-extrabold">{unit.title}</h3>
-            <p class="text-sm font-bold text-ink/60">{unit.subtitle}</p>
-          </div>
-          <div class="mt-4 grid gap-5 md:grid-cols-2">
-            {decks.map(({ chapter: c, count }) => {
-              const col = COLORS[c.color];
-              return (
-                <a href={url(`resources/flashcards/${c.slug}/`)} class={`card block p-5 ${col.soft}`}>
-                  <div class="flex items-center gap-4">
-                    <div class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white text-3xl">{c.emoji}</div>
-                    <div>
-                      <p class="text-sm font-extrabold text-ink/50">Topic {c.n} · Spec {c.spec}</p>
-                      <h4 class="font-display text-xl font-extrabold leading-tight">{c.title}</h4>
-                    </div>
-                  </div>
-                  <p class={`mt-4 text-sm font-extrabold ${col.text}`}>{count} flashcards →</p>
-                </a>
-              );
-            })}
-          </div>
-        </div>
+    <div class="mt-8 grid gap-6 md:grid-cols-2">
+      {levels.map((l) => (
+        <a href={url(`resources/${l.slug}/`)} class:list={['card block p-8', l.slug === 'o-level' ? 'bg-mint-soft' : 'bg-grape-soft']}>
+          <p class="text-5xl">{l.emoji}</p>
+          <h2 class="mt-3 text-2xl font-extrabold">{l.title} resources</h2>
+          <p class="mt-2 text-ink/70">{l.blurb}</p>
+          <p class="mt-4 font-extrabold">
+            {l.live > 0 ? `${l.live} of ${l.total} specifications ready →` : 'Coming soon →'}
+          </p>
+        </a>
       ))}
-    </section>
+    </div>
 
-    <!-- Practice questions -->
-    <section class="mt-14">
-      <h2 class="text-2xl font-extrabold">📝 Practice questions</h2>
-      <p class="mt-1 text-ink/70">Exam-style questions for every chapter. Try them first, then check the mark scheme.</p>
-
-      {practiceGroups.map(({ unit, chapters }) => (
-        <div class="mt-8">
-          <div class="flex flex-wrap items-baseline gap-3">
-            <h3 class="rounded-full bg-sun px-4 py-1 text-lg font-extrabold">{unit.title}</h3>
-            <p class="text-sm font-bold text-ink/60">{unit.subtitle}</p>
-          </div>
-          <div class="mt-4 grid gap-5 md:grid-cols-2">
-            {chapters.map((c) => {
-              const col = COLORS[c.color];
-              return (
-                <a href={url(`resources/practice/${c.slug}/`)} class={`card block p-5 ${col.soft}`}>
-                  <div class="flex items-center gap-4">
-                    <div class="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-white text-3xl">{c.emoji}</div>
-                    <div>
-                      <p class="text-sm font-extrabold text-ink/50">Topic {c.n} · Spec {c.spec}</p>
-                      <h4 class="font-display text-xl font-extrabold leading-tight">{c.title}</h4>
-                    </div>
-                  </div>
-                  <p class={`mt-4 text-sm font-extrabold ${col.text}`}>Practice questions with mark schemes →</p>
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      ))}
-    </section>
-
-    <!-- Coming soon -->
     <section class="mt-14">
       <h2 class="text-2xl font-extrabold">Coming soon</h2>
       <div class="mt-5 grid gap-5 md:grid-cols-2">

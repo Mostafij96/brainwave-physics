@@ -1,0 +1,77 @@
+---
+import Base from '../../../../../../layouts/Base.astro';
+import { COLORS, LEVELS, allChapters } from '../../../../../../data/curriculum';
+import { resourcesFor } from '../../../../../../lib/resources';
+import { url } from '../../../../../../lib/url';
+
+export async function getStaticPaths() {
+  const out = [];
+  for (const { spec, unit, chapter } of allChapters()) {
+    const res = await resourcesFor(spec.slug, chapter.slug);
+    if (res.deck || res.hasPractice)
+      out.push({ params: { level: spec.level, spec: spec.slug, unit: unit.slug, chapter: chapter.slug }, props: { spec, unit, chapter, res } });
+  }
+  return out;
+}
+
+const { spec, unit, chapter, res } = Astro.props;
+const col = COLORS[chapter.color];
+const info = LEVELS[spec.level];
+const root = `resources/${spec.level}/${spec.slug}/${unit.slug}/${chapter.slug}`;
+---
+
+<Base
+  title={`Topic ${chapter.n} ${chapter.title} – Free Resources`}
+  description={`Free flashcards and practice questions for ${spec.name} Topic ${chapter.n}: ${chapter.title}.`}
+>
+  <div class="mx-auto max-w-3xl px-4 py-12">
+    <nav class="flex flex-wrap gap-x-2 text-sm font-bold text-ink/60">
+      <a href={url('resources/')} class="hover:text-sky">Free Resources</a> <span>›</span>
+      <a href={url(`resources/${spec.level}/`)} class="hover:text-sky">{info.title}</a> <span>›</span>
+      <a href={url(`resources/${spec.level}/${spec.slug}/`)} class="hover:text-sky">{spec.name}</a> <span>›</span>
+      <a href={url(`resources/${spec.level}/${spec.slug}/${unit.slug}/`)} class="hover:text-sky">{unit.title}</a> <span>›</span>
+      <span>Topic {chapter.n}</span>
+    </nav>
+
+    <div class={`mt-4 rounded-[2rem] p-6 ${col.soft}`}>
+      <div class="flex items-center gap-4">
+        <div class="grid h-14 w-14 place-items-center rounded-2xl bg-white text-3xl">{chapter.emoji}</div>
+        <div>
+          <p class="text-sm font-extrabold text-ink/60">{unit.title} · Topic {chapter.n} · Spec {chapter.spec}</p>
+          <h1 class="text-3xl font-extrabold leading-tight">{chapter.title}</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-6 space-y-4">
+      {res.deck && (
+        <a href={url(`${root}/flashcards/`)} class="card flex items-center gap-4 bg-sun-soft p-5">
+          <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white text-2xl">🃏</span>
+          <span class="flex-1">
+            <span class="block text-lg font-extrabold leading-tight">Flashcards</span>
+            <span class="mt-1 block text-sm text-ink/60">{res.cards} cards · flip, shuffle and track what you know</span>
+          </span>
+          <span class="text-2xl text-ink/30">→</span>
+        </a>
+      )}
+      {res.hasPractice && (
+        <a href={url(`${root}/practice/`)} class="card flex items-center gap-4 bg-mint-soft p-5">
+          <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-white text-2xl">📝</span>
+          <span class="flex-1">
+            <span class="block text-lg font-extrabold leading-tight">Practice questions</span>
+            <span class="mt-1 block text-sm text-ink/60">Exam-style questions with mark schemes</span>
+          </span>
+          <span class="text-2xl text-ink/30">→</span>
+        </a>
+      )}
+      <a href={url(`${spec.level}/${spec.slug}/${unit.slug}/${chapter.slug}/`)} class="card flex items-center gap-4 p-5">
+        <span class="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-sky-soft text-2xl">📖</span>
+        <span class="flex-1">
+          <span class="block text-lg font-extrabold leading-tight">Chapter notes</span>
+          <span class="mt-1 block text-sm text-ink/60">Read the lessons for this chapter</span>
+        </span>
+        <span class="text-2xl text-ink/30">→</span>
+      </a>
+    </div>
+  </div>
+</Base>

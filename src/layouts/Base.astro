@@ -12,8 +12,12 @@ const { title, description = SITE.description, type = 'website' } = Astro.props;
 const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} | ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 
-const nav = [
-  { label: 'IGCSE Physics', href: url('igcse/') },
+import SpecMenu from '../components/SpecMenu.astro';
+import { LEVELS } from '../data/curriculum';
+
+const levels = (['o-level', 'a-level'] as const).map((slug) => ({ slug, title: LEVELS[slug].title }));
+const footerLinks = [
+  { label: 'O Level', href: url('o-level/') },
   { label: 'A Level', href: url('a-level/') },
   { label: 'Free Resources', href: url('resources/') },
   { label: 'About', href: url('about/') },
@@ -51,18 +55,60 @@ const socials = Object.entries(SITE.social).filter(([, v]) => v);
           <span>Brainwave <span class="text-sky">Physics</span></span>
         </a>
 
-        <nav class="hidden items-center gap-1 md:flex">
-          {nav.map((n) => (
-            <a href={n.href} class="rounded-full px-4 py-2 font-bold hover:bg-sun-soft">{n.label}</a>
+        <!-- Desktop menu with dropdowns -->
+        <nav class="hidden items-center gap-1 md:flex" aria-label="Main">
+          {levels.map((l) => (
+            <div class="nav-item">
+              <a href={url(`${l.slug}/`)} class="nav-link">{l.title} <span class="caret">▾</span></a>
+              <div class="nav-panel">
+                <div class="nav-card"><SpecMenu level={l.slug} kind="learn" /></div>
+              </div>
+            </div>
           ))}
+
+          <div class="nav-item">
+            <a href={url('resources/')} class="nav-link">Free Resources <span class="caret">▾</span></a>
+            <div class="nav-panel is-right">
+              <div class="nav-card nav-card-narrow">
+                {levels.map((l) => (
+                  <div class="nav-item nav-sub-item">
+                    <a href={url(`resources/${l.slug}/`)} class="nav-spec nav-sub-trigger">
+                      <span>{l.title}</span><span class="caret">◂</span>
+                    </a>
+                    <div class="nav-sub">
+                      <div class="nav-card"><SpecMenu level={l.slug} kind="resources" /></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <a href={url('about/')} class="nav-link">About</a>
         </nav>
 
+        <!-- Mobile menu -->
         <details class="relative md:hidden">
           <summary class="btn cursor-pointer list-none bg-sun px-4 py-2">Menu ☰</summary>
-          <div class="card absolute right-0 mt-2 flex w-56 flex-col p-2">
-            {nav.map((n) => (
-              <a href={n.href} class="rounded-xl px-4 py-2 font-bold hover:bg-sun-soft">{n.label}</a>
+          <div class="card absolute right-0 mt-2 max-h-[80vh] w-72 overflow-y-auto p-2">
+            {levels.map((l) => (
+              <details class="m-group">
+                <summary>{l.title}</summary>
+                <a href={url(`${l.slug}/`)} class="nav-spec">All {l.title} specifications</a>
+                <SpecMenu level={l.slug} kind="learn" />
+              </details>
             ))}
+            <details class="m-group">
+              <summary>Free Resources</summary>
+              <a href={url('resources/')} class="nav-spec">All free resources</a>
+              {levels.map((l) => (
+                <details class="m-group m-sub">
+                  <summary>{l.title}</summary>
+                  <SpecMenu level={l.slug} kind="resources" />
+                </details>
+              ))}
+            </details>
+            <a href={url('about/')} class="m-link">About</a>
           </div>
         </details>
       </div>
@@ -81,7 +127,7 @@ const socials = Object.entries(SITE.social).filter(([, v]) => v);
         <div>
           <p class="font-display font-bold">Explore</p>
           <ul class="mt-2 space-y-1 text-sm">
-            {nav.map((n) => (
+            {footerLinks.map((n) => (
               <li><a href={n.href} class="hover:text-sky">{n.label}</a></li>
             ))}
           </ul>

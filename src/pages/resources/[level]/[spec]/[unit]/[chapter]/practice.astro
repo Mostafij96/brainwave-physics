@@ -1,0 +1,68 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../../../../../layouts/Base.astro';
+import { COLORS, LEVELS, allChapters } from '../../../../../../data/curriculum';
+import { getPractice } from '../../../../../../lib/resources';
+import { url } from '../../../../../../lib/url';
+
+export async function getStaticPaths() {
+  const out = [];
+  for (const { spec, unit, chapter } of allChapters()) {
+    const entry = await getPractice(spec.slug, chapter.slug);
+    if (entry)
+      out.push({
+        params: { level: spec.level, spec: spec.slug, unit: unit.slug, chapter: chapter.slug },
+        props: { entry, spec, unit, chapter },
+      });
+  }
+  return out;
+}
+
+const { entry, spec, unit, chapter } = Astro.props;
+const col = COLORS[chapter.color];
+const resRoot = `resources/${spec.level}/${spec.slug}/${unit.slug}/${chapter.slug}`;
+const { Content, headings } = await render(entry);
+const sections = headings.filter((h) => h.depth === 2);
+---
+
+<Base
+  title={`Practice questions: Topic ${chapter.n} ${chapter.title} – ${spec.name}`}
+  description={entry.data.description}
+>
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <nav class="flex flex-wrap gap-x-2 text-sm font-bold text-ink/60">
+      <a href={url('resources/')} class="hover:text-sky">Free Resources</a> <span>›</span>
+      <a href={url(`resources/${spec.level}/${spec.slug}/`)} class="hover:text-sky">{spec.name}</a> <span>›</span>
+      <a href={url(`${resRoot}/`)} class="hover:text-sky">Topic {chapter.n}: {chapter.title}</a> <span>›</span>
+      <span>Practice questions</span>
+    </nav>
+
+    <div class={`mt-4 rounded-[2rem] p-6 ${col.soft}`}>
+      <p class="text-sm font-extrabold text-ink/60">📝 Practice questions · {unit.title} · Topic {chapter.n}</p>
+      <h1 class="mt-1 text-3xl font-extrabold leading-tight">{chapter.title}</h1>
+      <p class="mt-2 text-sm text-ink/70">
+        Write your answer on paper first. Then press <strong>Show mark scheme</strong> under each question to check
+        your marks. Original exam-style questions, in specification order.
+      </p>
+    </div>
+
+    {sections.length > 0 && (
+      <nav class="mt-5 flex flex-wrap gap-2" aria-label="Sections">
+        {sections.map((h) => (
+          <a href={`#${h.slug}`} class="rounded-full border-2 border-[#d6e0f5] bg-white px-3 py-1 text-xs font-extrabold hover:bg-sun-soft">
+            {h.text}
+          </a>
+        ))}
+      </nav>
+    )}
+
+    <div class="lesson-prose practice-prose prose prose-lg mt-8 max-w-none">
+      <Content />
+    </div>
+
+    <p class="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 text-center">
+      <a href={url(`${resRoot}/`)} class="font-extrabold text-sky hover:underline">← Chapter resources</a>
+      <a href={url(`${spec.level}/${spec.slug}/${unit.slug}/${chapter.slug}/`)} class="font-extrabold text-sky hover:underline">Read the chapter notes →</a>
+    </p>
+  </div>
+</Base>

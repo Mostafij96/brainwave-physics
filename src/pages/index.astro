@@ -10,7 +10,7 @@ const first = lessons
   .filter((l) => l.data.unit === 1 && l.data.chapter === 1)
   .sort((a, b) => a.data.order - b.data.order)
   .slice(0, 6);
-const lessonUrl = (id: string) => url(`${id}/`);
+const lessonUrl = (id: string) => url(`o-level/${id}/`);
 
 const features = [
   { icon: '🧠', color: 'bg-sky-soft', title: 'Simple explanations', text: 'Every topic is broken into small, easy steps with everyday examples.' },
@@ -35,7 +35,7 @@ const features = [
         </h1>
         <p class="mt-5 max-w-lg text-lg text-ink/75">{SITE.description}</p>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href={url('igcse/')} class="btn bg-sky text-white shadow-[0_5px_0_#1c78cc]">Start learning →</a>
+          <a href={url('o-level/')} class="btn bg-sky text-white shadow-[0_5px_0_#1c78cc]">Start learning →</a>
           <a href={url('resources/')} class="btn bg-white shadow-[0_5px_0_#d6e0f5] border-2 border-[#d6e0f5]">Free resources</a>
         </div>
       </div>
@@ -129,7 +129,7 @@ const features = [
   <section class="mx-auto max-w-6xl px-4 py-10">
     <h2 class="text-center text-3xl font-extrabold">Choose your level</h2>
     <div class="mt-8 grid gap-6 md:grid-cols-2">
-      <a href={url('igcse/')} class="card block bg-mint-soft p-8">
+      <a href={url('o-level/')} class="card block bg-mint-soft p-8">
         <p class="text-5xl">🌱</p>
         <h3 class="mt-3 text-2xl font-extrabold">O Level / IGCSE Physics</h3>
         <p class="mt-2 text-ink/70">Edexcel course in book order: Unit → Chapter → Topic, with diagrams and worked examples.</p>
@@ -161,7 +161,7 @@ const features = [
   <section class="mx-auto max-w-6xl px-4 py-10">
     <div class="flex items-end justify-between">
       <h2 class="text-3xl font-extrabold">Start with Forces and Motion</h2>
-      <a href={url('igcse/')} class="font-extrabold text-sky hover:underline">See all chapters →</a>
+      <a href={url('o-level/')} class="font-extrabold text-sky hover:underline">See all chapters →</a>
     </div>
     <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {first.map((l) => (

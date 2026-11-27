@@ -1,0 +1,63 @@
+---
+import Base from '../../layouts/Base.astro';
+import { BOARDS, LEVELS, specsFor, type LevelSlug } from '../../data/curriculum';
+import { url } from '../../lib/url';
+
+export function getStaticPaths() {
+  return (['o-level', 'a-level'] as const).map((level) => ({ params: { level } }));
+}
+
+const level = Astro.params.level as LevelSlug;
+const info = LEVELS[level];
+const groups = BOARDS.map((board) => ({ board, specs: specsFor(level).filter((s) => s.board === board) })).filter(
+  (g) => g.specs.length,
+);
+---
+
+<Base
+  title={`${info.long} – All Specifications`}
+  description={`${info.blurb} Choose your exam board and specification.`}
+>
+  <div class="mx-auto max-w-4xl px-4 py-12">
+    <p class="inline-block rounded-full bg-mint-soft px-4 py-1 text-sm font-extrabold text-emerald-800">
+      {info.emoji} {info.title}
+    </p>
+    <h1 class="mt-3 text-4xl font-extrabold">{info.long}</h1>
+    <p class="mt-2 max-w-2xl text-ink/70">{info.blurb} New specifications are added one by one.</p>
+
+    {groups.map((g) => (
+      <section class="mt-10">
+        <h2 class="rounded-full bg-sun px-5 py-2 text-2xl font-extrabold inline-block">{g.board}</h2>
+        <ul class="card mt-4 divide-y-2 divide-[#e6edf9] overflow-hidden">
+          {g.specs.map((s) => (
+            <li class="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-4 sm:flex-nowrap">
+              {s.status === 'live' ? (
+                <a href={url(`${s.level}/${s.slug}/`)} class="min-w-0 flex-1 hover:text-sky">
+                  <span class="block font-display text-lg font-extrabold leading-tight">{s.name}</span>
+                  <span class="block text-sm text-ink/60">
+                    {s.code && <>Code {s.code} · </>}{s.blurb}
+                  </span>
+                </a>
+              ) : (
+                <div class="min-w-0 flex-1 opacity-60">
+                  <span class="block font-display text-lg font-extrabold leading-tight">{s.name}</span>
+                  <span class="block text-sm">{s.code && <>Code {s.code} · </>}Coming soon</span>
+                </div>
+              )}
+              {s.status === 'live' ? (
+                <a
+                  href={url(`resources/${s.level}/${s.slug}/`)}
+                  class="shrink-0 rounded-full bg-sun-soft px-3 py-1 text-xs font-extrabold text-ink/80 hover:bg-sun hover:text-ink"
+                >
+                  Free resources →
+                </a>
+              ) : (
+                <span class="shrink-0 rounded-full bg-[#eef2fb] px-3 py-1 text-xs font-extrabold text-ink/50">Soon</span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</Base>
